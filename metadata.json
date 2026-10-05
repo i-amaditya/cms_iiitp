@@ -1,0 +1,8 @@
+{
+  "name": "Remix IIIT Pune - Faculty Management CMS",
+  "description": "Official Faculty Management CMS module and portal for the Indian Institute of Information Technology Pune (IIIT Pune).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

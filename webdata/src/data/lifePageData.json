@@ -1,0 +1,1972 @@
+{
+  "CLUBS": {
+    "blueprint": {
+      "name": "Blueprint",
+      "desc": "Blueprint is the college’s graphic design and creative media club, bringing together students passionate about visual storytelling, branding, UI/UX, motion graphics, and digital creativity. The club serves as a collaborative space where members explore industry-standard design tools, develop creative thinking, and work on hands-on projects across multiple domains of design. Through regular workshops, design meets, collaborative sessions, and competitions, Blueprint encourages students to learn, experiment, and grow as creators. From graphic design and illustration to video editing, animation, and 3D design, the club provides opportunities for members to gain practical exposure while building a strong creative community on campus. Blueprint also represents the college in various design events and competitions, promoting innovation, teamwork, and artistic expression among students. With a focus on learning by doing, the club aims to nurture both technical skills and creative confidence in aspiring designers.",
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Creativity"
+      ],
+      "flagship": [
+        {
+          "title": "Zokei Poster-Making Contest (iConclave '26)",
+          "desc": "A flagship visual design competition organized by Blueprint under iConclave '26. Participants created thematic digital posters, demonstrating creative composition, typography, and graphic storytelling."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "UI/UX & Prototyping Masterclass",
+          "desc": "Hands-on training sessions focused on user-centered design principles, wireframing workflows, and prototyping interfaces in Figma."
+        },
+        {
+          "title": "Creative Brand & Media Kit Design",
+          "desc": "Collaborative meets focused on logo design, brand guidelines, and high-impact marketing graphics for campus fests."
+        }
+      ],
+      "achievements": [
+        "Created the official visual branding and media kit for iConclave '26",
+        "Conducted campus-wide Figma and Illustrator design bootcamps for 150+ students"
+      ],
+      "images": [
+        "/assets/clubs/blueprint_1.png",
+        "/assets/clubs/blueprint_2.png",
+        "/assets/clubs/blueprint_3.png",
+        "/assets/clubs/blueprint_4.png",
+        "/assets/clubs/blueprint_5.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Revansh Singh",
+            "role": "Club Head"
+          }, 
+          {
+            "name": "Daksh Pachwaria",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "blueprint@iiitp.ac.in",
+        "instagram": "@blueprint_iiitp"
+      },
+      "flyer": "/assets/clubs/blueprint_flyer.jpg"
+    },
+    "rang": {
+      "name": "Rang",
+      "desc": "RANG serves as a vibrant platform for students who perceive stories in colors, meaning in patterns, and emotion in every stroke. Rooted in creativity, collaboration, and innovation, the collective nurtures artistic talent while enriching the cultural and visual identity of the campus. Through these initiatives, RANG plays a significant role in shaping the artistic atmosphere of IIIT Pune, ensuring that creativity remains an integral part of campus life. Beyond workshops and events, RANG is a thriving community that values originality, teamwork, and artistic growth.",
+      "tags": [
+        "Fine Arts",
+        "Crafts",
+        "Sketching"
+      ],
+      "flagship": [
+        {
+          "title": "Halo Runway (iConclave '26)",
+          "desc": "A major fashion-as-art showcase introduced during iConclave '26. Reflects fashion and makeup design as contemporary visual art forms, drawing huge crowds."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Bleach Painting Workshops",
+          "desc": "Experimental workshops where students worked on textile textures, techniques, and bleach painting on fabrics."
+        },
+        {
+          "title": "Sketching, Mandala & Illustration Meets",
+          "desc": "Sessions covering illustration fundamentals, sketching, perspective drawings, and precision mandala art."
+        },
+        {
+          "title": "Festive Rangoli & Campus Decor Installations",
+          "desc": "Designing and executing massive traditional rangolis and artistic installations to decorate the campus during national fests."
+        }
+      ],
+      "achievements": [
+        "Successfully compiled and published the RANG Annual Art Report 2025-26 showcasing student art collections",
+        "Completed multiple collaborative art installations around the college host zones"
+      ],
+      "images": [
+        "/assets/clubs/rang_1.jpeg",
+        "/assets/clubs/rang_2.jpeg",
+        "/assets/clubs/rang_3.png",
+        "/assets/clubs/rang_4.png",
+        "/assets/clubs/rang_5.jpg"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Lakshita Banothe",
+            "role": "Club Head"
+          },
+          {
+            "name": "Nishit Kerketta",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "rang@iiitp.ac.in",
+        "instagram": "@rangiiitp",
+        "website": "https://www.iiitp.ac.in/page/rang-0"
+      },
+      "flyer": "/assets/clubs/rang_flyer.jpg"
+    },
+    "quantnum": {
+      "name": "QuantNum",
+      "desc": "Curious About the Magic Behind Numbers? At QuantNum, we believe that mathematics is more than equations and symbols; it is a powerful language, an intellectual adventure, and a work of art. As the Mathematics Club of IIIT Pune, we are dedicated to illuminating the wonders of math, celebrating its timeless elegance and immense real-world value.",
+      "tags": [
+        "Mathematics",
+        "Analytics",
+        "Logic"
+      ],
+      "flagship": [
+        {
+          "title": "Quant-Bid Arena (iConclave '26)",
+          "desc": "A unique mathematical bidding tournament hosted during iConclave '26. Combines mathematical problem solving, game theory, strategy, and real-time bidding."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Mathematical Seminars & Logical Bootcamps",
+          "desc": "Faculty-guided problem-solving seminars to promote logical deduction, discrete math, and analytical thinking."
+        },
+        {
+          "title": "Pi Day & National Mathematics Day Celebrations",
+          "desc": "Interactive math puzzles, quiz sessions, and math history debates celebrating Srinivasa Ramanujan's legacy."
+        }
+      ],
+      "achievements": [
+        "Organized the highly successful Quant-Bid Arena with massive participation from engineering students across Pune",
+        "Maintained weekly 'Problem of the Week' challenges and 'Did You Know' math series on social media to build curiosity"
+      ],
+      "images": [
+        "/assets/clubs/quantnum_1.jpg",
+        "/assets/clubs/quantnum_2.png",
+        "/assets/clubs/quantnum_3.png",
+        "/assets/clubs/quantnum_4.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Jash Popat",
+            "role": "Club Head"
+          },
+          {
+            "name": "Krish Joshi",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "quantnum@iiitp.ac.in",
+        "instagram": "@quantnum_iiitp",
+        "website": "https://www.iiitp.ac.in/page/quantnum-club"
+      },
+      "flyer": "/assets/clubs/quantnum_flyer.jpg"
+    },
+    "bit-legion": {
+      "name": "Bit-Legion",
+      "desc": "BiT Legion is the elite coding club of IIIT Pune. It is an active student-driven community of like-minded people striving to reach new heights in the programming field, whether competitive programming, Development, Open Source, interview prep, etc. This year marks the 3rd anniversary of the Bit Legion Coding Club. Throughout these years, the club's primary focus has been to introduce students to the beautiful world of programming and build a strong coding culture in the institute. BitLegion ensures that every individual gets a smooth onboarding, to begin with their programming journey.",
+      "tags": [
+        "Competitive Programming",
+        "DSA",
+        "Algorithms"
+      ],
+      "flagship": [
+        {
+          "title": "InfInITY Global Rated Coding Contest",
+          "desc": "A flagship competitive coding contest hosted in collaboration with CodeChef. Rated as a 6-star event, it registered 1,28,000+ submissions and 25K+ participants worldwide."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "ICPC Prep & Senior Guidance Panels",
+          "desc": "Guidance forums led by seniors who qualified for the ICPC Asia-West Continentals, sharing roadmap guidelines and contest strategies."
+        },
+        {
+          "title": "DSA & Programming Bootcamps",
+          "desc": "Regular coding drills, mock contest rounds, and coding bootcamps covering advanced algorithms and data structures."
+        }
+      ],
+      "achievements": [
+        "Ranked 1st among all IIITs at the Amritapuri ICPC Regionals and qualified for the Asia-West Continental Finals",
+        "Conducted InfInITY 2k22 globally, attracting top-rated competitive programmers including masters and grandmasters"
+      ],
+      "images": [
+        "/assets/clubs/bitlegion_1.jpg",
+        "/assets/clubs/bitlegion_2.jpg",
+        "/assets/clubs/bitlegion_3.jpg",
+        "/assets/clubs/bitlegion_4.jpg",
+        "/assets/clubs/bitlegion_5.jpg"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Pratham Bhardwaj",
+            "role": "Club Head"
+          },
+          {
+            "name": "Nabhya Parasrampuria",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "bitlegion@iiitp.ac.in",
+        "instagram": "@bit_legion_iiitp",
+        "website": "https://bitlegion.iiitp.ac.in"
+      },
+      "flyer": "/assets/clubs/bitlegion_flyer.jpg"
+    },
+    "e-cell": {
+      "name": "E-Cell",
+      "desc": "Entrepreneurship and Incubation Cell at IIIT Pune was established as the first-ever student club of IIIT Pune in the year 2020 to create a startup-supporting ecosystem and establish a functional mechanism for scouting innovative ideas, pre-incubation activities, rewarding innovations, and sharing entrepreneurial success stories.\n\nFor implementation of NISP 2019 at the Institute level, IIIT Pune developed a roadmap that includes:\n• Formation of Entrepreneurship, Innovation, and Incubation Cell.\n• Formation of E-Cell and I-Cell.\n• Faculty nomination for NISP implementation.\n• Creation of a Section-8 company at the Institute level.",
+      "vision": "To foster a collaborative environment that inspires students to think creatively and develop strong business acumen. Ultimately, our goal is to evolve into a fully resourced ecosystem that connects with E-Cells across IITs, NITs, IIITs, and colleges across the nation.\nBy building this network, we aim to provide the support needed to turn student ideas into reality and drive startup culture as a nationwide movement.",
+      "tags": [
+        "Entrepreneurship",
+        "Incubation",
+        "Startups"
+      ],
+      "flagship": [
+        {
+          "title": "E-Summit IIIT Pune",
+          "desc": "The Entrepreneurship Summit (E-summit) is IIIT Pune’s flagship annual entrepreneurial fest that aims to promote the spirit of entrepreneurship and involve students from all over the country to participate in various fun-infused activities upholding the motive of promoting entrepreneurship. E-Cell IIIT Pune has successfully conducted four editions of E-Summit beginning in 2022, with the latest edition held in 2026. E-Summit IIIT Pune has witnessed: 15000+ Registrations, 1100+ Colleges, 15+ Countries."
+        },
+        {
+          "title": "iConclave × E-Summit 2026",
+          "desc": "E-Summit 2026 was conducted along with the annual techno-cultural fest of IIIT Pune - iConclave. The combined event was an extremely successful attempt in bringing the student community of IIIT Pune and several other colleges across India together. Three flagship events were organized: IPL Auction, Startup Hunt, No Way Out. All three events were extremely successful with over 1200+ registrations combined."
+        },
+        {
+          "title": "No Way Out",
+          "desc": "No Way Out, one of the flagship events of Iconclave × E-Summit 2026, attracted over 400 participants and tested their problem-solving, teamwork, and decision-making abilities through multiple challenging rounds. The journey culminated in Round 2: The Finale, an immersive escape-room experience where participants had to investigate a crime scene, uncover critical hints, and piece together information to progress toward the final solution."
+        },
+        {
+          "title": "IPL Auction / Stadium Showdown",
+          "desc": "I-Conclave X E-Summit turned into a high-stakes cricketing battlefield for the highly anticipated IPL Auction 2026, bringing infectious energy and fierce competition to the room. Drawing an impressive participation of over 200 attendees, the event witnessed enthusiastic bidding wars and strategic team-building throughout the evening."
+        },
+        {
+          "title": "Startup Hunt",
+          "desc": "Startup Hunt is E-Cell IIIT Pune’s premier national-level startup pitching competition that invites ambitious student entrepreneurs from colleges nationwide to present their most innovative business ideas. Participating teams pitch their visions, business models, and solutions directly to a distinguished panel of expert judges. This year's edition saw over 900 participants."
+        },
+        {
+          "title": "Breaking Conventions",
+          "desc": "Breaking Conventions is one of the legacy events of E-Summit IIIT Pune. It is an insightful speaker series featuring industry leaders, entrepreneurs and startup founders. Notable speakers include Mr. Arjun Malhotra (Co-Founder, HCL) and Mr. Aman Dhattarwal (Founder, Apni Kaksha)."
+        },
+        {
+          "title": "E-Cell Networking Events",
+          "desc": "E-Cell IIIT Pune actively participates in networking events across Pune and beyond. These events help students connect with entrepreneurs, innovators and startup enthusiasts. Recent achievements include participation at MAGNATE'26 hosted by PICT and securing Runner-Up position at IGNITE."
+        }
+      ],
+      "achievements": [
+        "Secured Runner-Up position at IGNITE, Cummins College, Pune",
+        "Participated and networked actively at events like MAGNATE'26 hosted by PICT",
+        "Organized 4 editions of E-Summit, including E-Summit × iConclave 2026 with over 1200+ registrations"
+      ],
+      "images": [
+        "/assets/lifepage/ecell1.png",
+        "/assets/lifepage/ecell3.png",
+        "/assets/lifepage/ecell4.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Dr. Habila Basumatary",
+            "role": "Faculty Mentor",
+            "link": "/people/faculty/habila-basumatary"
+          },
+          {
+            "name": "Harshit Nagpal",
+            "role": "Head"
+          },
+          {
+            "name": "Anshika Dhuria",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "ecell@iiitp.ac.in",
+        "instagram": "@ecell_iiitp"
+      },
+      "flyer": "/assets/clubs/ecell_flyer.jpg"
+    },
+    "eclectic": {
+      "name": "Eclectic",
+      "desc": "A club of like-minded individuals who share a passion for literature and a perennial hunger for fun: At Eclectic, we organise writing activities, conduct open mics and literary quizzes, have book discussions, and much more. However, it isn’t just the activities that define Eclectic — it is our vibrant and welcoming community.",
+      "tags": [
+        "Literature",
+        "Debates",
+        "Creative Writing"
+      ],
+      "flagship": [
+        {
+          "title": "Eloquence (TEDx Theme Showcase)",
+          "desc": "An inspiring public speaking event themed 'What if you were a TEDx speaker?'. Former TEDx speakers evaluated student pitches and shared communication keys."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Yours, Clueless Podcast Series",
+          "desc": "A campus podcast initiative facilitating one-on-one professional conversations between seniors and juniors regarding career choices."
+        },
+        {
+          "title": "Auditions & Formal Debate Tournaments",
+          "desc": "Public debate matches designed to foster critical thinking, prompt argumentation, and clear communication."
+        },
+        {
+          "title": "Book Society Discussions",
+          "desc": "A dedicated book discussion forum where readers explore, review, and debate new literature and non-fiction books."
+        }
+      ],
+      "achievements": [
+        "Launched the Yours, Clueless podcast series, bridging the gap between academic life and corporate careers",
+        "Founded the Book Society to promote a reading and critical writing culture inside the institute"
+      ],
+      "images": [],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Urvara Lakshmy Prakash",
+            "role": "Club Head"
+          },
+          {
+            "name": "Yashraj Singh",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "eclectic@iiitp.ac.in",
+        "instagram": "@media",
+        "website": "https://eclectic-iiitp.github.io/eclectic/"
+      },
+      "flyer": "/assets/clubs/eclectic_flyer.jpg"
+    },
+    "saaz": {
+      "name": "SAAZ",
+      "desc": "The Music Club of IIIT Pune. SAAZ nurtures vocalists and instrumentalists, setting up jamming sessions, acoustic events, and representing the institute at cultural fests.",
+      "tags": [
+        "Music",
+        "Vocals",
+        "Instruments"
+      ],
+      "flagship": [
+        {
+          "title": "Ananta Music Showcases",
+          "desc": "Large band concerts and solo vocal showcases organized during the college's annual socio-cultural festival Ananta."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Acoustic Unplugged Nights",
+          "desc": "Outdoor jamming sessions promoting instrumental collaboration, acoustic performances, and student songwriting."
+        },
+        {
+          "title": "Vocal & Instrumental Masterclasses",
+          "desc": "Training sessions covering guitar chords, keyboard scales, drumming patterns, and classical vocal techniques."
+        }
+      ],
+      "achievements": [
+        "Represented IIIT Pune in national inter-college music fests, securing top positions in solo and group singing",
+        "Recorded and produced original soundtracks for college promotional media and short student films"
+      ],
+      "images": [],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Sanjanaa Anantharraman",
+            "role": "Club Head"
+          },
+          {
+            "name": "Dev Krishan",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "saaz@iiitp.ac.in",
+        "instagram": "@saaz_iiitp",
+        "website": "https://saaz-iiitp.vercel.app/"
+      },
+      "flyer": "/assets/clubs/saaz_flyer.jpg"
+    },
+    "vanity-crew": {
+      "name": "Vanity Crew",
+      "desc": "Vanity Crew is the official dance club of IIIT Pune, established with the objective of fostering creativity, expression, discipline, and community through the art of dance. The club welcomes dancers from diverse backgrounds and styles, including contemporary, hip-hop, fusion, folk, and classical dance forms such as Bharatnatyam. Vanity Crew believes in creating an inclusive environment where both experienced performers and beginners can learn, collaborate, and grow together.",
+      "tags": [
+        "Dance",
+        "Choreography",
+        "Hip-hop"
+      ],
+      "flagship": [
+        {
+          "title": "Nritya Nova Dance Competition",
+          "desc": "The annual flagship intercollegiate dance contest organized by Vanity Crew, showcasing contemporary, hip-hop, and folk styles."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Republic Day & Shivjayanti Tribute Acts",
+          "desc": "Massive tribute dance performances blending traditional Maharashtrian folk dances (like Lavani) with contemporary styles."
+        },
+        {
+          "title": "Spontaneous Campus Flash Mobs",
+          "desc": "Choreographed street dances in central campus zones to build community engagement and promote cultural fests."
+        },
+        {
+          "title": "Choreography & Style Masterclasses",
+          "desc": "Auditions and regular workshops for both beginners and experienced dancers covering hip-hop, contemporary, and classical forms."
+        }
+      ],
+      "achievements": [
+        "Successfully performed at iConclave, receiving high praise for group coordination, choreographic complexity, and energy",
+        "Maintained the official club website vanitycrew.vercel.app to share training schedules and dance routines"
+      ],
+      "images": [
+        "/assets/clubs/vanity-crew_1.png",
+        "/assets/clubs/vanity-crew_2.jpg",
+        "/assets/clubs/vanity-crew_3.jpg",
+        "/assets/clubs/vanity-crew_4.jpg",
+        "/assets/clubs/vanity-crew_5.jpg",
+        "/assets/clubs/vanity-crew_6.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Shravya",
+            "role": "Club Head"
+          },
+          {
+            "name": "Nagoor",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "vanitycrew@iiitp.ac.in",
+        "instagram": "@vanity_crew_iiitp",
+        "website": "https://www.iiitp.ac.in/page/vanity-crew"
+      },
+      "flyer": "/assets/clubs/vanity_crew_flyer.jpg"
+    },
+    "sports": {
+      "name": "Sports",
+      "desc": "Sports are a great way to make friends, learn new skills and have fun. Apart from providing a social outlet for people sharing a common interest in a particular sport, they act as a platform to meet new people from different backgrounds and experiences. Sports and fitness go hand in hand and are essential for good mental and physical health. We at IIIT Pune Sports Club are here to build a community and create a sense of belonging to inspire people to reach their full potential and to help people improve their physical fitness and health.",
+      "tags": [
+        "Athletics",
+        "Football",
+        "Cricket"
+      ],
+      "flagship": [
+        {
+          "title": "Eklavya – Annual Sports Fest",
+          "desc": "A massive 3-day annual sports festival featuring football, cricket, volleyball, basketball, badminton, kabaddi, chess, and carrom."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Esports Tournament",
+          "desc": "An online gaming tournament featuring FIFA, Valorant, Clash Royale, and Fall Guys, complete with live screenings on campus."
+        },
+        {
+          "title": "Inter-Batch Kabaddi Leagues",
+          "desc": "Intra-college tournament fostering batch pride, sportsmanship, and teamwork, with Batch '24 winning the trophy."
+        }
+      ],
+      "achievements": [
+        "Volleyball team won the Bronze Medal and Football team secured 4th position at the national Inter-IIIT Meet (Kancheepuram)",
+        "Sent an athletic contingent to represent the institute at the Inter-IIIT Sports Meet at IIITDM Kurnool"
+      ],
+      "images": [
+        "/assets/clubs/sports_1.png",
+        "/assets/clubs/sports_2.jpg",
+        "/assets/clubs/sports_3.jpg",
+        "/assets/clubs/sports_4.jpeg",
+        "/assets/clubs/sports_5.jpeg",
+        "/assets/clubs/sports_6.jpeg",
+        "/assets/clubs/sports_7.jpeg"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Saksham Dabas",
+            "role": "Club Head"
+          },
+          {
+            "name": "Adarsh",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "sports@iiitp.ac.in",
+        "instagram": "@sports_iiitp",
+        "website": "https://www.iiitp.ac.in/page/sports"
+      },
+      "flyer": "/assets/clubs/sports_flyer.jpg"
+    },
+    "rofies": {
+      "name": "ROFIES",
+      "desc": "R.O.F.I.E.S. (Robotics Oriented Futuristic & Innovative Engineers Society) is the official robotics and embedded systems club of IIIT Pune, focused on promoting practical learning, innovation, and technical development in the fields of robotics, embedded systems, IoT, and automation.",
+      "tags": [
+        "Robotics",
+        "Embedded Systems",
+        "IoT"
+      ],
+      "flagship": [
+        {
+          "title": "Hashiriya – The Street Racers (iConclave '26)",
+          "desc": "A premier robotics racing tournament organized as part of iConclave 2026. Vehicles raced through complex, obstacle-ridden tracks."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Project Aura Companion Robot Development",
+          "desc": "Building a mood-aware interactive companion robot that cleared Level 1 screening of the international TRON 2026 contest."
+        },
+        {
+          "title": "Autonomous Drone Systems",
+          "desc": "Building and testing quadcopters equipped with autonomous navigation, path planning, object detection, and a GUI monitoring panel."
+        },
+        {
+          "title": "Embedded Systems & IoT Bootcamps",
+          "desc": "Hands-on workshops covering Arduino programming, Raspberry Pi integrations, sensor calibration, and microcontrollers."
+        }
+      ],
+      "achievements": [
+        "Represented IIIT Pune at MindSpark (COEP) and Cognizance (IIT Roorkee) with award-winning robotics projects",
+        "Successfully cleared Level 1 of TRON 2026 with Project Aura, competing against global universities"
+      ],
+      "images": [
+        "/assets/clubs/rofies_1.jpeg",
+        "/assets/clubs/rofies_2.jpeg",
+        "/assets/clubs/rofies_3.jpeg",
+        "/assets/clubs/rofies_4.jpeg",
+        "/assets/clubs/rofies_5.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Om Shivansh Jaiswal",
+            "role": "Club Head"
+          },
+          {
+            "name": "Khushal Agrawal",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "rofies@iiitp.ac.in",
+        "instagram": "@rofies_iiitp",
+        "website": "https://www.iiitp.ac.in/page/rofies"
+      },
+      "flyer": "/assets/clubs/rofies_flyer.jpg"
+    },
+    "localhost": {
+      "name": "localhost",
+      "desc": "“Better developers, better humans and together” To be a place for developers to hang out, realise exciting ideas and become a strong network of builders who will leave their mark on the world. From weekly sprints of Web Development and Flutter Development to contributing at Hacktoberfest and GSoC, localhost is marching on many fronts to bring development to the students of IIIT Pune.",
+      "tags": [
+        "Web Dev",
+        "App Dev",
+        "Open Source"
+      ],
+      "flagship": [
+        {
+          "title": "Nexus Hackathon",
+          "desc": "A flagship development hackathon where teams built and pitched software products solving real-world challenges in 36 hours."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Hacktoberfest & Git Workshops",
+          "desc": "Open-source contribution boot camps teaching Git commands, branching, GitHub pull requests, and open-source practices."
+        },
+        {
+          "title": "Weekly Development Sprints",
+          "desc": "High-energy coding sessions where members collaborated on active codebases to solve and deploy features."
+        },
+        {
+          "title": "Full-Stack & Flutter Bootcamps",
+          "desc": "Tutorial drives focused on React development, Node.js REST APIs, database design, and mobile app development in Flutter."
+        }
+      ],
+      "achievements": [
+        "Conducted full-scale Hacktoberfest workshops, resulting in over 80 students completing open-source contribution pull requests",
+        "Maintained active community dev channels on Telegram to support beginners in web and app development"
+      ],
+      "images": [
+        "/assets/clubs/localhost_1.jpg",
+        "/assets/clubs/localhost_2.jpg",
+        "/assets/clubs/localhost_3.gif"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Abdul Baasith",
+            "role": "Club Head"
+          },
+          {
+            "name": "Bhumi Dingana",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "localhost@iiitp.ac.in",
+        "instagram": "@localhost_iiitp",
+        "website": "https://www.iiitp.ac.in/page/localhost"
+      },
+      "flyer": "/assets/clubs/localhost_flyer.jpg"
+    },
+    "horizon": {
+      "name": "Horizon",
+      "desc": "Horizon, established in January 2022 with the ideology of \"capture imagination,\" continues to steadfastly pursue and expand upon this captivating concept. As the photography and videography club of IIIT Pune, Horizon has swiftly emerged as one of the institute's most dynamic and youthful clubs. Its ubiquitous presence is felt throughout campus events, where it skillfully encapsulates cherished memories, earning Horizon the designation of being IIIT Pune's dedicated media house.",
+      "tags": [
+        "Photography",
+        "Videography",
+        "Media"
+      ],
+      "flagship": [
+        {
+          "title": "Annual Campus Photo Exhibition",
+          "desc": "A showcase of IIIT Pune's best student photography capturing campus infrastructure, laboratory life, and cultural events."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Pune Cultural Photowalks",
+          "desc": "Out-of-campus photowalks to Kasba Peth and FC Road, cooperating with Photowalk India to capture local architecture and street life."
+        },
+        {
+          "title": "Camera Controls & Video Editing",
+          "desc": "Workshops covering DSLR manual controls, lighting adjustments, composition grids, and editing in Premiere Pro."
+        }
+      ],
+      "achievements": [
+        "Successfully operated as IIIT Pune's official media house, covering all major college events, fests, and guest lectures",
+        "Maintained the official Linktree portal to share digital photography portfolios and promotional videography"
+      ],
+      "images": [],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Mohan Sri Krishna Alavanthar Budumuru",
+            "role": "Club Head"
+          },
+          {
+            "name": "Dhyey Chatwani",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "horizon@iiitp.ac.in",
+        "instagram": "@horizon_iiitp",
+        "website": "https://linktr.ee/horizon_iiitp?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcASnsPNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacGh-52hAB8cNrdj6va_lhtfjH-Cfu6WhGoGwSZttyBuRjBjFi8DIe1svLOfw_aem_QQt3SYFQwuxt41Ot9MXCug"
+      },
+      "flyer": "/assets/clubs/horizon_flyer.jpg"
+    },
+    "abhinay": {
+      "name": "Abhinay",
+      "desc": "Abhinay isn't just a club; it's where stories come alive. Step into our world and unleash your inner performer. From thrilling performances to lifelong friendships, Abhinay is the stage where your journey begins. Abhinay is a tradition of artistic excellence that continues to evolve, from street plays to finishing top 5 nationwide in IIT Kharagpur's Springfest and performing street play prelims in MIT-WPU Mood Indigo.",
+      "tags": [
+        "Street Play",
+        "Acting",
+        "Theater"
+      ],
+      "flagship": [
+        {
+          "title": "Dastaan-E-Nukkad Street Plays",
+          "desc": "Powerful, socially conscious street plays addressing issues like anti-ragging awareness, academic stress, and social responsibility."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Springfest Murder Thriller Production",
+          "desc": "Scripting and rehearsing an original murder thriller play that was selected for the final stage at IIT Kharagpur."
+        },
+        {
+          "title": "Mood Indigo Street Play Performance",
+          "desc": "Scripting and performing the street play preliminary round at MIT-WPU for IIT Bombay's Mood Indigo."
+        },
+        {
+          "title": "Acting & Backstage Production",
+          "desc": "Training sessions on character development, scriptwriting, voice modulation, stage lights, and backstage sound design."
+        }
+      ],
+      "achievements": [
+        "Finished in the Top 5 nationwide in the Springfest finals hosted by IIT Kharagpur",
+        "Secured outstanding recognition for Dastaan-E-Nukkad street play at VIT Pune, winning 1st prize"
+      ],
+      "images": [
+        "/assets/clubs/abhinay_1.png",
+        "/assets/clubs/abhinay_2.png",
+        "/assets/clubs/abhinay_3.png",
+        "/assets/clubs/abhinay_4.png",
+        "/assets/clubs/abhinay_5.png",
+        "/assets/clubs/abhinay_6.png",
+        "/assets/clubs/abhinay_7.png",
+        "/assets/clubs/abhinay_8.png"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Arjun Mukraiya",
+            "role": "Club Head"
+          },
+          {
+            "name": "Ishika Kodwani",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "abhinay@iiitp.ac.in",
+        "instagram": "@abhinay_iiitp",
+        "website": "https://www.iiitp.ac.in/page/abhinay"
+      },
+      "flyer": "/assets/clubs/abhinay_flyer.jpg"
+    },
+    "q-riocity": {
+      "name": "Q-riocity",
+      "desc": "The club brings together students who enjoy exploring the world through quizzes, discussions, games, and interactive activities across a wide range of topics including history, geography, current affairs, global culture, pop-culture, sports, literature, cinema, anime, defence, science, technology, space, languages, flags, maps, internet culture, and more. Q-Riocity is more than a quiz club. It is a close-knit community where students can learn, host, participate, and have fun with any topic they are passionate about.",
+      "tags": [
+        "Quizzes",
+        "Trivia",
+        "General Knowledge"
+      ],
+      "flagship": [
+        {
+          "title": "Cognition: Seikai Showdown Quiz",
+          "desc": "A major visual anime and pop-culture quiz organized during iConclave, featuring buzzer and country-recognition rounds."
+        }
+      ],
+      "workshops": [
+        {
+          "title": "Freshers Audition & Welcome Quiz",
+          "desc": "Auditions and introductory quiz leagues designed to onboard first-year students into the quizzing community."
+        },
+        {
+          "title": "Sakura Survey (Family Feud style)",
+          "desc": "A themed Family Feud visual game where teams guessed the most popular survey answers submitted by the student body."
+        },
+        {
+          "title": "Theme-based Trivia Leagues",
+          "desc": "Weekly quizzes covering world history, geography maps, scientific breakthroughs, pop culture, flags, and linguistics."
+        }
+      ],
+      "achievements": [
+        "Organized Cognition: Seikai Showdown with great success and high participation across Pune colleges",
+        "Successfully built a welcoming learning-sharing environment for quiz hosting and framing"
+      ],
+      "images": [
+        "/assets/clubs/qriocity_1.png",
+        "/assets/clubs/qriocity_2.jpg",
+        "/assets/clubs/qriocity_3.jpg",
+        "/assets/clubs/qriocity_4.jpg",
+        "/assets/clubs/qriocity_5.png",
+        "/assets/clubs/qriocity_6.png",
+        "/assets/clubs/qriocity_7.jpg",
+        "/assets/clubs/qriocity_8.jpg",
+        "/assets/clubs/qriocity_9.jpg"
+      ],
+      "leadership": {
+        "heads": [
+          {
+            "name": "Aadit Bajaj",
+            "role": "Club Head"
+          },
+          {
+            "name": "Amol",
+            "role": "Club Co-Head"
+          }
+        ],
+        "email": "q_riocity@iiitp.ac.in",
+        "instagram": "@q_riocity_",
+        "website": "https://www.iiitp.ac.in/page/q-riocity"
+      },
+      "flyer": "/assets/clubs/qriocity_flyer.jpg"
+    }
+  },
+  "ACTIVITIES": [
+    {
+      "id": "azadi",
+      "name": "Azadi Ka Amrit Mahotsav",
+      "paragraphs": [
+        "Azadi Ka Amrit Mahotsav is an initiative of the Government of India to celebrate and commemorate 75 years of progressive India and the glorious history of its people, culture, and achievements. It is dedicated to the citizens of India who hold the power to enable the vision of activating India 2.0, fueled by the spirit of Atmanirbhar Bharat.",
+        "As part of the celebrations, the EBSB Club of IIIT Pune, in association with the EBSB Club of IIIT Trichy, organized two online expert lectures. The joint event was attended by more than 130 students and faculty members from both institutes, promoting a shared spirit of national unity and collaboration.",
+        "During the event, Prof. R. Gururaj from the Department of Humanities and Social Sciences at NIT Trichy addressed the gathering on the topic of \"Unity of Purpose\" via Google Meet, encouraging the participants to convert small local improvements into significant national gains."
+      ],
+      "images": [
+        "/assets/lifepage/azadikamohotsav.png",
+        "/assets/lifepage/1.png",
+        "/assets/lifepage/2_0.png"
+      ]
+    },
+    {
+      "id": "ebsb",
+      "name": "EBSB (Ek Bharat Shreshtha Bharat)",
+      "paragraphs": [
+        "The \"Ek Bharat Shreshtha Bharat\" initiative was announced by Honourable Prime Minister Shri Narendra Modi on 31st October 2015, on the occasion of the 140th birth anniversary of Sardar Vallabhbhai Patel. Through this innovative initiative, knowledge of the cultures, traditions, and practices of various states and Union Territories will strengthen mutual understanding and bonds between states, further reinforcing the unity and integrity of India.",
+        "IIIT Pune has actively organized several national programs under this scheme, most notably the 75th Anniversary — Azadi Ka Amrit Mahotsav, International Mother Language Day, and Aatmanirbhar Bharat Saptah 2021. In addition, various special cultural and linguistic exchange sessions were conducted to promote interaction among students from diverse backgrounds.",
+        "The institute has also raised awareness among students through patriotic song presentations, a special guest lecture on e-waste management during Swachh Bharat Pakhwada 2021, and an Integrity Pledge-taking ceremony — all contributing to building a socially responsible and self-reliant student community."
+      ],
+      "images": [
+        "/assets/lifepage/ebbs.png"
+      ]
+    },
+    {
+      "id": "fit-india",
+      "name": "Fit India Movement",
+      "paragraphs": [
+        "Fit India Movement was launched on 29th August 2019 by the Honourable Prime Minister with the aspiration to make fitness an integral part of our daily lives. The movement aims to bring about behavioral changes and move towards a physically active and healthy lifestyle. It focuses on promoting fitness as a free and easy lifestyle choice while fostering indigenous games across all schools, colleges, and villages.",
+        "In support of this movement, IIIT Pune organized the \"Fit India Freedom Run\" on August 13, 2021. The event witnessed enthusiastic participation from students and faculty members who ran to promote a physically active lifestyle, keeping in view all necessary health and safety guidelines. The campus continues to encourage sports and regular physical exercises to maintain sound mental and physical well-being."
+      ],
+      "images": [
+        "/assets/lifepage/fit india.png"
+      ]
+    },
+    {
+      "id": "hindi",
+      "name": "Hindi Pakhwada",
+      "paragraphs": [
+        "IIIT Pune celebrates Hindi Pakhwada every year to promote and honour the Hindi language. This fortnight-long programme begins on 14th September, which is also observed as Hindi Diwas. Under the aegis of Hindi Pakhwada, a range of events are organized for students including poetry writing, essay writing, recitation, debates, painting, and quizzes.",
+        "This year, the programme commenced with a painting competition. More than 50 students enthusiastically participated in the various competitions organized in coordination with the Hindi Committee. Shivam Patel secured first place in the painting competition, Saurabh Jaiswal won the poetry writing event, and Sonu Gupta topped the essay writing contest. Additionally, Rohini Maidamwar won the poetry translation event, Satyam Garg and Aryan Sharma won the riddle competition, and Prasad Dalvi emerged victorious in the quiz.",
+        "The organization of these diverse competitions has given a new direction to the promotion of the official language. The entire event was successfully conducted under the mentorship and supervision of faculty members from the Hindi Cell — Prof. Ritu Tiwari, Dr. Chandrakant Guled, Dr. Bhupendra Singh, Dr. Rahul Dixit, and Dr. Anagha Khiste."
+      ],
+      "images": [
+        {
+          "src": "/assets/activities/hindi_pakhwada_prize_distribution.jpg",
+          "caption": "Prize Distribution Ceremony"
+        },
+        {
+          "src": "/assets/activities/hindi_pakhwada_day_1.jpg",
+          "caption": "Day 1: Painting Competition"
+        },
+        {
+          "src": "/assets/activities/hindi_pakhwada_day_2.jpg",
+          "caption": "Day 2: Poetry & Essay Writing Competitions"
+        }
+      ]
+    },
+    {
+      "id": "swachh",
+      "name": "Swachh Bharat Abhiyan",
+      "paragraphs": [
+        "Swachh Pakhwada is a fortnight-long programme initiated by the Government of India to ensure the collective participation of citizens in cleanliness activities and to truly transform Swachh Bharat into a mass citizen movement. The inauguration and pledge-taking ceremony for Swachh Pakhwada 2021 was held on 1st September 2021, in which all faculty members and staff of the institute participated.",
+        "As directed by the Ministry of Education, IIIT Pune organized a special guest lecture during Swachh Pakhwada 2021 to identify and promote innovative cleanliness practices. The session, held on 14th September 2021, saw Ms. Shipra Bhalla Chaudhary guide students and staff on modern and effective methods of e-waste management, raising awareness about responsible disposal and sustainable practices."
+      ],
+      "images": [
+        "/assets/lifepage/swachbharat.png"
+      ]
+    },
+    {
+      "id": "unity",
+      "name": "Unity Day (Rashtriya Ekta Diwas)",
+      "paragraphs": [
+        "Under the aegis of \"Azadi Ka Amrit Mahotsav\", IIIT Pune organized an Integrity Pledge taking ceremony to mark National Unity Day. This campaign celebrates the spirit of integration and focuses on self-reliance with integrity across the country.",
+        "The ceremony was held on 2nd October 2021 via Google Meet, bringing together faculty members, administrative staff, and students. By taking the integrity pledge, participants committed themselves to support transparency, moral principles, and a corruption-free society, contributing collectively toward a self-reliant and strong India."
+      ],
+      "images": [
+        "/assets/lifepage/unityPledge.png"
+      ]
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga Day (International Yoga Day)",
+      "paragraphs": [
+        "Every year on June 21st, IIIT Pune observes International Yoga Day. The institute understands the invaluable gift of the ancient Indian tradition of Yoga and is committed to emerge as a beacon for a holistic approach to health and well-being. Yoga provides a balanced way of life, striking a harmony between mental calmness and physical vitality.",
+        "For the Yoga Day celebrations, Mrs. Neha Parakhe, an experienced instructor from Yoga Vidya Gurukul, was invited to the campus to guide students and staff. She conducted an interactive yoga and pranayama session, demonstrating postures that enhance concentration and relieve stress for academic excellence."
+      ],
+      "images": [
+        {
+          "src": "/assets/activities/yoga_day_group.jpg",
+          "caption": "Yoga Day Participants Group Photo"
+        },
+        {
+          "src": "/assets/activities/yoga_day_pranayama.jpg",
+          "caption": "Pranayama & Breathing Exercises"
+        },
+        {
+          "src": "/assets/activities/yoga_day_vrikshasana.jpg",
+          "caption": "Vrikshasana (Tree Pose) Practice"
+        }
+      ]
+    },
+    {
+      "id": "youth",
+      "name": "Youth Day (National Youth Day)",
+      "paragraphs": [
+        "India celebrates National Youth Day on 12th January every year to honour the birth anniversary of Swami Vivekananda, one of India's greatest spiritual leaders and believers in youth power. Popularly known as \"Yuva Diwas\", the day encourages the youth in the country to channelize their potential for the nation's constructive development.",
+        "The celebration at IIIT Pune was organized under the theme \"Channelizing Youth Power for Nation Building\". The institute hosted motivational speech contests, lectures, and group discussions aimed at sharing the vital and empowering thoughts of Swami Vivekananda among the student community, inspiring them to lead purposeful lives."
+      ],
+      "images": [
+        "/assets/lifepage/y1.png",
+        "/assets/lifepage/y2.png",
+        "/assets/lifepage/3.png",
+        "/assets/lifepage/4.png"
+      ]
+    },
+    {
+      "id": "ai-talent",
+      "name": "AI Talent Hackathon (Thinking Machine)",
+      "paragraphs": [
+        "IIIT Pune successfully hosted the national-level “Thinking Machine” Hackathon from 10–13 February 2026. The technical extravaganza witnessed an overwhelming response with more than 330 registrations from colleges across India. After rigorous evaluation rounds, 8 finalist teams advanced to present their innovative AI-driven solutions during the grand finale.",
+        "The event was inaugurated by Dr. Sushant Kumar, Associate Dean (R&D), with valuable guidance extended by Dr. Sanjeev Sharma and Dr. Bhupendra Singh. Dr. Priyank Jain coordinated the hackathon, and the jury panel comprised internal faculty members Dr. Priyank Jain, Dr. Shrikant Salve, Dr. Sonam Maurya, alongside external industry veteran Mr. Manoj Mishra from Zensar Technologies.",
+        "After highly competitive rounds, Team Bit Misfit from VIT secured 1st Place. Cypherforce from MMCOE, Mumbai and Dev Sters from IIIT Pune were jointly awarded 2nd Place, while Team Weights of Sin from DJSCE, Mumbai secured 3rd Place out of the prize pool of over ₹20,000."
+      ],
+      "images": [
+        "/assets/lifepage/1_0.jpg",
+        "/assets/lifepage/2.jpg",
+        "/assets/lifepage/3.jpg",
+        "/assets/lifepage/4.jpg",
+        "/assets/lifepage/5_0.jpg"
+      ]
+    }
+  ],
+  "GALLERY_ITEMS": [
+    {
+      "title": "Eklavya Medal Ceremony 2026",
+      "category": "Sports",
+      "image": "/assets/lifepage/MedalCeremony1.JPG",
+      "description": "Highlights moments from the Eklavya Medal Ceremony 2026.",
+      "images": [
+        "/assets/lifepage/MedalCeremony1.JPG",
+        "/assets/lifepage/MedalCeremony2.JPG",
+        "/assets/lifepage/MedalCeremony3.JPG",
+        "/assets/lifepage/MedalCeremony4.JPG",
+        "/assets/lifepage/MedalCeremony5.JPG",
+        "/assets/lifepage/MedalCeremony6.JPG",
+        "/assets/lifepage/MedalCeremony7.JPG",
+        "/assets/lifepage/MedalCeremony8.JPG",
+        "/assets/lifepage/MedalCeremony9.JPG"
+      ]
+    },
+    {
+      "title": "I-Conclave 2026 Day 1",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay1_1.JPG",
+      "description": "Highlights from Day 1 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay1_1.JPG",
+        "/assets/lifepage/IconclaveDay1_2.JPG",
+        "/assets/lifepage/IconclaveDay1_3.JPG",
+        "/assets/lifepage/IconclaveDay1_4.JPG",
+        "/assets/lifepage/IconclaveDay1_5.JPG",
+        "/assets/lifepage/IconclaveDay1_6.JPG",
+        "/assets/lifepage/IconclaveDay1_7.JPG",
+        "/assets/lifepage/IconclaveDay1_8.JPG",
+        "/assets/lifepage/IconclaveDay1_9.JPG",
+        "/assets/lifepage/IconclaveDay1_10.JPG",
+        "/assets/lifepage/IconclaveDay1_11.JPG",
+        "/assets/lifepage/IconclaveDay1_12.JPG"
+      ]
+    },
+    {
+      "title": "I-Conclave 2026 Day 2",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay2_1.JPG",
+      "description": "Highlights from Day 2 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay2_1.JPG",
+        "/assets/lifepage/IconclaveDay2_2.JPG"
+      ]
+    },
+    {
+      "title": "I-Conclave 2026 Day 3",
+      "category": "Fest",
+      "image": "/assets/lifepage/IconclaveDay3_1.JPG",
+      "description": "Highlights from Day 3 of the I-Conclave 2026 festival.",
+      "images": [
+        "/assets/lifepage/IconclaveDay3_1.JPG",
+        "/assets/lifepage/IconclaveDay3_2.jpeg"
+      ]
+    },
+    {
+      "title": "Cybersecurity at Mahakumbh 2025 Seminar",
+      "category": "Seminar",
+      "image": "/assets/lifepage/Cyber1.jpeg",
+      "description": "Photos from the semiar held about the cybersecurity challenges faced at Mahakumbh 2025.",
+      "images": [
+        "/assets/lifepage/Cyber1.jpeg",
+        "/assets/lifepage/Cyber2.jpeg",
+        "/assets/lifepage/Cyber3.jpeg",
+        "/assets/lifepage/Cyber4.jpeg"
+      ]
+    },
+    {
+      "title": "Arbitrum Builder Labs Seminar",
+      "category": "Seminar",
+      "image": "/assets/lifepage/Arbitrum1.jpeg",
+      "description": "Photos from the semiar held about the cybersecurity challenges faced at Mahakumbh 2025.",
+      "images": [
+        "/assets/lifepage/Arbitrum1.jpeg",
+        "/assets/lifepage/Arbitrum2.jpeg",
+        "/assets/lifepage/Arbitrum3.jpeg",
+        "/assets/lifepage/Arbitrum4.jpeg",
+        "/assets/lifepage/Arbitrum6.jpeg",
+        "/assets/lifepage/Arbitrum5.jpeg"
+      ]
+    }
+  ],
+  "EVENTS": [
+    {
+      "name": "IIIT Pune Celebrates Gandhi Jayanti & Lal Bahadur Shastri Jayanti",
+      "type": "National Celebrations, Values & Civic Responsibility",
+      "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) commemorated Gandhi Jayanti and Lal Bahadur Shastri Jayanti on 2nd October, celebrating the birth anniversaries of two of India's most iconic leaders and reflecting on their enduring contributions to the nation. The IIIT Pune community marked the occasion through engaging discussions on the lives, values, and legacies of Mahatma Gandhi and Lal Bahadur Shastri. The discussions highlighted Mahatma Gandhi's unwavering commitment to truth, non-violence, self-reliance, and Satyagraha, along with Lal Bahadur Shastri's values of simplicity, integrity, resilience, and dedicated public service. An interactive quiz was also organised to bring history to life and encourage students to engage with the rich legacy of the two national leaders. The programme provided students with an opportunity to reflect on the values that shaped India's freedom movement, nation-building journey, and democratic ethos. IIIT Pune believes that great engineers and innovators must also be informed, responsible, and socially conscious citizens. Through such commemorative activities, the Institute encourages students to connect technical education with values, civic responsibility, ethical leadership, and nation-building. The occasion concluded with warm tributes from the entire IIIT Pune family to Mahatma Gandhi and Lal Bahadur Shastri, whose ideals continue to inspire generations. The initiative aligns with SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 16 (Peace, Justice and Strong Institutions).",
+      "images": [
+        "/assets/lifepage/gandhi_1.jpg",
+        "/assets/lifepage/gandhi_2.jpg",
+        "/assets/lifepage/gandhi_3.jpg",
+        "/assets/lifepage/gandhi_4.jpg",
+        "/assets/lifepage/gandhi_5.jpg",
+        "/assets/lifepage/gandhi_6.jpg",
+        "/assets/lifepage/gandhi_7.jpg",
+        "/assets/lifepage/gandhi_8.jpg",
+        "/assets/lifepage/gandhi_9.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune commemorated Gandhi Jayanti and Lal Bahadur Shastri Jayanti on 2nd October",
+        "The IIIT Pune community reflected on the lives, values, and enduring legacies of Mahatma Gandhi and Lal Bahadur Shastri",
+        "Discussions highlighted Gandhi's principles of truth, non-violence, Satyagraha, and self-reliance",
+        "The programme highlighted Lal Bahadur Shastri's values of simplicity, integrity, resilience, and dedicated public service",
+        "An interactive quiz was organised to encourage students to engage with the history and legacy of the two national leaders",
+        "The programme encouraged students to connect technical education with civic responsibility, ethical leadership, and nation-building",
+        "The celebration reinforced the importance of developing responsible and socially conscious citizens alongside skilled engineers and innovators",
+        "IIIT Pune paid warm tributes to Mahatma Gandhi and Lal Bahadur Shastri and their lasting contributions to modern India",
+        "The initiative aligned with SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), and SDG 16 (Peace, Justice and Strong Institutions)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises SafaiMitra Suraksha Evam Samman Shivir under Swachhata Hi Seva 2026",
+      "type": "Social Responsibility, SafaiMitra Welfare & Sustainable Campus",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "As part of the national Swachhata Hi Seva 2026 campaign, Indian Institute of Information Technology, Pune (IIIT Pune) organised a SafaiMitra Suraksha Evam Samman Shivir, creating a meaningful platform for interaction between Swachchata Doots and students. The initiative placed dignity, safety, respect, and sustainability at the centre of the conversation. During the interaction, Swachchata Doots shared their experiences and perspectives, helping students understand the challenging and essential nature of the work that contributes to maintaining a clean and healthy campus every day. The interaction highlighted the importance of recognising and respecting the contribution of SafaiMitras and Swachchata Doots to the Institute's campus environment. A key focus of the programme was the importance of proper waste segregation at source. Effective segregation can directly reduce the burden of manual waste sorting, make the work of SafaiMitras safer, and contribute to their dignity, health, and overall well-being. The initiative reinforced IIIT Pune's commitment to building a sustainable campus based on shared responsibility, where students, faculty members, staff, and Swachchata Doots work together to create a cleaner, safer, healthier, and more respectful environment. Through this initiative, IIIT Pune encouraged responsible waste management practices and greater awareness of the social and environmental dimensions of cleanliness. The programme contributes to the broader objectives of the Swachh Bharat Mission and aligns with the Sustainable Development Goals, particularly SDG 3 (Good Health and Well-being), SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action).",
+      "images": [
+        "/assets/lifepage/safaimitra_1.jpg",
+        "/assets/lifepage/safaimitra_2.jpg",
+        "/assets/lifepage/safaimitra_3.jpg",
+        "/assets/lifepage/safaimitra_4.jpg",
+        "/assets/lifepage/safaimitra_5.jpg",
+        "/assets/lifepage/safaimitra_6.jpg",
+        "/assets/lifepage/safaimitra_7.jpg",
+        "/assets/lifepage/safaimitra_8.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised a SafaiMitra Suraksha Evam Samman Shivir as part of the national Swachhata Hi Seva 2026 campaign",
+        "The programme facilitated meaningful interaction between Swachchata Doots and students",
+        "Swachchata Doots shared their experiences and perspectives on the essential work of maintaining a clean campus",
+        "The initiative highlighted the importance of dignity, safety, respect, and well-being of SafaiMitras",
+        "Students were sensitised to the importance of proper waste segregation at source",
+        "Waste segregation at source helps reduce the burden of manual sorting and contributes to safer working conditions for SafaiMitras",
+        "The initiative promoted shared responsibility among students, faculty, staff, and Swachchata Doots for maintaining a sustainable campus",
+        "The programme reinforced IIIT Pune's commitment to cleanliness, environmental responsibility, and a respectful campus culture",
+        "The initiative supports the objectives of Swachh Bharat and aligns with SDG 3 (Good Health and Well-being), SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), SDG 12 (Responsible Consumption and Production), and SDG 13 (Climate Action)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Hosts Insightful Interaction with Dr. R. (Venki) Venkateswaran of ACM India",
+      "type": "Academic Collaboration, Leadership Interaction & Student Development",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) was privileged to welcome Dr. R. (Venki) Venkateswaran from ACM India for a productive and insightful interaction with the Institute's leadership team on 25th September 2026. The interaction focused on strengthening collaboration between IIIT Pune and ACM India and exploring opportunities for meaningful academic and professional engagement. Key areas of discussion included organizing expert talks, workshops, and mentorship programmes, along with fostering stronger industry-academia interactions to enrich the learning ecosystem for students and faculty. The engagement provided an opportunity to discuss initiatives that can support student development, professional growth, research, innovation, and exposure to leading experts from the computing and technology community. IIIT Pune expressed its gratitude to Dr. Venki Venkateswaran for his valuable time, insights, and encouragement, and looks forward to building a strong and growing partnership with ACM India in the months ahead. The initiative reflects IIIT Pune's commitment to strengthening academic and professional collaborations, creating meaningful learning opportunities, and connecting students and faculty with the broader computing and technology ecosystem. The collaboration aligns with SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/venki_interaction_1.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune welcomed Dr. R. (Venki) Venkateswaran from ACM India for an insightful interaction with the Institute's leadership team",
+        "The interaction was held on 25th September 2026",
+        "Discussions focused on strengthening collaboration between IIIT Pune and ACM India",
+        "Opportunities for expert talks, workshops, and mentorship programmes were explored",
+        "The interaction emphasized fostering meaningful industry-academia engagement for students and faculty",
+        "The initiative aims to support student development, professional development, research, and innovation",
+        "IIIT Pune expressed its gratitude to Dr. Venki Venkateswaran for his valuable insights and encouragement",
+        "The engagement supports IIIT Pune's commitment to building strong academic and professional partnerships",
+        "The initiative aligns with SDG 4 (Quality Education), SDG 8 (Decent Work and Economic Growth), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Micro-Credits Programme on Supervised Machine Learning with IIT Kharagpur",
+      "type": "Academic Excellence, Micro-Credits & Industry-Academia Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) hosted Prof. Sourangshu Bhattacharya from the Indian Institute of Technology, Kharagpur (IIT Kharagpur), as part of its Micro-Credits Programme, an initiative designed to bring distinguished faculty from premier institutions directly to IIIT Pune students. The programme featured a focused 7-hour lecture conducted over two days on Supervised Machine Learning, providing B.Tech. students from the Computer Science and Engineering (CSE) and Electronics and Communication Engineering (ECE) programmes with an opportunity to engage with advanced concepts in machine learning. The sessions went beyond conventional classroom instruction, covering rigorous theoretical concepts, mathematical foundations, and research-oriented perspectives from an expert in the field. Key areas included Supervised Learning, Support Vector Machines (SVM), Decision Trees, Logistic Regression, Karush-Kuhn-Tucker (KKT) conditions, and other foundational concepts in machine learning. The initiative provided students with valuable exposure to advanced academic perspectives while strengthening institutional collaboration between IIIT Pune and IIT Kharagpur. The Micro-Credits Programme reflects IIIT Pune’s commitment to providing students with high-quality academic experiences, interdisciplinary learning opportunities, and exposure to leading experts from premier institutions. The initiative also supports the objectives of NEP 2020 and contributes to SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/micro_credits01.jpg",
+        "/assets/lifepage/micro_credits03.jpg",
+        "/assets/lifepage/micro_credits05.jpg",
+        "/assets/lifepage/micro_credits06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune conducted a Micro-Credits Programme featuring Prof. Sourangshu Bhattacharya from IIT Kharagpur",
+        "A focused 7-hour lecture on Supervised Machine Learning was conducted over two days",
+        "B.Tech. students from CSE and ECE participated in the academic sessions",
+        "Students gained exposure to advanced theoretical concepts, rigorous mathematical foundations, and research-oriented perspectives",
+        "Key topics included Support Vector Machines (SVM), Decision Trees, Logistic Regression, and Karush-Kuhn-Tucker (KKT) conditions",
+        "The programme provided direct academic interaction with distinguished faculty from a premier institution",
+        "The initiative strengthened academic collaboration between IIIT Pune and IIT Kharagpur",
+        "The Micro-Credits Programme aligns with the objectives of NEP 2020 and supports SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Participates in Swachhata Hi Seva 2026",
+      "type": "Social Responsibility, Cleanliness & Environmental Sustainability",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) actively participated in the national Swachhata Hi Seva 2026 campaign by organizing a campus-wide cleanliness drive. The initiative brought together students, faculty, and staff in a collective effort to promote cleanliness, environmental responsibility, and sustainable campus practices. The cleanliness drive covered campus grounds, hostels, and common areas, encouraging active participation and reinforcing the importance of maintaining a clean, healthy, and environmentally responsible campus. The initiative reflected IIIT Pune’s commitment to fostering environmental consciousness, civic responsibility, and collective action towards a cleaner and greener campus. Through this campaign, the Institute emphasized the importance of community participation and individual responsibility in maintaining a healthy and sustainable environment. The initiative aligns with SDG 11 (Sustainable Cities and Communities) and SDG 3 (Good Health and Well-being), highlighting how small, collective actions can contribute to building a cleaner, greener, and more responsible campus.",
+      "images": [
+        "/assets/lifepage/swachhata_hi_seva_2026_01.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_02.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_03.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_04.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_05.jpg",
+        "/assets/lifepage/swachhata_hi_seva_2026_06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune participated in the national Swachhata Hi Seva 2026 campaign through a campus-wide cleanliness drive",
+        "Students, faculty, and staff came together to promote cleanliness and environmental responsibility",
+        "The cleanliness drive covered campus grounds, hostels, and common areas",
+        "The initiative encouraged active participation and reinforced the importance of maintaining a clean and healthy campus",
+        "The campaign promoted environmental consciousness, civic responsibility, and sustainable campus practices",
+        "The initiative aligned with SDG 11 (Sustainable Cities and Communities) and SDG 3 (Good Health and Well-being), emphasizing collective action for a cleaner and greener campus"
+      ],
+      "links": []
+    },
+    {
+    "name": "IIIT Pune Hosts Internal Hackathon to Select Teams for Smart India Hackathon 2026",
+    "type": "Innovation, Hackathon & Student Development",
+    "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) recently hosted its Internal Hackathon, a competitive and structured selection event to identify and nominate the best student teams to represent the Institute at the Smart India Hackathon (SIH) 2026, India’s flagship national-level hackathon initiative. A total of 96 teams participated in the internal competition and were evaluated by 12 expert panels across emerging technology domains including Robotics, Agentic AI, Deep Learning, Cybersecurity, and Explainable Artificial Intelligence (XAI). The top-performing teams successfully cleared the internal selection rounds and were registered on the national SIH portal, earning the opportunity to compete at the national level. The event highlighted the innovative spirit, technical capabilities, problem-solving skills, and student leadership at IIIT Pune, with participating teams working on solutions addressing real-world and national challenges. Through this initiative, IIIT Pune continues to foster innovation, entrepreneurship, collaborative problem-solving, and technology-driven nation building while providing students with a platform to showcase their ideas on a national stage. The initiative aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 11 (Sustainable Cities and Communities), and SDG 17 (Partnerships for the Goals).",
+    "images": [
+    "/assets/lifepage/sih_internal_hackathon_01.jpg",
+    "/assets/lifepage/sih_internal_hackathon_02.jpg",
+    "/assets/lifepage/sih_internal_hackathon_03.jpg",
+    "/assets/lifepage/sih_internal_hackathon_04.jpg",
+    "/assets/lifepage/sih_internal_hackathon_05.jpg",
+    "/assets/lifepage/sih_internal_hackathon_06.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune hosted an Internal Hackathon to select and nominate the best student teams for the Smart India Hackathon (SIH) 2026",
+    "A total of 96 student teams participated in the competitive internal selection process",
+    "The teams were evaluated through 12 expert evaluation panels across multiple emerging technology domains",
+    "Key domains included Robotics, Agentic AI, Deep Learning, Cybersecurity, and Explainable Artificial Intelligence (XAI)",
+    "The top-performing teams successfully cleared the internal rounds and were registered on the national SIH portal to compete at the national level",
+    "The initiative promoted innovation, technical excellence, student leadership, real-world problem solving, and nation-building while supporting SDG 4, SDG 9, SDG 11, and SDG 17"
+    ],
+    "links": []
+    },
+    {
+    "name": "IIIT Pune Organises Two-Day Micro-Credit Session on Cryptography and Network Security",
+    "type": "Academic Enrichment & Micro-Credits Programme",
+    "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) successfully conducted a two-day Micro-Credit session on Cryptography and Network Security on 12–13 September 2026 under its Micro-Credits Programme, an initiative designed to bring distinguished faculty from premier institutions directly to IIIT Pune students. The sessions were conducted by Dr. Somitra Sanadhya, Professor at the Wadhwani School of AI & Intelligent Systems, IIT Kanpur, and a leading researcher in cryptography and information security. The programme covered key topics including the Foundations of Cryptography, Post-Quantum Cryptography (PQC), and Quantum-Resilient Security. With quantum computing rapidly advancing, Post-Quantum Cryptography is emerging as a critical area of modern cybersecurity, and the session provided students with valuable exposure to these emerging challenges and technologies. The Micro-Credits Programme reflects IIIT Pune’s commitment to ensuring that students remain informed about developments in advanced computing, cybersecurity, and information security while gaining insights from experts from leading institutions. The initiative also supports the objectives of NEP 2020 and aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), SDG 16 (Peace, Justice and Strong Institutions), and SDG 17 (Partnerships for the Goals).",
+    "images": [
+    "/assets/lifepage/cryptography_01.jpg",
+    "/assets/lifepage/cryptography_02.jpg",
+    "/assets/lifepage/cryptography_03.jpg",
+    "/assets/lifepage/cryptography_04.jpg",
+    "/assets/lifepage/cryptography_05.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune successfully conducted a two-day Micro-Credit session on Cryptography and Network Security on 12–13 September 2026",
+    "The programme was organised under IIIT Pune’s Micro-Credits Programme to bring distinguished faculty from premier institutions directly to students",
+    "Dr. Somitra Sanadhya, Professor at the Wadhwani School of AI & Intelligent Systems, IIT Kanpur, conducted the sessions and shared his expertise in cryptography and information security",
+    "The sessions covered Foundations of Cryptography, Post-Quantum Cryptography (PQC), and Quantum-Resilient Security",
+    "Students gained exposure to emerging cybersecurity challenges associated with the advancement of quantum computing and the growing importance of Post-Quantum Cryptography",
+    "The initiative strengthened IIIT Pune’s commitment to advanced technical learning and collaboration with leading institutions and aligns with NEP 2020, SDG 4, SDG 9, SDG 16, and SDG 17"
+    ],
+    "links": []
+    },
+    {
+    "name": "IIIT Pune Hosts Grand “Saaz Ka Sangam Evam Kavi Sammelan” During Hindi Month 2026",
+    "type": "Hindi Month & Cultural Programme",
+    "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+    "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) successfully organised the grand “Saaz Ka Sangam Evam Rashtriya Kavi Sammelan” on 11 September 2026 at 6:30 PM as part of Hindi Month 2026. Organised under the inspiration and guidance of Director Prof. Vineet Kansal, the cultural evening featured eminent poets from different parts of the country who captivated the audience with powerful, भावपूर्ण, हास्य and व्यंग्य प्रस्तुतियाँ. The कवि सम्मेलन featured Shri Pawan Aagri, Shri Om Prakash Kalyane, Dr. Ganesh Shankar Srivastava ‘Rishi’, Dr. Vinamra Sen Singh, and Shri Shambhu Shikhar. The evening was enriched by melodious musical performances along with engaging हास्य-व्यंग्य presentations, creating a vibrant and memorable cultural experience. Faculty members, staff, and their families participated enthusiastically in the celebration, reflecting the institute’s commitment to promoting Hindi language, literature, cultural heritage, and an inclusive campus community. The event contributed to the United Nations Sustainable Development Goals, particularly SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Cities and Communities), and SDG 16 (Peace, Justice and Strong Institutions).",
+    "images": [
+    "/assets/lifepage/saaz_ka_sangam_01.jpg",
+    "/assets/lifepage/saaz_ka_sangam_02.jpg",
+    "/assets/lifepage/saaz_ka_sangam_03.jpg",
+    "/assets/lifepage/saaz_ka_sangam_04.jpg",
+    "/assets/lifepage/saaz_ka_sangam_05.jpg"
+    ],
+    "highlights": [
+    "IIIT Pune successfully organised the grand “Saaz Ka Sangam Evam Kavi Sammelan” on 11 September 2026 at 6:30 PM under Hindi Month 2026",
+    "The programme was organised under the inspiration and guidance of Director Prof. Vineet Kansal and brought together eminent poets from different parts of the country",
+    "The कवि सम्मेलन featured Shri Pawan Aagri, Shri Om Prakash Kalyane, Dr. Ganesh Shankar Srivastava ‘Rishi’, Dr. Vinamra Sen Singh, and Shri Shambhu Shikhar",
+    "Powerful poetic recitations, melodious musical performances, and हास्य-व्यंग्य presentations captivated the audience and created a memorable cultural evening",
+    "Faculty members, staff, and their families participated enthusiastically, strengthening the spirit of cultural inclusion and community engagement at IIIT Pune",
+    "The event promoted Hindi language, literature, cultural heritage, and inclusive community values while supporting SDG 4 (Quality Education), SDG 10 (Reduced Inequalities), SDG 11 (Sustainable Cities and Communities), and SDG 16 (Peace, Justice and Strong Institutions)"
+    ],
+    "links": []
+    },
+    {
+      "name": "IIIT Pune Organises Four Sessions for the Holistic Growth of Students",
+      "type": "Student Development & Well-being",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) organised a series of four enriching sessions aimed at promoting the holistic development of students by fostering self-awareness, emotional well-being, purposeful decision-making, curiosity, and mindful use of technology. The first session, “The Game of Life,” explored awareness, purpose, and decision-making, encouraging students to reflect on the relationship between the mind, soul, and senses. An interactive quiz provided students with an engaging opportunity to apply the concepts discussed, with top performers being felicitated. The second session, “Discover Inner Self,” encouraged students to look beyond external achievements and focus on clarity, self-awareness, and inner growth, while also recognising 14 students who qualified for certification from faculty members of IIT Kharagpur under the Evolve360 programme. The third session, “Discover Ultimate Genius,” encouraged students to think beyond conventional boundaries and explore their potential through curiosity, imagination, deeper thinking, and self-discovery. The fourth session, “Who Is the Master: You or Your Mobile?”, organised by ManSamvaad – The Wellness Club, addressed mindful technology use and digital well-being, encouraging students to consciously manage their attention and relationship with mobile devices and social media. Together, the four sessions reinforced IIIT Pune’s commitment to developing self-aware, emotionally intelligent, purpose-driven, and technically proficient individuals. The initiative aligns with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education.",
+      "images": [
+        "/assets/lifepage/wellness_01.jpg",
+        "/assets/lifepage/wellness_02.jpg",
+        "/assets/lifepage/wellness_03.jpg",
+        "/assets/lifepage/wellness_04.jpg",
+        "/assets/lifepage/wellness_05.jpg",
+        "/assets/lifepage/wellness_06.jpg",
+        "/assets/lifepage/wellness_07.jpg",
+        "/assets/lifepage/wellness_08.jpg",
+        "/assets/lifepage/wellness_09.jpg",
+        "/assets/lifepage/wellness_10.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised four sessions focused on holistic student development, self-awareness, emotional well-being, purposeful decision-making, curiosity, and mindful technology use",
+        "“The Game of Life” encouraged students to reflect on awareness, purpose, decision-making, and the relationship between the mind, soul, and senses",
+        "“Discover Inner Self” focused on clarity, self-awareness, and inner growth, with 14 students recognised for qualifying for Evolve360 certification from IIT Kharagpur faculty members",
+        "“Discover Ultimate Genius” encouraged curiosity, imagination, deeper thinking, creativity, and self-discovery beyond conventional boundaries",
+        "“Who Is the Master: You or Your Mobile?” promoted mindful use of mobile devices and social media and highlighted the importance of digital well-being",
+        "The initiative supports SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education) through mental well-being, purposeful learning, and holistic education"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises Industry Insights Session with Senior Software Engineer from AMD India",
+      "type": "Industry Interaction",
+      "typeColor": "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) organised an engaging Industry Insights session featuring Mr. Madhab Sharma, Senior Software Engineer at AMD India and former Senior Software Engineer at Qualcomm. The session provided students and faculty with valuable first-hand insights into professional practices, engineering culture, and expectations of the global semiconductor and software industry. During the expert lecture, Mr. Sharma shared his experiences of working on real-world engineering projects at AMD and Qualcomm and familiarised students with workflows, methodologies, and problem-solving approaches followed in large-scale technology organisations. The session focused on software engineering practices in industry, complex engineering problems, and the skills and technical areas students should develop during their academic years. An important feature was the interactive problem-solving component, where students engaged with practical problem statements and discussed possible approaches and solutions, helping them understand how engineering concepts are applied to real-world challenges. The programme was followed by an enthusiastic student interaction and Q&A session covering career pathways, industry expectations, skill development, and ways to make engineering education more meaningful and industry-oriented. The session concluded with a faculty interaction exploring possibilities for student-industry collaboration and potential projects involving real-world problem solving. The initiative strengthens the connection between academic learning and industry practices and aligns with SDG 4 – Quality Education, SDG 8 – Decent Work and Economic Growth, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [
+        "/assets/lifepage/AMD_01.jpg",
+        "/assets/lifepage/AMD_02.jpg",
+        "/assets/lifepage/AMD_03.jpg",
+        "/assets/lifepage/AMD_04.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised an Industry Insights session featuring Mr. Madhab Sharma, Senior Software Engineer at AMD India and former Senior Software Engineer at Qualcomm",
+        "Students and faculty gained first-hand insights into professional practices, engineering culture, and expectations of the global semiconductor and software industry",
+        "The session covered real-world engineering workflows, methodologies, complex problem-solving approaches, and technical skills required in large-scale technology organisations",
+        "Students participated in an interactive problem-solving activity using practical engineering problem statements",
+        "The Q&A interaction addressed career pathways, industry expectations, skill development, and building a strong technical foundation during college",
+        "Faculty discussions explored opportunities for student-industry collaboration and potential real-world problem-solving projects",
+        "The initiative aligns with SDG 4, SDG 8, SDG 9, and SDG 17 by promoting industry exposure, skill development, innovation, employability, and stronger academia-industry partnerships"
+      ],
+      "links": []
+    },
+        {
+      "name": "IIIT Pune Hosts Delegation from Binghamton University, USA",
+      "type": "International Academic Engagement",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "Indian Institute of Information Technology, Pune (IIIT Pune) hosted a delegation from Binghamton University, New York, USA, a leading public research university and part of the State University of New York (SUNY) system. The visit brought together two enriching engagements focused on emerging technological research and international opportunities for higher education. The first engagement featured an expert talk by Prof. Aravind Prakash on “Leveraging AI for Robust and Resilient Software Systems.” The session introduced students to the application of Artificial Intelligence and Machine Learning research in developing secure, robust, and resilient software systems, while providing practical insights into how advances in machine learning are being translated into production-grade systems and security applications. The second engagement focused on graduate education opportunities at Binghamton University. Ms. Johanna Brozinsky, M.S., Director of Graduate Recruitment, interacted with IIIT Pune students and provided valuable information about graduate programmes, admission pathways, scholarships, and opportunities available to students seeking higher education in the United States. The visit provided a valuable platform for students to engage with cutting-edge research and global academic opportunities while interacting with experts from an internationally recognised institution. The initiative strengthens international academic engagement and aligns with SDG 4 – Quality Education, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [
+        "/assets/lifepage/Binghamton_01.jpg",
+        "/assets/lifepage/Binghamton_02.jpg",
+        "/assets/lifepage/Binghamton_03.jpg",
+        "/assets/lifepage/Binghamton_04.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted a delegation from Binghamton University, New York, USA, bringing international academic and research engagement to students",
+        "Prof. Aravind Prakash delivered an expert talk on leveraging Artificial Intelligence for robust and resilient software systems",
+        "Students gained practical insights into the application of AI and Machine Learning in production-grade systems and security applications",
+        "Ms. Johanna Brozinsky, Director of Graduate Recruitment, provided information on graduate programmes, admissions, scholarships, and higher-education opportunities in the United States",
+        "The initiative promoted advanced learning, international academic engagement, technological innovation, and institutional partnerships, aligning with SDG 4, SDG 9, and SDG 17"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Hosts Dr. Virendra Singh from IIT Bombay Under Micro-Credits Programme",
+      "type": "Academic Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune hosted Dr. Virendra Singh from the Indian Institute of Technology Bombay as part of the Micro-Credits Programme, an initiative through which distinguished faculty from premier institutions deliver credit-bearing lectures to IIIT Pune students. Dr. Singh delivered a series of expert lectures on VLSI Design, a domain of critical national importance in the context of India's growing semiconductor ecosystem and the country's focus on domestic chip design and manufacturing. The visit also included a productive faculty interaction session, where potential areas of joint research collaboration between IIT Bombay and IIIT Pune were explored. The Micro-Credits Programme reflects IIIT Pune's commitment to providing students with current, relevant, and expert-led education beyond the regular curriculum, while strengthening academic partnerships and bringing leading expertise into the classroom.",
+      "images": [
+        "/assets/lifepage/VirendraSingh01.jpg",
+        "/assets/lifepage/VirendraSingh02.jpg",
+        "/assets/lifepage/VirendraSingh03.jpg",
+        "/assets/lifepage/VirendraSingh04.jpg",
+        "/assets/lifepage/VirendraSingh05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Dr. Virendra Singh from IIT Bombay under the Micro-Credits Programme, enabling students to benefit from expert-led, credit-bearing lectures",
+        "Dr. Singh delivered a series of expert lectures on VLSI Design, with a focus on a critical domain linked to India's growing semiconductor ecosystem",
+        "The visit included a faculty interaction session exploring potential areas of joint research collaboration between IIT Bombay and IIIT Pune",
+        "The Micro-Credits Programme strengthens IIIT Pune's commitment to current, relevant and expert-led education beyond the regular curriculum",
+        "The initiative supports stronger academic partnerships and aligns with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Strengthens Competitive Programming Ecosystem Through CodeChef Interaction",
+      "type": "Industry Interaction",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "IIIT Pune hosted Mr. Suraj Sharma, Director of Operations at CodeChef, for a day-long visit on 27/08/2026 aimed at strengthening the institute's competitive programming ecosystem and exploring avenues for deeper collaboration between CodeChef and IIIT Pune. The visit included discussions with the Director, ICPC Nodal Officer, HOD CSE, TPO, SAC In-charge and Mr. Sharma on strengthening the partnership and developing future collaborative initiatives. He also interacted with 25+ coding club members on improving the coding culture on campus and encouraging greater female participation in ICPC. An interactive session with around 350 students focused on transitioning from a school mindset to an engineering mindset, the importance of problem solving and Data Structures and Algorithms in the age of AI, common myths about learning to code, and the value of consistent active learning through problem solving and project building. The visit concluded with an interaction with around 25+ faculty members on strengthening the coding culture at IIIT Pune, reflecting the institute's continued commitment to competitive programming and meaningful industry partnerships.",
+      "images": [
+        "/assets/lifepage/CodeChef01.JPG",
+        "/assets/lifepage/CodeChef02.JPG",
+        "/assets/lifepage/CodeChef03.JPG",
+        "/assets/lifepage/CodeChef04.JPG",
+        "/assets/lifepage/CodeChef05.JPG",
+        "/assets/lifepage/CodeChef06.JPG"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Mr. Suraj Sharma, Director of Operations at CodeChef, on 27/08/2026 to strengthen the competitive programming ecosystem and explore deeper institutional collaboration",
+        "Discussions with the Director, ICPC Nodal Officer, HOD CSE, TPO, SAC In-charge and Mr. Sharma focused on strengthening the CodeChef–IIIT Pune partnership and future collaborative initiatives",
+        "Mr. Sharma interacted with 25+ coding club members on improving coding culture and encouraging greater female participation in ICPC",
+        "An interactive session with around 350 students covered the transition from a school mindset to an engineering mindset, coding in the age of AI, problem solving, Data Structures and Algorithms, and common myths around learning to code",
+        "The visit concluded with an interaction with around 25+ faculty members on strengthening the coding culture at IIIT Pune, reaffirming the institute's commitment to competitive programming and meaningful industry partnerships"
+      ],
+      "links": [
+                {
+          "label": "View Report",
+          "url": "/assets/lifepage/CodeChef Event.pdf"
+        }
+      ]
+    },
+    {
+      "name": "IIIT Pune Celebrates National Sports Day",
+      "type": "Sports",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "IIIT Pune celebrated National Sports Day with enthusiastic participation from the Institute community, reaffirming its commitment to holistic student development and a vibrant sporting culture. Organised under the guidance of Director Prof. Vineet Kansal, the celebrations featured table tennis, basketball, volleyball, badminton, chess, carrom, an 800m run, and a 3 km marathon. Beyond competition, the activities highlighted the values of teamwork, discipline, resilience, sportsmanship, and physical well-being. The celebration reinforced the importance of sports in building healthier and well-rounded individuals, aligning with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education.",
+      "images": [
+        "/assets/lifepage/NS01.jpg",
+        "/assets/lifepage/NS02.jpg",
+        "/assets/lifepage/NS03.jpg",
+        "/assets/lifepage/NS04.jpg",
+        "/assets/lifepage/NS05.jpg",
+        "/assets/lifepage/NS06.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune celebrated National Sports Day with enthusiastic participation from the Institute community",
+        "The celebrations featured table tennis, basketball, volleyball, badminton, chess, carrom, an 800m run, and a 3 km marathon",
+        "The activities highlighted teamwork, discipline, resilience, sportsmanship, and physical well-being",
+        "The celebration reinforced the importance of sports in building healthier and well-rounded individuals, aligning with SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Explores Academic Collaboration with Aivancity, Paris",
+      "type": "Academic Collaboration",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune hosted Prof. (Dr.) Amod Bhat from Aivancity School of AI & Data for Business & Society, Paris, for discussions aimed at strengthening India–France academic collaboration. The institutional interaction explored opportunities for joint research in AI, technology and business, student and faculty exchanges, academic partnerships, and potential dual-degree programmes. Prof. Bhat also interacted with students on the future of Artificial Intelligence, discussing its impact on startups and entrepreneurship, emerging career opportunities, innovation, and the importance of responsible and ethical AI for societal benefit. The visit strengthened IIIT Pune’s growing international academic outreach and aligns with SDG 4 – Quality Education, SDG 9 – Industry, Innovation and Infrastructure, and SDG 17 – Partnerships for the Goals.",
+      "images": [
+        "/assets/lifepage/Aivancity01.jpg",
+        "/assets/lifepage/Aivancity02.jpg",
+        "/assets/lifepage/Aivancity03.jpg",
+        "/assets/lifepage/Aivancity04.jpg",
+        "/assets/lifepage/Aivancity05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune hosted Prof. (Dr.) Amod Bhat from Aivancity School of AI & Data for Business & Society, Paris, for discussions on strengthening India–France academic collaboration",
+        "Exploration of opportunities for joint research in AI, technology and business, student and faculty exchanges, academic partnerships, and potential dual-degree programmes",
+        "Prof. Bhat interacted with students on the future of Artificial Intelligence, including its impact on startups and entrepreneurship, emerging career opportunities, innovation, and responsible and ethical AI for societal benefit",
+        "The visit strengthened IIIT Pune’s growing international academic outreach and aligned with SDG 4 (Quality Education), SDG 9 (Industry, Innovation and Infrastructure), and SDG 17 (Partnerships for the Goals)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Observes Anti-Ragging Week 2026",
+      "type": "Awareness",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune observed Anti-Ragging Week from 17–22 August 2026, reaffirming its commitment to fostering a safe, respectful, inclusive, and student-friendly campus. The week featured a range of awareness activities, including essay and slogan writing, a signature campaign, skit competition, poetry writing, and poster painting, encouraging students to creatively engage with the values of dignity, empathy, and mutual respect. A key highlight was the Anti-Ragging Pledge, administered to all students as a collective commitment against ragging and towards responsible conduct. The initiative reinforced the message that every student has the right to a campus environment founded on safety, dignity, equality, respect, and inclusion, aligning particularly with SDG 4 – Quality Education and SDG 16 – Peace, Justice and Strong Institutions. Say No to Ragging. Say Yes to Respect and Inclusion.",
+      "images": [
+        "/assets/lifepage/Antirag01.jpg",
+        "/assets/lifepage/Antirag02.jpg",
+        "/assets/lifepage/Antirag03.jpg",
+        "/assets/lifepage/Antirag04.jpg",
+        "/assets/lifepage/Antirag05.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune observed Anti-Ragging Week from 17–22 August 2026 to promote a safe, respectful, inclusive, and student-friendly campus",
+        "Awareness activities included essay and slogan writing, a signature campaign, skit competition, poetry writing, and poster painting",
+        "The Anti-Ragging Pledge was administered to all students as a collective commitment against ragging and towards responsible conduct",
+        "The initiative promoted safety, dignity, equality, respect, and inclusion while aligning with SDG 4 (Quality Education) and SDG 16 (Peace, Justice and Strong Institutions)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises “Re-Engineering Mind” Session for Students",
+      "type": "Student Development",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "IIIT Pune organised an engaging session titled “Re-Engineering Mind”, featuring Mr. Shrikant Awate from Google India. The session focused on understanding the human mind, its influence on thoughts and choices, and developing greater self-awareness and emotional intelligence. The concepts were creatively presented through a pantomime performance, offering students an experiential perspective on the relationship between thoughts, senses, and actions. The initiative reflected IIIT Pune’s emphasis on holistic student development, complementing technical education with self-awareness, emotional well-being, and personal growth. The initiative also aligns with SDG 3 – Good Health and Well-being and SDG 4 – Quality Education, promoting mental well-being, self-awareness, and holistic learning as integral components of student development.",
+      "images": [
+        "/assets/lifepage/Reeng01.jpg",
+        "/assets/lifepage/Reeng02.jpg",
+        "/assets/lifepage/Reeng03.jpg",
+        "/assets/lifepage/Reeng04.jpg"
+      ],
+      "highlights": [
+        "IIIT Pune organised the “Re-Engineering Mind” session featuring Mr. Shrikant Awate from Google India",
+        "The session focused on understanding the human mind, its influence on thoughts and choices, self-awareness, and emotional intelligence",
+        "Concepts were creatively presented through a pantomime performance, providing students with an experiential perspective on the relationship between thoughts, senses, and actions",
+        "The initiative promoted holistic student development, self-awareness, emotional well-being, personal growth, and aligned with SDG 3 (Good Health and Well-being) and SDG 4 (Quality Education)"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Organises ICC Orientation on POSH, Women’s Rights and Workplace Safety",
+      "type": "Orientation",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "The Internal Complaints Committee (ICC), IIIT Pune organised an orientation session on POSH, Women’s Rights, Safety and the SHe-Box Initiative on 20 August 2026. Advocate Eeshani Mangesh Joshi, Pune, delivered the guest lecture, offering valuable insights into the Vishaka Guidelines, the POSH Act, women’s rights, workplace safety, the SHe-Box Initiative, and the role and functioning of the ICC. With active and attentive participation from the IIIT Pune community, the session highlighted the importance of awareness and education as essential steps towards prevention and creating a safe and inclusive environment. By fostering knowledge on rights, responsibilities, equality and workplace safety, the initiative contributes to SDG 4 (Quality Education) and SDG 5 (Gender Equality), while promoting equal opportunities and reducing discrimination and inequalities in the institutional environment, in alignment with SDG 10 (Reduced Inequalities). The orientation also reinforced IIIT Pune’s commitment to providing a safe, respectful and inclusive campus and workplace, contributing to SDG 8 (Decent Work and Economic Growth). Through the effective functioning of the ICC, awareness of grievance-redressal mechanisms and promotion of institutional accountability, the initiative further supports SDG 16 (Peace, Justice and Strong Institutions). The engagement of the ICC, Institute community and an external legal expert also reflects the importance of collaboration and knowledge-sharing in advancing shared goals of safety, dignity, equality and empowerment, thereby contributing to SDG 17 (Partnerships for the Goals). The session reaffirmed IIIT Pune’s collective commitment to fostering a campus rooted in safety, dignity, equality, respect and empowerment, while advancing the Sustainable Development Goals through awareness, institutional responsibility and inclusive practices.",
+      "images": [
+        "/assets/lifepage/icc_1.JPG",
+        "/assets/lifepage/icc_2.JPG",
+        "/assets/lifepage/icc_3.JPG",
+        "/assets/lifepage/icc_4.JPG",
+        "/assets/lifepage/icc_5.jpg",
+        "/assets/lifepage/icc_6.JPG",
+        "/assets/lifepage/icc_7.jpg",
+        "/assets/lifepage/icc_8.jpg",
+        "/assets/lifepage/icc_9.JPG"
+      ],
+      "highlights": [
+        "Orientation session on POSH, Women’s Rights, Safety and the SHe-Box Initiative organized by the Internal Complaints Committee (ICC), IIIT Pune",
+        "Guest lecture delivered by Advocate Eeshani Mangesh Joshi, Pune, providing insights into the Vishaka Guidelines, the POSH Act, women’s rights, workplace safety, the SHe-Box Initiative, and the role and functioning of the ICC",
+        "Active participation from the IIIT Pune community, emphasizing the importance of awareness and education in creating a safe and inclusive environment",
+        "Contribution to SDG 4 (Quality Education), SDG 5 (Gender Equality), SDG 8 (Decent Work and Economic Growth), SDG 10 (Reduced Inequalities), SDG 16 (Peace, Justice and Strong Institutions), and SDG 17 (Partnerships for the Goals) through awareness, institutional responsibility, and inclusive practices"
+      ],
+      "links": [
+      ]
+    },
+    {
+      "name":"IIIT Pune Hosts Campus France for Interaction on Higher Education Opportunities",
+      "type":"Conference",
+      "typeColor":"bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc":"IIIT Pune hosted Ms. Rini Abraham, Manager – Campus France India, for an interactive session with the Director, faculty, and students. The discussion explored higher education and research opportunities in France, including scholarships, admission pathways, research collaborations, and the academic ecosystem available to international students. The interaction reflects IIIT Pune’s continued efforts to strengthen international academic engagement and expand global learning and research opportunities for its students and faculty, in alignment with SDG 4 (Quality Education) and SDG 17 (Partnerships for the Goals).",
+      "images":[
+        "/assets/lifepage/France_1.jpg",
+        "/assets/lifepage/France_2.jpg",
+        "/assets/lifepage/France_3.jpg",
+        "/assets/lifepage/France_4.jpg"
+      ],
+      "highlights":[
+        "Interactive session with Ms. Rini Abraham, Manager – Campus France India",
+        "Discussion on higher education and research opportunities in France",
+        "Insights into scholarships, admission pathways, research collaborations, and academic ecosystem for international students",
+        "Reflecting IIIT Pune’s efforts to strengthen international academic engagement and expand global learning and research opportunities"
+      ]
+    },
+    {
+      "name": "IIIT Pune Explores Strategic Partnership with Ansys and Synopsys",
+      "type": "Expert Lecture",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "IIIT Pune hosted a strategic meeting with the academic and technical leadership of Ansys and Synopsys, chaired by Director Prof. Vineet Kansal, to explore avenues for a long-term industry-academia partnership. The discussions focused on joint research and thesis supervision, industry-led micro-credit courses, internships, hackathons, Faculty Development Programmes (FDPs), and collaborative academic initiatives, including the possibility of co-organising MAPCON 2028 with IEEE Pune Section. The interaction marks another step towards strengthening IIIT Pune’s industry-academia ecosystem and creating meaningful research, learning, and professional opportunities for students and faculty.",
+      "images": [
+        "/assets/lifepage/Synopsys_1.jpg"
+      ],
+      "highlights": [
+        "Strategic meeting with academic and technical leadership of Ansys and Synopsys",
+        "Discussions on joint research, thesis supervision, industry-led micro-credit courses, internships, hackathons, Faculty Development Programmes (FDPs), and collaborative academic initiatives",
+        "Exploration of co-organising MAPCON 2028 with IEEE Pune Section",
+        "Strengthening IIIT Pune’s industry-academia ecosystem and creating meaningful research, learning, and professional opportunities for students and faculty"
+      ],
+      "links": []
+    },
+    {
+      "name": "IIIT Pune Welcomes New Students with Orientation Programme for AY 2026–27 Batch",
+      "type": "Orientation Programme",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "The Indian Institute of Information Technology (IIIT), Pune organised an Orientation Programme for the first-year B.Tech. and M.Tech. students of Academic Year 2026–27 on 19 August 2026, welcoming the new batch to the Institute and familiarising students and parents with its academic environment, facilities, and campus life. The programme commenced with the traditional lamp-lighting ceremony and Saraswati Vandana, followed by a welcome address. Students were introduced to important aspects of the Institute, including its academic and examination structure, administrative procedures, hostel facilities and regulations, infrastructure, internships, research and development opportunities, international relations, sports, student activities, and placement opportunities. The Director, Registrar, Associate Deans, International Relations Office, Heads of Departments, and other faculty members interacted with the incoming students and shared insights into the academic and institutional ecosystem at IIIT Pune. A dedicated Parents' Interaction Session provided an opportunity for parents to engage with the Institute authorities and seek information about academics and student life. The afternoon session featured introductions to the various student clubs, giving the new batch a glimpse into the vibrant co-curricular and extracurricular opportunities available on campus. The day concluded with a Vote of Thanks followed by the National Anthem. The Orientation Programme marked the beginning of a new academic journey for the incoming students, encouraging them to make the most of the opportunities for learning, research, innovation, collaboration, and holistic development at IIIT Pune.",
+      "images": [
+        "/assets/lifepage/Orientation_1.jpg",
+        "/assets/lifepage/Orientation_2.jpg",
+        "/assets/lifepage/Orientation_3.jpg",
+        "/assets/lifepage/Orientation_4.jpg"
+      ],
+      "highlights": [
+        "Orientation Programme for first-year B.Tech. and M.Tech. students of AY 2026–27",
+        "Traditional lamp-lighting ceremony and Saraswati Vandana",
+        "Welcome address and introduction to academic and administrative aspects of the Institute",
+        "Interaction with faculty members, Associate Deans, and Heads of Departments",
+        "Parents' Interaction Session for engagement with Institute authorities",
+        "Introduction to student clubs and co-curricular opportunities on campus"
+      ],
+      "links": [
+        {
+          "label": "View Report",
+          "url": "/assets/lifepage/Induction Event Report.pdf"
+        }
+      ]
+    },
+    {
+      "name": "IIIT Pune Celebrates 80th Independence Day with Patriotic Fervour",
+      "type": "National Celebration",
+      "typeColor": "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
+      "desc": "The Indian Institute of Information Technology (IIIT), Pune celebrated the 80th Independence Day with great enthusiasm and patriotic spirit, bringing together students, faculty, staff, and members of the Institute community. The celebrations were presided over by Director Prof. Vineet Kansal, who unfurled the National Flag and addressed the gathering on the significance of the occasion. A spirited Tiranga Yatra was organised to celebrate national unity and pride, followed by a Prize Distribution Ceremony recognising achievers from the IIIT Pune community. The celebrations also featured a vibrant cultural programme, with students showcasing their talent and patriotic spirit through various performances. As India commemorates 80 years of Independence, IIIT Pune reaffirmed its commitment to the values and aspirations that have shaped the nation. The Institute continues to contribute towards a knowledge-driven, innovative, and self-reliant India by fostering academic excellence, responsible citizenship, and a spirit of service to the nation. Jai Hind! Vande Mataram!",
+      "images": [
+        "/assets/lifepage/independence_day_1.JPG",
+        "/assets/lifepage/independence_day_2.JPG",
+        "/assets/lifepage/independence_day_3.JPG",
+        "/assets/lifepage/independence_day_4.JPG",
+        "/assets/lifepage/independence_day_5.JPG",
+        "/assets/lifepage/independence_day_6.JPG",
+        "/assets/lifepage/independence_day_7.JPG",
+        "/assets/lifepage/independence_day_8.JPG",
+        "/assets/lifepage/independence_day_9.JPG"
+      ],
+      "highlights": [
+        "Flag hoisting ceremony presided by Director Prof. Vineet Kansal",
+        "Spirited Tiranga Yatra celebrating national unity and pride",
+        "Prize Distribution Ceremony recognising achievers",
+        "Vibrant cultural programme showcasing student talent and patriotic performances",
+        "Reaffirming commitment to knowledge-driven, innovative, and self-reliant India"
+      ],
+      "links": []
+    },
+    {
+      "name": "Expert Lecture on Research, Entrepreneurship, and Global Industry Careers",
+      "type": "Expert Lecture",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "The Indian Institute of Information Technology, Pune organised an expert lecture by Mr. Pratik Ratadiya, CTO and Head of Product at Narravance, New York City. The session provided students with valuable insights into research, entrepreneurship, and opportunities in the global technology industry. Drawing on his professional journey from India to New York, Mr. Ratadiya shared practical perspectives on building successful careers in emerging fields such as artificial intelligence, machine learning, and natural language processing. The interactive session encouraged students to explore innovation, research-driven problem-solving, and entrepreneurial thinking while offering guidance on navigating international career pathways. The lecture reflected IIIT Pune's continued commitment to strengthening industry-academia engagement and preparing students to become globally competent technology professionals.",
+      "images": [
+        "/assets/lifepage/expert_lecture_1.jpg",
+        "/assets/lifepage/expert_lecture_2.jpg",
+        "/assets/lifepage/expert_lecture_3.jpg",
+        "/assets/lifepage/expert_lecture_4.jpg"
+      ],
+      "highlights": [
+        "Insights into research, entrepreneurship, and global technology careers",
+        "Encouraged innovation, research-driven problem-solving, and entrepreneurial thinking",
+        "Interactive session on international career opportunities",
+        "Strengthened industry-academia collaboration and global career readiness"
+      ]
+    },
+    {
+      "name": "IIIT Pune Organises Activities under the Nasha Mukt Yuva for Viksit Bharat Campaign",
+      "type": "Awareness Campaign",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "The Indian Institute of Information Technology, Pune actively participated in the Nasha Mukt Yuva for Viksit Bharat campaign, a national initiative aimed at raising awareness about substance abuse and promoting the vision of a drug-free India by 2047. As part of the campaign, the Institute organised a 1 km Marathon, 1 km Walkathon, and a Signature Campaign, followed by the live telecast of the address by the Hon'ble Prime Minister of India. The programme was led by the Director, Prof. Vineet Kansal, with enthusiastic participation from students, faculty members, and staff. The initiative reaffirmed the Institute's commitment to promoting health, social responsibility, and civic awareness while encouraging young people to contribute towards building a healthier and more responsible society.",
+      "images": [
+        "/assets/lifepage/nasha_mukt_1.jpg",
+        "/assets/lifepage/nasha_mukt_2.JPG",
+        "/assets/lifepage/nasha_mukt_3.JPG",
+        "/assets/lifepage/nasha_mukt_4.JPG",
+        "/assets/lifepage/nasha_mukt_5.jpg",
+        "/assets/lifepage/nasha_mukt_6.jpg",
+        "/assets/lifepage/nasha_mukt_7.JPG",
+        "/assets/lifepage/nasha_mukt_8.jpg"
+      ],
+      "highlights": [
+        "1 km Marathon and Walkathon for drug-free awareness",
+        "Participation in the Hon'ble Prime Minister's Virtual Address",
+        "Signature Campaign against substance abuse",
+        "Aligned with SDG 3 – Good Health and Well-being",
+        "Active participation from students, faculty, and staff",
+        "In support of the Nasha Mukt Bharat Abhiyaan and the vision of Viksit Bharat 2047"
+      ]
+    },
+    {
+      "name": "HBTM 2026: National-Level 24-Hour Hackathon Organised at IIIT Pune",
+      "type": "Hackathon",
+      "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      "desc": "The IEEE Student Branch at the Indian Institute of Information Technology, Pune, in collaboration with IABTM and the IEEE Maharashtra Section, successfully organised HBTM 2026 – Hack Better Than Me, a 24-hour national-level hackathon. The event was inaugurated by the Director, Prof. Vineet Kansal, along with members of the organising team, marking the beginning of an intensive innovation challenge that brought together students, developers, and innovators from across the country.\n Over the course of 24 hours, participants collaborated to design and develop technology-driven solutions to real-world problems, demonstrating creativity, technical expertise, and teamwork. The hackathon provided a dynamic platform for experiential learning, innovation, and interdisciplinary collaboration. A prize pool of USD 500 was awarded to the top-performing teams in recognition of their outstanding solutions and overall performance. The event also reflected the Institute's strong culture of student-led initiatives and its commitment to fostering innovation, leadership, and excellence in technology.",
+      "images": [
+        "/assets/lifepage/hbtm2026_1.JPG",
+        "/assets/lifepage/hbtm2026_2.JPG",
+        "/assets/lifepage/hbtm2026_3.JPG",
+        "/assets/lifepage/hbtm2026_4.JPG",
+        "/assets/lifepage/hbtm2026_5.JPG",
+        "/assets/lifepage/hbtm2026_6.JPG",
+        "/assets/lifepage/hbtm2026_7.JPG",
+        "/assets/lifepage/hbtm2026_8.JPG",
+        "/assets/lifepage/hbtm2026_9.JPG"
+      ],
+      "highlights": [
+        "24-hour National Hackathon – HBTM 2026",
+        "Inaugurated by Hon’ble Director Prof. Vineet Kansal",
+        "Participants from across India",
+        "Innovation, collaboration, and real-world problem solving"
+      ]
+    },
+    {
+      "name": "Campus Visit by CTO of Narravance (22 July 2026)",
+      "type": "Industry Visit",
+      "typeColor": "bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300",
+      "desc": "IIIT Pune was privileged to host Mr. Pratik Ratadiya, CTO and Head of Product at Narravance, for an enriching and thought-provoking campus visit. The discussions spanned several impactful areas: Research Culture, Lab Setup & Center of Excellence, Academic Enrichment, and Industry-Academia Collaboration.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173091383_37.jpg",
+        "/assets/lifepage/linkedin_img_1785173091414_38.jpg",
+        "/assets/lifepage/linkedin_img_1785173091444_39.jpg",
+        "/assets/lifepage/linkedin_img_1785173091473_40.jpg",
+        "/assets/lifepage/linkedin_img_1785173091504_41.jpg"
+      ],
+      "highlights": [
+        "Visit by Mr. Pratik Ratadiya, CTO of Narravance",
+        "Discussions on Research Culture and Lab Setup",
+        "Industry-Academia Collaboration"
+      ]
+      
+    },
+    {
+      "name": "Visit of South Korean Delegates — Indo-Korean Center, Pune (14 July 2026)",
+      "type": "International Visit",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "A delegation from the Indo-Korean Center, Pune, comprising Dr. Lim Eunjoo and Mr. Sanjib Ghatak, visited the Indian Institute of Information Technology, Pune (IIIT Pune) on 14th July 2026. The visit was organised by the International Relations Office, IIIT Pune, with the objective of introducing both institutions to each other and exploring avenues for academic, research, and cultural collaboration between India and South Korea. During the interaction sessions, both delegations presented an overview of their respective institutions. Dr. Jatin Majithia presented IIIT Pune's academic programmes, research areas, active funded projects, and student activities. The discussions were wide-ranging and productive, identifying priorities for possible collaboration including student and faculty exchange programs, joint research projects (in AI, Cybersecurity, VLSI, IoT, and Signal Processing), structured pathways for student employability in Korea, and cultural exchange programs.",
+      "images": [
+        "/assets/lifepage/indo-korean-1.jpeg",
+        "/assets/lifepage/indo-korean-2.jpeg",
+        "/assets/lifepage/indo-korean-3.jpeg",
+        "/assets/lifepage/indo-korean-4.jpeg",
+        "/assets/lifepage/indo-korean-5.jpeg",
+        "/assets/lifepage/indo-korean-6.jpeg",
+        "/assets/lifepage/indo-korean-7.jpeg"
+      ],
+      "highlights": [
+        "Visit by Dr. Lim Eunjoo & Mr. Sanjib Ghatak",
+        "Discussion on Student & Faculty Exchange Programs",
+        "Collaboration on AI, Cybersecurity, and Semiconductor Research",
+        "Avenues for Student Placement & Internship in Korea"
+      ],
+      "links": [
+        {
+          "label": "View Report",
+          "url": "/assets/lifepage/IIIT_Pune_Korean_Visit_Report_Brief.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Visit by Dean of International Relations, IIT Bombay (10 July 2026)",
+      "type": "Institutional Visit",
+      "typeColor": "bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300",
+      "desc": "IIIT Pune was privileged to host the Dean of International Relations from IIT Bombay for a highly productive visit focused on building a deeper academic and research connection between the two institutions. Key areas of discussion included signing an MoU to formalize a framework for institutional collaboration, joint research opportunities, and international outreach.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173091259_33.jpg",
+        "/assets/lifepage/linkedin_img_1785173091290_34.jpg",
+        "/assets/lifepage/linkedin_img_1785173091321_35.jpg",
+        "/assets/lifepage/linkedin_img_1785173091351_36.jpg"
+      ],
+      "highlights": [
+        "Visit by Dean of IR, IIT Bombay",
+        "Discussions on MoU and research collaborations",
+        "Exploring global academic partnerships"
+      ]
+    },
+    {
+      "name": "Interactive Session on Wireless Communication (04 July 2026)",
+      "type": "Academic Session",
+      "typeColor": "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
+      "desc": "IIIT Pune hosted an interactive session with Prof. Vivek Ashok Bohara from Indraprastha Institute of Information Technology, Delhi. Prof. Bohara's research spans some of the most exciting frontiers in wireless communication. The session was highly engaging and sparked meaningful discussions on research directions and potential collaborations.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173091197_31.jpg",
+        "/assets/lifepage/linkedin_img_1785173091229_32.jpg"
+      ],
+      "highlights": [
+        "Session with Prof. Vivek Ashok Bohara, IIIT Delhi",
+        "Discussions on wireless communication",
+        "Exploring potential collaborations"
+      ]
+    },
+    {
+      "name": "IBM Leadership visits IIIT Pune (01 July 2026)",
+      "type": "Industry Visit",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "We were delighted to host senior leadership from IBM at our campus for discussions on research collaboration in Cybersecurity, Data Storage, and Quantum Computing. A promising step towards deepening the industry-academia connect. Looking forward to what we build together!",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173089905_1.jpg",
+        "/assets/lifepage/linkedin_img_1785173090160_2.jpg",
+        "/assets/lifepage/linkedin_img_1785173090202_3.jpg",
+        "/assets/lifepage/linkedin_img_1785173090263_4.jpg",
+        "/assets/lifepage/linkedin_img_1785173090301_5.jpg",
+        "/assets/lifepage/linkedin_img_1785173090336_6.jpg"
+      ],
+      "highlights": [
+        "IBM Leadership Visit",
+        "Research collaboration in Cybersecurity, Data Storage, and Quantum Computing",
+        "Deepening the industry-academia connect"
+      ],
+      "links": []
+    },
+    {
+      "name": "Faculty Development Program on AI-Driven Adaptive Optical and Wireless Communication Systems (05–12 June 2026)",
+      "type": "Faculty Development Program",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "A 7-day Faculty Development Program (FDP) titled \"AI-Driven Adaptive Optical and Wireless Communication Systems\" was conducted from 05 June 2026 to 12 June 2026 in collaboration with the Electronics and ICT (E&ICT) Academy, IIIT Jabalpur, and IIIT Pune.\n\nThe FDP focused on recent advancements in Artificial Intelligence-enabled adaptive communication technologies, intelligent optical and wireless networks, machine learning applications in communication systems, next-generation communication architectures, and emerging research challenges and opportunities in the field.\n\nThe program brought together experts from academia and industry to share their knowledge and research insights, thereby enhancing the technical expertise and research capabilities of participants in the rapidly evolving domain of AI-driven communication systems.\n\nThe program was coordinated by the organizing team at IIIT Pune under the guidance of the designated FDP Coordinator, Dr. Dheeraj Dubey, IIIT Pune.",
+      "images": [],
+      "highlights": [
+        "7-day FDP (05–12 June 2026)",
+        "Collaboration with E&ICT Academy",
+        "Focus on AI & Wireless Communication",
+        "Expert Insights from Academia & Industry"
+      ],
+      "links": []
+    },
+    {
+      "name": "World Environment Day Celebration (06 June 2026)",
+      "type": "Plantation Drive",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "IIIT Pune celebrated World Environment Day through a special tree plantation drive under the inspiring initiative “Ek Ped Maa Ke Naam”. Our alumni and employees actively participated by planting saplings on campus, reinforcing our collective commitment towards environmental sustainability and a greener future.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173090369_7.jpg",
+        "/assets/lifepage/linkedin_img_1785173090408_8.jpg",
+        "/assets/lifepage/linkedin_img_1785173090450_9.jpg",
+        "/assets/lifepage/linkedin_img_1785173090495_10.jpg",
+        "/assets/lifepage/linkedin_img_1785173090533_11.jpg",
+        "/assets/lifepage/linkedin_img_1785173090569_12.jpg",
+        "/assets/lifepage/linkedin_img_1785173090625_13.jpg",
+        "/assets/lifepage/linkedin_img_1785173090658_14.jpg",
+        "/assets/lifepage/linkedin_img_1785173090691_15.jpg"
+      ],
+      "highlights": [
+        "Tree plantation drive",
+        "Ek Ped Maa Ke Naam initiative",
+        "Alumni and employee participation"
+      ],
+      "links": []
+    },
+    {
+      "name": "First-Ever Alumni Interaction: Pune Chapter (06 June 2026)",
+      "type": "Alumni Meet",
+      "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      "desc": "We are proud to announce the successful organization of IIIT Pune's first-ever Alumni Interaction: Pune Chapter, held on 6th June 2026. The event witnessed enthusiastic participation from alumni spanning the 2020-2025 graduating batches, coming together to reconnect, reflect, and reimagine their journeys since leaving campus.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173090725_16.jpg",
+        "/assets/lifepage/linkedin_img_1785173090757_17.jpg",
+        "/assets/lifepage/linkedin_img_1785173090788_18.jpg",
+        "/assets/lifepage/linkedin_img_1785173090819_19.jpg",
+        "/assets/lifepage/linkedin_img_1785173090849_20.jpg",
+        "/assets/lifepage/linkedin_img_1785173090881_21.jpg",
+        "/assets/lifepage/linkedin_img_1785173090911_22.jpg",
+        "/assets/lifepage/linkedin_img_1785173090941_23.jpg",
+        "/assets/lifepage/linkedin_img_1785173090972_24.jpg"
+      ],
+      "highlights": [
+        "Alumni Interaction: Pune Chapter",
+        "Inspiring career journeys",
+        "Conversations bridging academia and industry"
+      ],
+      "links": []
+    },
+    {
+      "name": "Visit by Prof. Vikram Gadre, IIT Bombay (05 June 2026)",
+      "type": "Academic Visit",
+      "typeColor": "bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300",
+      "desc": "We were honoured to host Prof. Vikram Gadre from the Indian Institute of Technology, Bombay. The visit brought together our faculty for a thoughtful and wide-ranging discussion on the research landscape and innovation ecosystem at IIIT Pune. A key highlight was an in-depth conversation around the ANRF PAIR Project and other collaborative funding opportunities.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173091002_25.jpg",
+        "/assets/lifepage/linkedin_img_1785173091036_26.jpg"
+      ],
+      "highlights": [
+        "Visit by Prof. Vikram Gadre, IIT Bombay",
+        "Discussion on research landscape and innovation",
+        "Discussions on the ANRF PAIR Project"
+      ],
+      "links": []
+    },
+    {
+      "name": "Workshop on \"IIIT Pune's Vision\" (04 June 2026)",
+      "type": "Interactive Workshop",
+      "typeColor": "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
+      "desc": "A day-long workshop on \"IIIT Pune's Vision\" was organized on 4th June 2026, featuring Padma Shri Prof. Dr. Sanjay Govind Dhande, an internationally acclaimed technologist, researcher, and institution builder.\n\nProf. Dhande's day-long engagement covered a rich agenda. He met one-on-one with the Director, Dr. Vineet Kansal, to review academic and administrative progress, followed by a focused interaction with Heads of Departments and Associate Deans on curriculum, research, faculty growth, and the transition road to the permanent campus at Nanoli, Talegaon Dabhade, Maval, Pune.\n\nHe delivered a special lecture titled 'Vision for IIIT Pune', attended by 60+ faculty and staff, addressing the imperative to forge a bold, differentiated identity, the centrality of research, innovation, and entrepreneurship, lessons from IIT Kanpur's transformation, and the role of faculty. He also toured academic blocks and laboratories, offering observations on infrastructure priorities ahead of the permanent campus transition.\n\nThis engagement contributes to the institute's commitment towards SDG 4 (Quality Education) by fostering visionary academic leadership and institutional development, with secondary alignment to SDG 9 (Industry, Innovation and Infrastructure) and SDG 17 (Partnerships for the Goals).",
+      "images": [
+        "/assets/lifepage/vision_workshop1.png",
+        "/assets/lifepage/vision_workshop2.jpg",
+        "/assets/lifepage/vision_workshop3.jpg",
+        "/assets/lifepage/vision_workshop4.jpg",
+        "/assets/lifepage/vision_workshop5.jpg"
+      ],
+      "highlights": [
+        "Keynote by Padma Shri Prof. Dr. Sanjay Govind Dhande",
+        "Strategic Roadmapping for the Nanoli Permanent Campus",
+        "Special Lecture 'Vision for IIIT Pune' for 60+ Faculty & Staff",
+        "Laboratory Tours & Individualized Research Dialogue"
+      ],
+      "links": []
+    },
+    {
+      "name": "Workshop on Patent Filing Process (29 May 2026)",
+      "type": "Workshop",
+      "typeColor": "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
+      "desc": "IIIT Pune successfully organized a workshop on “Patent Filing Process: From Idea to Grant” by renowned Patent Attorney Dr. Alok Gupta, in the presence of Hon’ble Director Prof. Vineet Kansal. The session provided valuable insights into Intellectual Property Rights (IPR), patent drafting, filing procedures, and innovation protection for researchers.",
+      "images": [
+        "/assets/lifepage/linkedin_img_1785173091071_27.jpg",
+        "/assets/lifepage/linkedin_img_1785173091102_28.jpg",
+        "/assets/lifepage/linkedin_img_1785173091134_29.jpg",
+        "/assets/lifepage/linkedin_img_1785173091166_30.jpg"
+      ],
+      "highlights": [
+        "Workshop by Dr. Alok Gupta",
+        "Insights into IPR and patent drafting",
+        "Innovation protection for researchers"
+      ],
+      "links": []
+    },
+    {
+      "name": "iConclave 2026",
+      "type": "Tech-Cultural Extravaganza",
+      "typeColor": "bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300",
+      "desc": "iConclave is IIIT Pune's flagship annual fest — a seamless blend of technology, culture, and community. The 2026 edition featured the Thinking Machine AI Hackathon, the Hashiriya Bot Racing Championship by ROFIES, the Zokei Poster Design Contest by Blueprint, Nritya Nova dance battles by Vanity Crew, and more. Thousands of students from colleges across Pune and India participated, making it the biggest edition yet.",
+      "images": [
+        "/assets/lifepage/Icon2026_1.png",
+        "/assets/lifepage/Icon2026_2.png",
+        "/assets/lifepage/Icon2026_3.png"
+      ],
+      "highlights": [
+        "AI Hackathon — 330+ teams",
+        "Bot Racing Championship",
+        "Poster Design + Dance Battles",
+        "Intercollegiate Participation"
+      ],
+      "links": [
+        {
+          "label": "View Report",
+          "url": "/assets/lifepage/Conclave × E-Summit 2026 Event Report (1).pdf"
+        }
+      ]
+    },
+    {
+      "name": "Thinking Machine",
+      "type": "National-Level AI Hackathon",
+      "typeColor": "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300",
+      "desc": "Thinking Machine was a national-level AI hackathon hosted by IIIT Pune, challenging participants to develop impactful AI-powered solutions through an intensive four-day competition. Conducted in two stages, the event featured an online submission round followed by an offline grand finale at the campus. It attracted enthusiastic participation from students representing premier engineering institutions across India, including NITs, COEP, PICT, and VIT. With a total of 333 registrations, 82 complete team registrations, and 43 project submissions, the event demonstrated a strong enthusiasm for applied Artificial Intelligence. Following a rigorous evaluation, the top six performing teams were shortlisted to compete in the offline finale, where they presented their solutions before an expert jury panel. The hackathon successfully provided a platform for students to showcase technical creativity, collaborate, and address real-world challenges using cutting-edge AI technologies.",
+      "images": [
+        "/assets/lifepage/thinkingMachine1.png",
+        "/assets/lifepage/thinkingMachine2.png",
+        "/assets/lifepage/thinkingMachine3.png"
+      ],
+      "highlights": [
+        "333 Registrations",
+        "82 Complete Team Registrations",
+        "43 Project Submissions",
+        "Top 6 Teams in Offline Finale"
+      ],
+      "links": [
+        {
+          "label": "View Report",
+          "url": "/assets/lifepage/Thinking_Machine_Hackathon_Event_Report.pdf"
+        }
+      ]
+    },
+    {
+      "name": "Ananta Cultural Fest",
+      "type": "Cultural Extravaganza",
+      "typeColor": "bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300",
+      "desc": "Ananta is the annual socio-cultural festival of IIIT Pune. Spanning three vibrant days, it features group dance battles, fashion pageants (like Halo Runway by RANG), vocal showcases by SAAZ, nukkad natak street plays by Abhinay, quiz nights by Q-riocity, acoustic unplugged evenings, rangoli installations, and a grand closing concert with star performances. It draws participants from top colleges across Maharashtra.",
+      "images": [
+        "/assets/lifepage/rang6.jpg",
+        "/assets/lifepage/rang8.jpeg",
+        "/assets/lifepage/Picture2.jpg"
+      ],
+      "highlights": [
+        "Dance Battles",
+        "Fashion Showcase",
+        "Star Night Concert",
+        "Literary Events"
+      ],
+      "links": []
+    },
+    {
+      "name": "Eklavya Sports Fest",
+      "type": "Annual Sports Meet",
+      "typeColor": "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300",
+      "desc": "Eklavya is the annual three-day sports festival organized by the IIIT Pune Sports Club. It features competitive tournaments in football, cricket, volleyball, basketball, badminton, kabaddi, chess, and carrom. The 2024 edition also added an Esports tournament featuring FIFA, Valorant, Clash Royale, and Fall Guys with live screenings on campus. Eklavya is a celebration of sportsmanship, fitness, and team spirit.",
+      "images": [
+        "/assets/lifepage/image042.jpg",
+        "/assets/lifepage/image043.jpg",
+        "/assets/lifepage/DSC_3082 (1) (1).jpg"
+      ],
+      "highlights": [
+        "Football, Cricket, Volleyball",
+        "Basketball, Kabaddi",
+        "Esports Tournament",
+        "Inter-Batch Leagues"
+      ],
+      "links": []
+    },
+    {
+      "name": "InfInITy Coding Contest",
+      "type": "Technical Event",
+      "typeColor": "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300",
+      "desc": "InfInITy is the flagship competitive programming contest organized by Bit Legion in collaboration with CodeChef. Rated as a 6-star global event, it attracted 1,28,000+ submissions and 25,000+ participants worldwide. The contest featured algorithmic challenges across multiple difficulty levels, drawing top-rated competitive programmers including grandmasters and masters from around the globe.",
+      "images": [
+        "/assets/lifepage/image001.jpg",
+        "/assets/lifepage/image003.jpg",
+        "/assets/lifepage/image005.jpg"
+      ],
+      "highlights": [
+        "1,28,000+ Submissions",
+        "25K+ Global Participants",
+        "CodeChef 6-Star Rated",
+        "Grandmaster Participation"
+      ],
+      "links": []
+    }
+  ],
+  "EDITIONS": [
+    {
+      "year": "2024–25",
+      "title": "Annual Magazine 2024-25",
+      "embedUrl": "https://online.fliphtml5.com/jpsva/pmdk/",
+      "cover": "/assets/lifepage/frontpage.png",
+      "desc": "The latest edition captures research breakthroughs, creative writing, student artwork, faculty interviews, club highlights, and the vibrant spirit of campus life at IIIT Pune."
+    },
+    {
+      "year": "2023–24",
+      "title": "Annual Magazine 2023-24",
+      "embedUrl": "https://online.fliphtml5.com/wscmc/peim/",
+      "cover": "/assets/lifepage/aygycs_blue.png",
+      "desc": "Celebrated IIIT Pune's growing research culture with features on funded projects, PhD scholar spotlights, club achievements, and an artistic tribute to campus life."
+    }
+  ],
+  "CAMPUS_TOUR_BOXES": [
+    {
+      "title": "Academic Building",
+      "image": "/assets/campus_tour/Acad1.jpeg",
+      "description": "The campus features a state-of-the-art Academic Building equipped with smart classrooms, advanced laboratories, collaborative learning spaces, and facilities. Classrooms are equipped with projectors, audio-visual systems, and digital learning tools to enhance the teaching-learning experience.",
+      "images": [
+        "/assets/campus_tour/Acad1.jpeg",
+        "/assets/campus_tour/Acad2.jpeg",
+        "/assets/campus_tour/Acad3.jpeg",
+        "/assets/campus_tour/Acad4.jpeg",
+        "/assets/campus_tour/Acad5.jpeg",
+        "/assets/campus_tour/Acad6.jpeg",
+        "/assets/campus_tour/Acad7.jpeg",
+        "/assets/campus_tour/Acad11.JPG",
+        "/assets/campus_tour/Acad12.JPG",
+        "/assets/campus_tour/Acad13.JPG",
+        "/assets/campus_tour/Acad14.JPG"
+      ]
+    },
+    {
+      "title": "Library & Auditorium",
+      "image": "/assets/campus_tour/Audi1.jpeg",
+      "description": "Students also have access to a well-stocked library with ample reading and study space. The building also houses seminar halls and a spacious auditorium that facilitates technical learning, workshops, conferences, cultural events, and industry interactions, contributing to the holistic development of students.",
+      "images": [
+        "/assets/campus_tour/Audi1.jpeg",
+        "/assets/campus_tour/Audi2.jpeg",
+        "/assets/campus_tour/Audi3.jpeg",
+        "/assets/campus_tour/Acad9.JPG",
+        "/assets/campus_tour/Acad10.JPG"
+      ]
+    },
+    {
+      "title": "Hostel Facilities",
+      "image": "/assets/campus_tour/Hostel1.jpeg",
+      "description": "IIIT Pune offers comfortable and secure hostel facilities for both boys and girls, fostering a vibrant residential community that encourages collaboration, cultural exchange, and lifelong friendships.",
+      "images": [
+        "/assets/campus_tour/Hostel1.jpeg",
+        "/assets/campus_tour/Hostel2.jpeg",
+        "/assets/campus_tour/Hostel3.jpeg",
+        "/assets/campus_tour/Hostel4.jpeg",
+        "/assets/campus_tour/Hostel5.jpeg"
+      ]
+    },
+    {
+      "title": "Dining Facilities",
+      "image": "/assets/campus_tour/Mess1.jpeg",
+      "description": "The institute provides spacious dining facilities through two independent messes on campus, serving nutritious and hygienically prepared meals. High standards of cleanliness, food safety, and quality ensure a comfortable and healthy dining experience for students.",
+      "images": [
+        "/assets/campus_tour/Mess1.jpeg",
+        "/assets/campus_tour/Mess2.jpeg",
+        "/assets/campus_tour/Mess3.jpeg",
+        "/assets/campus_tour/Mess4.jpeg",
+        "/assets/campus_tour/Mess5.jpeg",
+        "/assets/campus_tour/Mess6.jpeg",
+        "/assets/campus_tour/Mess7.jpeg",
+        "/assets/campus_tour/Mess8.jpeg"
+      ]
+    },
+    {
+      "title": "Sports & Fitness Centre",
+      "image": "/assets/campus_tour/Sports1.jpeg",
+      "description": "IIIT Pune provides dedicated gym facilities for both boys and girls, encouraging students to maintain an active and healthy lifestyle. The campus also features well-maintained sports grounds and a dedicated coaching and training instructor for sports and yoga. Equipped with modern fitness equipment, these spaces promote physical well-being, discipline, and overall physical fitness, mental well-being, teamwork, and a balanced lifestyle.",
+      "images": [
+        "/assets/campus_tour/Sports1.jpeg",
+        "/assets/campus_tour/Sports2.jpeg",
+        "/assets/campus_tour/Sports3.jpeg",
+        "/assets/campus_tour/Sports4.jpeg",
+        "/assets/campus_tour/Sports5.jpeg",
+        "/assets/campus_tour/Sports6.jpeg",
+        "/assets/campus_tour/Sports7.jpeg",
+        "/assets/campus_tour/Sports8.jpeg",
+        "/assets/campus_tour/Sports9.jpeg"
+      ]
+    },
+    {
+      "title": "Medical Facility",
+      "image": "/assets/campus_tour/Medical1.jpeg",
+      "description": "IIIT Pune provides an on-campus medical room to address the immediate healthcare needs of students and staff. The institute also has tie-ups with reputed hospitals to ensure timely access to professional medical consultation and emergency care.",
+      "images": [
+        "/assets/campus_tour/Medical1.jpeg"
+      ]
+    },
+    {
+      "title": "Transportation Services",
+      "image": "/assets/campus_tour/Transport1.jpeg",
+      "description": "The Institute provides a dedicated bus service operating multiple times throughout the week between IIIT Pune and Talegaon Railway Station, ensuring convenient connectivity for students and staff. In addition, the PMPML bus service connecting IIIT Pune to Nigdi Bus Stand via Talegaon Railway Station offers a reliable and accessible public transportation option for daily commuting.",
+      "images": [
+        "/assets/campus_tour/Transport1.jpeg",
+        "/assets/campus_tour/Transport2.jpeg"
+      ]
+    }
+  ]
+}

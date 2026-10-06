@@ -1,0 +1,13 @@
+[
+  { "sr": 1, "category": "National", "scheme": "Post Matric Scholarships Scheme for Minorities", "governedBy": "Ministry of Minority Affairs", "link": "https://scholarships.gov.in/" },
+  { "sr": 2, "category": "National", "scheme": "Merit Cum Means Scholarship For Professional and Technical Courses", "governedBy": "Ministry of Minority Affairs", "link": "https://scholarships.gov.in/" },
+  { "sr": 3, "category": "National", "scheme": "Post-matric Scholarship for Students with Disabilities", "governedBy": "Department of Empowerment of Persons with Disabilities", "link": "https://scholarships.gov.in/" },
+  { "sr": 4, "category": "National", "scheme": "Scholarship For Top Class Education For Students With Disabilities", "governedBy": "Department of Empowerment of Persons with Disabilities", "link": "https://scholarships.gov.in/" },
+  { "sr": 5, "category": "National", "scheme": "Central Sector Scholarship Of Top Class Education For SC Students", "governedBy": "Ministry of Social Justice and Empowerment", "link": "https://scholarships.gov.in/" },
+  { "sr": 6, "category": "Maharashtra", "scheme": "Government of India Post-Matric Scholarship", "governedBy": "Social Justice and Special Assistance", "link": "https://mahadbt.maharashtra.gov.in/" },
+  { "sr": 7, "category": "Maharashtra", "scheme": "Post-Matric Tuition Fee and Examination Fee (Freeship)", "governedBy": "Social Justice and Special Assistance", "link": "https://mahadbt.maharashtra.gov.in/" },
+  { "sr": 8, "category": "Gujarat", "scheme": "Post Metric Scholarships Guideline for Scheduled Caste, SEBC and ST Students Only", "governedBy": "Social Welfare Department", "link": "https://gssp.gujarat.gov.in/" },
+  { "sr": 9, "category": "Madhya Pradesh", "scheme": "Mukhya Mantri Medhavi Vidyarthi Yojana (MMVY)", "governedBy": "Department of Technical Education & Skill Development", "link": "https://medhavikalyan.mp.gov.in" },
+  { "sr": 10, "category": "Jammu & Kashmir / Ladakh", "scheme": "Special Scholarship Scheme for Students from Jammu & Kashmir and Ladakh", "governedBy": "AICTE", "link": "https://www.aicte-jk-scholarship-gov.in/" }
+
+]

@@ -24,11 +24,21 @@ async function startServer() {
 
   // CORS support
   app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', config.corsOrigin);
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    const origin = req.headers.origin;
+    const allowAnyOrigin = config.corsOrigins.includes('*');
+    const allowedOrigin = !origin || allowAnyOrigin || config.corsOrigins.includes(origin);
+
+    if (origin && allowedOrigin) {
+      res.header('Access-Control-Allow-Origin', allowAnyOrigin ? '*' : origin);
+      if (!allowAnyOrigin) res.vary('Origin');
+    }
+
     if (req.method === 'OPTIONS') {
-      res.sendStatus(200);
+      if (allowedOrigin) {
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+      }
+      res.sendStatus(204);
       return;
     }
     next();

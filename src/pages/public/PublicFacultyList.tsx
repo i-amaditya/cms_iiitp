@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Faculty, Department } from '../../types/index.ts';
-import { api } from '../../utils/api.ts';
+import { api, resolveApiAssetUrl } from '../../utils/api.ts';
 import { ChevronRight, Home, Search } from 'lucide-react';
 
 interface PublicFacultyListProps {
@@ -158,7 +158,7 @@ export const PublicFacultyList: React.FC<PublicFacultyListProps> = ({ onSelectFa
                           </span>
                           {faculty.profile_photo && (
                             <img
-                              src={faculty.profile_photo}
+                              src={resolveApiAssetUrl(faculty.profile_photo)}
                               alt={faculty.full_name}
                               loading="lazy"
                               className="absolute inset-0 h-full w-full object-cover"

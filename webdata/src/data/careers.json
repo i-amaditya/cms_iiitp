@@ -1,0 +1,424 @@
+{
+  "live": [
+    {
+      "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Shortlistings",
+          "file": "/careers-documents/shortlisted candidate for isro project.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/ADVERTISEMENT FOR HIRING OF MANPOWER.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://forms.gle/RksouGYmXkWy9kMa8"
+        }
+      ],
+      "date": "19-09-2026",
+      "lastDate": "25-09-2026",
+      "lastUpdate": "26-09-2026"
+    },
+    {
+     "title": "Advertisement for various research positions under (ANRF-PAIR) initiative",
+     "buttons": [
+      {
+        "file": "/careers-documents/CORRIGENDUM _ ANRF.pdf",
+        "label": "Corrigendum"
+      },
+      {
+        "label": "Details",
+        "file": "/careers-documents/Sept_ANRF-PAIR_Manpower_Advertisement.pdf"
+      },
+      {
+        "label": "Apply Now",
+        "link": "https://forms.gle/EtAebirY9agMuasd8"
+      },
+      {
+        "label": "Application Form",
+        "file": "/careers-documents/Sept_ANRF-PAIR_Manpower_Application_Form.pdf"
+      }
+     ],
+     "date": "09-09-2026",
+    "lastDate": "04-10-2026",
+    "lastUpdate": "25-09-2026"
+    },
+    {
+      "title": "Advertisement for the Post of Junior Research Fellow (JRF) in ISRO Sponsored Project",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/Advertisement_ISRO.pdf"
+        },
+        {
+          "label": "Application Form",
+          "file": "/careers-documents/Application_Form_JRF.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://forms.gle/UuuW41P1EDD65JR7A"
+        }
+      ],
+      "date": "10-09-2026.",
+      "lastDate": "30-09-2026",
+      "lastUpdate": "10-09-2026"
+    },
+    {
+      "title": "Assistant Professor (Temporary) in the Department of Computer Science & Engineering (CSE)",
+      "buttons": [
+        {
+          "label": "Shortlistings",
+          "link": "/careers-documents/Shortlisting Notice - Rolling.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/AP (CSE) Temp.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/"
+        },
+        {
+          "label": "Addendum",
+          "file": "/careers-documents/Addendum - cut off date CSE AP (T).pdf"
+        }
+      ],
+      "date": "08-09-2026",
+      "lastDate": "Nill",
+      "lastUpdate": "23-09-2026"
+    }
+  ],
+  "archive": [
+        {
+          "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+          "buttons": [
+            {
+              "label": "Details",
+              "file": "/careers-documents/Advertisment-IIIT 28-08-2026.pdf"
+            },
+            {
+              "label": "Apply Now",
+              "link": "https://forms.gle/X7LjpZqnk1jxENb9A"
+            }
+          ],
+          "date": "01-09-2026",
+          "lastDate": "12-09-2026",
+          "lastUpdate": ""
+        },
+        {
+          "title": "ADVERTISEMENT FOR POSITIONS IN START-UP & INCUBATION CELL IN INSTITUTE",
+          "buttons": [
+            {
+              "label": "Details",
+              "file": "/careers-documents/Advt. for CEO, CIO, Manager.pdf"
+            },
+            {
+              "label": "Apply Now",
+              "link": "https://iiitpnt.samarth.edu.in/"
+            },
+            {
+              "label": "Result",
+              "file": "/careers-documents/RESULT- CEO  & CIO.pdf"
+            }
+          ],
+          "date": "11-08-2026",
+          "lastDate": "25-08-2026",
+          "lastUpdate": ""
+        },
+        {
+      "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/Advertisment-IIIT - 2.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://docs.google.com/forms/d/e/1FAIpQLScuipDhPWCQS8au5qflYI8JVYklQYrifh4rLg5-sAJ8-74f1A/viewform#inbox/_blank"
+        }
+      ],
+      "date": "30-07-2026",
+      "lastDate": "08-08-2026",
+      "lastUpdate": ""
+    },
+
+    {
+      "title": "Assistant Professor (Temporary) in the Department of Electronics and Communication Engineering (ECE)",
+      "buttons": [
+        {
+          "label": "Result",
+          "file": "/careers-documents/Result - AP (T) ECE.pdf"
+        },
+        {
+          "label": "Shortlistings",
+          "link": "/careers-documents/SHORTLIST FOR THE POST OF ASSISTANT PROFESSOR(T) ECE.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/ECE - AP Temp advt.pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/"
+        }
+      ],
+      "date": "29-07-2026",
+      "lastDate": "7-08-2026",
+      "lastUpdate": ""
+    },
+    {
+      "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
+      "buttons": [
+        {
+          "label": "Result",
+          "file": "/careers-documents/Result - AP (T) CSE.pdf"
+        },
+        {
+          "label": "Shortlistings",
+          "link": "/careers-documents/SHORTLIST FOR THE POST OF ASSISTANT PROFESSOR(T) CSE.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/CSE - Assistant Prof. (Temporary).pdf"
+        },
+        {
+          "label": "Apply Now",
+          "link": "https://iiitprec.samarth.edu.in/"
+        }
+      ],
+      "date": "21-07-2026",
+      "lastDate": "07-08-2026",
+      "lastUpdate": ""
+    },
+    {
+      "title": "ADVERTISEMENT FOR HIRING OF MANPOWER THROUGH THE OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "careers-documents/IIIT Advertise (1).pdf"
+        }
+      ],
+      "date": "8-7-2026",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for Positions in Start-up and Incubation Cell on contract basis",
+      "buttons": [
+        {
+          "label": "Result",
+          "link": "/careers-documents/Result - CEO & CIO.pdf"
+        },
+        {
+          "label": "Stage II – Presentation",
+          "link": "/careers-documents/2nd Stage of Selection - Presentation.pdf"
+        },
+        {
+          "label": "Shortlistings",
+          "link": "careers-documents/INCUBATION SHORTLIST LIST TO BE UPDATED ON WEBSITE.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "careers-documents/Draft Advt Startup & Incubation Centre.docx (1).pdf"
+        }
+      ],
+      "date": "07-07-2026",
+      "lastDate": "01-08-2026",
+      "lastUpdate": ""
+    },
+    {
+    "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/IIIT_Pune_Project_Associate_Advertisement.pdf"
+        }
+      ],
+      "date": "23-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for various research positions under Anusandhan National Research Foundation - Partnerships for Accelerated Innovation and Research (ANRF-PAIR) Initiative",
+      "buttons": [
+        {
+          "label": "Details",
+          "file": "/careers-documents/ANRF-PAIR_Manpower_Advertisement June 2026.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "/careers-documents/CORRIGENDUM - ANRF.pdf"
+        }
+      ],
+      "date": "20-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "RECRUITMENT NOTICE FOR THE POST OF ASSISTANT PROFESSOR (TEMPORARY)",
+      "buttons": [
+        {
+          "label": "Result",
+          "file": "/careers-documents/Result nofication.pdf"
+        },
+        {
+          "label": "Shortlistings",
+          "link": "/careers/shortlistings/assistant-professor",
+          "isInternalRoute": true
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/16.06.2026 ASSISTANT PROFESSOR TEMPORARY FINAL VERSION.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "/careers-documents/CORRIGENDUM (Recruitment to the post of Assistant Proffesor) temporary on contractual basis. .pdf"
+        }
+      ],
+      "date": "16-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Cancellation of Advertisement for the Post of Assistant Registrar",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/1.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/2.pdf"
+        }
+      ],
+      "date": "10-06-2026",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for various research positions under Anusandhan National Research Foundation -Partnerships for Accelerated Innovation and Research (ANRF-PAIR) initiative",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/3.docx"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/4.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "/careers-documents/5.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for the Post of Project Associate-I under the Project SMDP-Chips to Startup (C2S)",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/6.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/7.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for the Post of Junior Research Fellow (JRF) in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/8.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/9.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "RECRUITMENT NOTICE FOR THE POST OF ADJUNCT ASSISTANT PROFESSOR (AAP) (ON TEMPORARY BASIS)",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/10.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/11.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "/careers-documents/12.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "WALK-IN-INTERVIEW FOR THE POST OF ADVISOR (CIVIL) ON CONTRACT BASIS – THROUGH OUTSOURCING AGENCY",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/13.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/14.pdf"
+        },
+        {
+          "label": "Corrigendum",
+          "file": "/careers-documents/15.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for the Post of Research Associate-I in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/16.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/17.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    },
+    {
+      "title": "Advertisement for the Post of Intern in Sponsored Project",
+      "buttons": [
+        {
+          "label": "Application",
+          "file": "/careers-documents/18.pdf"
+        },
+        {
+          "label": "Details",
+          "file": "/careers-documents/19.pdf"
+        }
+      ],
+      "date": "--",
+      "lastDate": "",
+      "lastUpdate": ""
+    }
+  ]
+}

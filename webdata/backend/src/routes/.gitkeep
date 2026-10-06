@@ -1,0 +1,18 @@
+# Route modules (Phase 1+)
+# Each file exports an Express Router for a specific resource.
+#
+# auth.ts          — POST /auth/google, GET /auth/me, POST /auth/refresh, POST /auth/logout
+# admin.ts         — Admin user management, invites, audit logs
+# notices.ts       — GET/POST/PATCH/DELETE /notices
+# news.ts          — GET/POST/PATCH/DELETE /news
+# careers.ts       — GET/POST/PATCH/DELETE /careers + buttons
+# etenders.ts      — GET/POST/PATCH/DELETE /etenders
+# faculty.ts       — GET/PATCH /faculty + sub-resources
+# media.ts         — POST/GET/DELETE /media
+# approvals.ts     — POST/GET/PATCH /approvals
+# scholarships.ts  — GET/POST/PATCH/DELETE /scholarships
+# staff.ts         — GET/POST/PATCH/DELETE /staff
+# alumni.ts        — GET/POST/PATCH/DELETE /alumni
+# mous.ts          — GET/POST/PATCH/DELETE /mous
+# shortlistings.ts — GET/POST/PATCH/DELETE /shortlistings
+# press.ts         — GET/POST/PATCH/DELETE /press

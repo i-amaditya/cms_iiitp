@@ -1,0 +1,9 @@
+{
+  // Root tsconfig — only used by VS Code's TypeScript language server
+  // to understand the monorepo structure. It does NOT compile anything itself.
+  // Each sub-project (backend/) has its own tsconfig.json that tsc uses directly.
+  "files": [],
+  "references": [
+    { "path": "./backend" }
+  ]
+}

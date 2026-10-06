@@ -17,6 +17,9 @@ export const config = {
     password: process.env.DB_PASSWORD || '',
     database: process.env.DB_NAME || 'iiitp_cms',
   },
-  corsOrigin: process.env.CORS_ORIGIN || '*',
+  corsOrigins: (process.env.CORS_ORIGIN || '*')
+    .split(',')
+    .map(origin => origin.trim())
+    .filter(Boolean),
   environment: process.env.NODE_ENV || 'development'
 };

@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "year": 2026,
+    "organization": "IIIT Pune and IIT Bombay Sign MoU",
+    "logo": "/Mougallery/logo IIT b.png",
+    "department": "Institute Level",
+    "signedDate": "23 July 2026",
+    "validTill": "22 July 2029",
+    "description": "Memorandum of Understanding (MoU) between the Indian Institute of Technology Bombay (IIT Bombay) and the Indian Institute of Information Technology Pune (IIIT Pune) to promote academic collaboration, research, faculty and student exchange, joint projects, internships, workshops, seminars, and other mutually beneficial activities in education and innovation.",
+    "tags": [
+      "Research",
+      "Academic Collaboration",
+      "MoU",
+      "Innovation",
+      "Institute of National Importance"
+    ],
+    "gallery": [
+      "/Mougallery/IITB_MoU_1.jpg",
+      "/Mougallery/IITB_MoU_2.jpg",
+      "/Mougallery/IITB_MoU_3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "year": 2026,
+    "organization": "IIIT Pune Signs MoU with TrustLab, IIT Bombay",
+    "logo": "/Mougallery/logo IIT b.png",
+    "department": "TrustLab",
+    "signedDate": "03 June 2026",
+    "validTill": "02 June 2029",
+    "description": "IIIT Pune has signed a Memorandum of Understanding (MoU) with TrustLab, IIT Bombay to collaborate in the areas of Cyber Security and Digital Trust. The partnership aims to promote research, innovation, knowledge sharing, and skill development, while preparing future-ready professionals to address emerging cybersecurity challenges.",
+    "tags": [
+      "Cyber Security",
+      "Digital Trust",
+      "Innovation",
+      "Higher Education",
+      "Research Collaboration"
+    ],
+    "gallery": [
+      "/Mougallery/TrustAI_MoU.jpeg"
+    ]
+  }
+  
+]

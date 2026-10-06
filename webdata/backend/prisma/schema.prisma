@@ -1,0 +1,440 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// ============================================================
+// ENUMS
+// ============================================================
+
+enum UserRole {
+  admin
+  editor
+  faculty
+}
+
+enum ContentStatus {
+  draft
+  published
+  archived
+}
+
+
+// ============================================================
+// USERS & AUTH
+// ============================================================
+
+model User {
+  id            Int       @id @default(autoincrement())
+  email         String    @unique @db.VarChar(255)
+  name          String    @db.Text
+  google_sub    String?   @unique @db.VarChar(255)
+  avatar_url    String?   @db.Text
+  role          UserRole  @default(editor)
+  is_active     Boolean   @default(true)
+  last_login_at DateTime?
+  token_version Int       @default(0) // [FIX #4] increment to invalidate all sessions
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+
+  // Relations
+  invites_sent          Invite[]                   @relation("InvitedBy")
+  section_assignments   EditorSectionAssignment[]
+  faculty_profile       FacultyProfile?            @relation("UserProfile")
+  notices_created       Notice[]                   @relation("NoticeCreatedBy")
+  notices_updated       Notice[]                   @relation("NoticeUpdatedBy")
+  news_created          News[]                     @relation("NewsCreatedBy")
+  news_updated          News[]                     @relation("NewsUpdatedBy")
+  careers_created       Career[]                   @relation("CareerCreatedBy")
+  careers_updated       Career[]                   @relation("CareerUpdatedBy")
+  etenders_created      Etender[]                  @relation("EtenderCreatedBy")
+  etenders_updated      Etender[]                  @relation("EtenderUpdatedBy")
+  media_uploaded        MediaFile[]
+
+  @@map("users")
+}
+
+model Invite {
+  id         Int       @id @default(autoincrement())
+  email      String    @unique @db.VarChar(255)
+  role       UserRole
+  sections   Json?     // [FIX #1] e.g. ["notices","news"]
+  invited_by Int?
+  inviter    User?     @relation("InvitedBy", fields: [invited_by], references: [id], onDelete: SetNull)
+  token      String    @unique @db.VarChar(128)
+  accepted   Boolean   @default(false)
+  created_at DateTime  @default(now())
+  expires_at DateTime?
+
+  @@map("invites")
+}
+
+model EditorSectionAssignment {
+  id      Int    @id @default(autoincrement())
+  user_id Int
+  user    User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  section String @db.VarChar(100)
+
+  @@unique([user_id, section])
+  @@map("editor_section_assignments")
+}
+
+// ============================================================
+// FACULTY PROFILES
+// ============================================================
+
+model FacultyProfile {
+  id             Int       @id @default(autoincrement())
+  slug           String    @unique @db.VarChar(255)
+  user_id        Int?      @unique
+  user           User?     @relation("UserProfile", fields: [user_id], references: [id], onDelete: SetNull)
+  email          String    @unique @db.VarChar(255)
+  name           String    @db.Text
+  designation    String?   @db.Text
+  department     String?   @db.VarChar(20)   // 'CSE','ECE','ASH'
+  bio            String?   @db.Text
+  education      String?   @db.Text
+  expertise      String?   @db.Text
+  phone          String?   @db.Text
+  linkedin_url   String?   @db.Text
+  google_scholar String?   @db.Text
+  orcid          String?   @db.Text
+  scopus_url     String?   @db.Text
+  resume_url     String?   @db.Text
+  photo_url      String?   @db.Text
+  is_published   Boolean   @default(true)
+  created_at     DateTime  @default(now())
+  updated_at     DateTime  @updatedAt
+
+  publications  FacultyPublication[]
+  projects      FacultyProject[]
+  patents       FacultyPatent[]
+  seminars      FacultySeminar[]
+  supervisions  FacultySupervision[]
+
+  @@index([department, is_published])
+  @@map("faculty_profiles")
+}
+
+model FacultyPublication {
+  id            Int            @id @default(autoincrement())
+  faculty_id    Int
+  faculty       FacultyProfile @relation(fields: [faculty_id], references: [id], onDelete: Cascade)
+  title         String         @db.Text
+  authors       String?        @db.Text
+  journal       String?        @db.Text
+  year          Int?           @db.SmallInt
+  doi_or_link   String?        @db.Text
+  pub_type      String         @default("journal") @db.VarChar(30) // 'journal','conference','book_chapter'
+  display_order Int            @default(0) @db.SmallInt
+
+  @@map("faculty_publications")
+}
+
+model FacultyProject {
+  id             Int            @id @default(autoincrement())
+  faculty_id     Int
+  faculty        FacultyProfile @relation(fields: [faculty_id], references: [id], onDelete: Cascade)
+  title          String         @db.Text
+  funding_agency String?        @db.Text
+  amount         String?        @db.Text
+  duration       String?        @db.Text
+  status         String         @default("ongoing") @db.VarChar(20)
+  display_order  Int            @default(0) @db.SmallInt
+
+  @@map("faculty_projects")
+}
+
+model FacultyPatent {
+  id            Int            @id @default(autoincrement())
+  faculty_id    Int
+  faculty       FacultyProfile @relation(fields: [faculty_id], references: [id], onDelete: Cascade)
+  title         String         @db.Text
+  patent_number String?        @db.Text
+  status        String?        @db.Text
+  year          Int?           @db.SmallInt
+  display_order Int            @default(0) @db.SmallInt
+
+  @@map("faculty_patents")
+}
+
+model FacultySeminar {
+  id            Int            @id @default(autoincrement())
+  faculty_id    Int
+  faculty       FacultyProfile @relation(fields: [faculty_id], references: [id], onDelete: Cascade)
+  title         String         @db.Text
+  event_name    String?        @db.Text
+  venue         String?        @db.Text
+  date_text     String?        @db.Text
+  display_order Int            @default(0) @db.SmallInt
+
+  @@map("faculty_seminars")
+}
+
+model FacultySupervision {
+  id            Int            @id @default(autoincrement())
+  faculty_id    Int
+  faculty       FacultyProfile @relation(fields: [faculty_id], references: [id], onDelete: Cascade)
+  student_name  String?        @db.Text
+  degree        String?        @db.VarChar(20)  // 'PhD','MTech','BTech'
+  topic         String?        @db.Text
+  status        String?        @db.VarChar(20)  // 'ongoing','completed'
+  year          Int?           @db.SmallInt
+  display_order Int            @default(0) @db.SmallInt
+
+  @@map("faculty_supervisions")
+}
+
+// ============================================================
+// NOTICES  [FIX #2: working-copy draft fields]
+// ============================================================
+
+model Notice {
+  id                    Int           @id @default(autoincrement())
+  // === LIVE (public) fields ===
+  title                 String        @db.Text
+  category              String?       @db.VarChar(100)
+  link_url              String?       @db.Text
+  file_url              String?       @db.Text
+  notice_date           DateTime      @db.Date
+  status                ContentStatus @default(draft)
+  // === DRAFT (working copy) fields [FIX #2] ===
+  draft_title           String?       @db.Text
+  draft_category        String?       @db.VarChar(100)
+  draft_link_url        String?       @db.Text
+  draft_file_url        String?       @db.Text
+  draft_notice_date     DateTime?     @db.Date
+  has_unpublished_draft Boolean       @default(false)
+  // === Audit ===
+  created_by            Int?
+  creator               User?         @relation("NoticeCreatedBy", fields: [created_by], references: [id], onDelete: SetNull)
+  updated_by            Int?
+  updater               User?         @relation("NoticeUpdatedBy", fields: [updated_by], references: [id], onDelete: SetNull)
+  created_at            DateTime      @default(now())
+  updated_at            DateTime      @updatedAt
+
+  @@index([status, notice_date(sort: Desc)])
+  @@index([category, status])
+  @@fulltext([title])
+  @@map("notices")
+}
+
+// ============================================================
+// NEWS  [FIX #2]
+// ============================================================
+
+model News {
+  id                    Int           @id @default(autoincrement())
+  title                 String        @db.Text
+  excerpt               String?       @db.Text
+  link_url              String?       @db.Text
+  file_url              String?       @db.Text
+  news_date             DateTime      @db.Date
+  status                ContentStatus @default(draft)
+  draft_title           String?       @db.Text
+  draft_excerpt         String?       @db.Text
+  draft_link_url        String?       @db.Text
+  draft_file_url        String?       @db.Text
+  draft_news_date       DateTime?     @db.Date
+  has_unpublished_draft Boolean       @default(false)
+  created_by            Int?
+  creator               User?         @relation("NewsCreatedBy", fields: [created_by], references: [id], onDelete: SetNull)
+  updated_by            Int?
+  updater               User?         @relation("NewsUpdatedBy", fields: [updated_by], references: [id], onDelete: SetNull)
+  created_at            DateTime      @default(now())
+  updated_at            DateTime      @updatedAt
+
+  @@index([status, news_date(sort: Desc)])
+  @@fulltext([title])
+  @@map("news")
+}
+
+// ============================================================
+// CAREERS  [FIX #2]
+// ============================================================
+
+model Career {
+  id                    Int           @id @default(autoincrement())
+  title                 String        @db.Text
+  career_type           String        @default("live") @db.VarChar(10) // 'live','past'
+  post_date             DateTime?     @db.Date
+  last_date             DateTime?     @db.Date
+  status                ContentStatus @default(draft)
+  draft_title           String?       @db.Text
+  draft_last_date       DateTime?     @db.Date
+  has_unpublished_draft Boolean       @default(false)
+  created_by            Int?
+  creator               User?         @relation("CareerCreatedBy", fields: [created_by], references: [id], onDelete: SetNull)
+  updated_by            Int?
+  updater               User?         @relation("CareerUpdatedBy", fields: [updated_by], references: [id], onDelete: SetNull)
+  created_at            DateTime      @default(now())
+  updated_at            DateTime      @updatedAt
+
+  buttons CareerButton[]
+
+  @@index([career_type, status, last_date(sort: Desc)])
+  @@map("careers")
+}
+
+model CareerButton {
+  id            Int     @id @default(autoincrement())
+  career_id     Int
+  career        Career  @relation(fields: [career_id], references: [id], onDelete: Cascade)
+  label         String  @db.VarChar(100)
+  url           String? @db.Text
+  file_url      String? @db.Text
+  display_order Int     @default(0) @db.SmallInt
+
+  @@map("career_buttons")
+}
+
+// ============================================================
+// E-TENDERS  [FIX #2]
+// ============================================================
+
+model Etender {
+  id                    Int           @id @default(autoincrement())
+  title                 String        @db.Text
+  tender_number         String?       @db.Text
+  tender_type           String        @default("live") @db.VarChar(10) // 'live','past'
+  file_url              String?       @db.Text
+  corrigendum_url       String?       @db.Text
+  submission_date       String?       @db.Text  // kept as text — mixed formats in source data
+  status                ContentStatus @default(draft)
+  draft_title           String?       @db.Text
+  draft_file_url        String?       @db.Text
+  draft_corrigendum_url String?       @db.Text
+  has_unpublished_draft Boolean       @default(false)
+  created_by            Int?
+  creator               User?         @relation("EtenderCreatedBy", fields: [created_by], references: [id], onDelete: SetNull)
+  updated_by            Int?
+  updater               User?         @relation("EtenderUpdatedBy", fields: [updated_by], references: [id], onDelete: SetNull)
+  created_at            DateTime      @default(now())
+  updated_at            DateTime      @updatedAt
+
+  @@index([tender_type, status])
+  @@map("etenders")
+}
+
+// ============================================================
+// SUPPLEMENTARY CONTENT
+// ============================================================
+
+model Scholarship {
+  id          Int     @id @default(autoincrement())
+  sr_no       Int?    @db.SmallInt
+  category    String? @db.Text
+  scheme_name String  @db.Text
+  governed_by String? @db.Text
+  link_url    String? @db.Text
+  is_active   Boolean @default(true)
+
+  @@map("scholarships")
+}
+
+model NonTeachingStaff {
+  id               Int     @id @default(autoincrement())
+  name             String  @db.Text
+  designation      String? @db.Text
+  department       String? @db.Text
+  department_short String? @db.Text
+  photo_url        String? @db.Text
+  email            String? @db.Text
+  staff_type       String  @default("Regular") @db.VarChar(20) // 'Regular','Contract'
+  display_order    Int     @default(0) @db.SmallInt
+  is_active        Boolean @default(true)
+
+  @@map("non_teaching_staff")
+}
+
+model Alumni {
+  id            Int     @id @default(autoincrement())
+  name          String  @db.Text
+  branch_year   String? @db.Text
+  alumni_type   String? @db.Text  // 'higher_ed_abroad','higher_ed_india','placement'
+  university    String? @db.Text
+  degree        String? @db.Text
+  company       String? @db.Text
+  batch         String? @db.Text  // e.g. '2017_2021'
+  display_order Int     @default(0) @db.SmallInt
+
+  @@map("alumni")
+}
+
+model Mou {
+  id           Int      @id @default(autoincrement())
+  organization String   @db.Text
+  department   String?  @db.Text
+  signed_date  String?  @db.Text  // kept as text — format varies
+  valid_till   String?  @db.Text
+  description  String?  @db.Text
+  logo_url     String?  @db.Text
+  year         Int?     @db.SmallInt
+  tags         Json?    // MySQL JSON column
+  gallery_urls Json?    // e.g. ["url1","url2"]
+  is_active    Boolean  @default(true)
+
+  @@map("mous")
+}
+
+model PressCoverage {
+  id         Int      @id @default(autoincrement())
+  title      String   @db.Text
+  press_date String?  @db.Text  // kept as text — format: "13th August 2026"
+  description String? @db.Text
+  articles   Json?    // Array of { publisher, link } — kept together for simplicity
+  is_active  Boolean  @default(true)
+
+  @@map("press_coverage")
+}
+
+// ============================================================
+// MEDIA FILES  [FIX #6]
+// ============================================================
+
+model MediaFile {
+  id            Int      @id @default(autoincrement())
+  filename      String   @db.VarChar(255)
+  original_name String?  @db.VarChar(255)
+  mime_type     String?  @db.VarChar(100)
+  size_bytes    Int?
+  url           String   @db.Text
+  storage_path  String?  @db.Text
+  is_pdf        Boolean  @default(false) // [FIX #6] tracked for Content-Disposition enforcement
+  uploaded_by   Int?
+  uploader      User?    @relation(fields: [uploaded_by], references: [id], onDelete: SetNull)
+  created_at    DateTime @default(now())
+
+  @@index([uploaded_by, created_at(sort: Desc)])
+  @@map("media_files")
+}
+
+// ============================================================
+// AUDIT LOGS  [FIX #3]
+// ============================================================
+
+model AuditLog {
+  id          Int      @id @default(autoincrement())
+  user_id     Int?     // NOT a FK — intentional: log survives user deletion
+  user_email  String?  @db.VarChar(255) // [FIX #3] snapshot at time of action
+  action      String   @db.VarChar(50)  // 'CREATE','UPDATE','DELETE','LOGIN','LOGOUT','INVITE','PUBLISH','REJECT'
+  resource    String   @db.VarChar(100) // 'notice','faculty_profile','user', etc.
+  resource_id String?  @db.VarChar(50)
+  old_value   Json?
+  new_value   Json?
+  ip_address  String?  @db.VarChar(50)
+  user_agent  String?  @db.Text
+  created_at  DateTime @default(now())
+
+  @@index([resource, created_at(sort: Desc)])
+  @@index([user_id, created_at(sort: Desc)])
+  @@map("audit_logs")
+}
+
+

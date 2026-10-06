@@ -1,0 +1,10 @@
+# Controllers (Phase 1+)
+#
+# auth.controller.ts     — Google token verification, JWT issuance, invite claim logic
+# notices.controller.ts  — CRUD + draft/publish workflow [FIX #2]
+# news.controller.ts
+# careers.controller.ts
+# etenders.controller.ts
+# faculty.controller.ts  — Self-edit authorization [FIX #7]
+# media.controller.ts    — Upload + Cloudinary/local storage
+# approvals.controller.ts

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://iiitp.ac.in/</loc><priority>1.0</priority></url>
+  <url><loc>https://iiitp.ac.in/about</loc><priority>0.9</priority></url>
+  <url><loc>https://iiitp.ac.in/contact</loc><priority>0.9</priority></url>
+  <url><loc>https://iiitp.ac.in/placement</loc><priority>0.9</priority></url>
+  
+  <!-- Academics -->
+  <url><loc>https://iiitp.ac.in/academics/btech/cse</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/academics/btech/ece</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/academics/phd</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/academics/calendar</loc><priority>0.8</priority></url>
+  
+  <!-- Administration -->
+  <url><loc>https://iiitp.ac.in/administration</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/administration/director</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/administration/registrar</loc><priority>0.8</priority></url>
+  
+  <!-- People -->
+  <url><loc>https://iiitp.ac.in/people/faculty</loc><priority>0.8</priority></url>
+  <url><loc>https://iiitp.ac.in/people/alumni</loc><priority>0.8</priority></url>
+  
+  <!-- Research -->
+  <url><loc>https://iiitp.ac.in/research</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/research/centres</loc><priority>0.7</priority></url>
+  
+  <!-- Student Life & News -->
+  <url><loc>https://iiitp.ac.in/life</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/news</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/notice</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/careers</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/e-tender</loc><priority>0.7</priority></url>
+  <url><loc>https://iiitp.ac.in/nirf</loc><priority>0.7</priority></url>
+  
+  <!-- International -->
+  <url><loc>https://iiitp.ac.in/international</loc><priority>0.8</priority></url>
+</urlset>

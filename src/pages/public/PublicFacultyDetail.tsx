@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Faculty } from '../../types/index.ts';
-import { api } from '../../utils/api.ts';
+import { api, resolveApiAssetUrl } from '../../utils/api.ts';
 import {
   ArrowLeft,
   Mail,
@@ -176,7 +176,7 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
               </span>
               {faculty.profile_photo && (
                 <img
-                  src={faculty.profile_photo}
+                  src={resolveApiAssetUrl(faculty.profile_photo)}
                   alt={faculty.full_name}
                   className="absolute inset-0 w-full h-full object-cover"
                   onError={(e) => {
@@ -486,7 +486,7 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
 
               {typeof sourceData.resume === 'string' && isSafeResumeUrl(sourceData.resume) && (
                 <a
-                  href={sourceData.resume}
+                  href={resolveApiAssetUrl(sourceData.resume)}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-800 hover:bg-blue-100"

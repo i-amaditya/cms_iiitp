@@ -1,0 +1,1151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow-x: clip;
+  max-width: 100%;
+  top: 0 !important;
+}
+
+/* Hide the Google Translate top bar */
+.skiptranslate > iframe.skiptranslate {
+  display: none !important; 
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important; 
+}
+
+html {
+  font-size: 105%;
+  /* Slightly increases all rem-based sizes, including fonts */
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans transition-colors duration-200 text-justify;
+  }
+
+  .dark body {
+    @apply bg-bg-dark text-text-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1.5px, transparent 1.5px);
+}
+
+.dark .bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px);
+}
+
+/* Sky blue dotted background */
+.bg-grid-sky {
+  background-color: #e0f2fe;
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(56, 189, 248, 0.18) 1.5px, transparent 1.5px);
+}
+
+.dark .bg-grid-sky {
+  background-color: #0f172a;
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px);
+}
+
+/* Hide Scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for horizontally scrollable components */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 10px;
+}
+.dark .custom-scrollbar {
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+}
+
+/* ==========================================================================
+   IIIT Pune — International Relations Office Scoped CSS
+   ========================================================================== */
+
+/* Scoped variables mapped to IIITP Website Theme */
+.international-relations-page {
+  --color-primary:      #1B3A6B; /* IIIT Pune Primary Deep Blue */
+  --color-primary-dark: #112546;
+  --color-accent:       #DC2626; /* IIIT Pune Primary Red Accent */
+  --color-accent-light: #EF4444;
+  --color-text-main:    #111827; /* Dark slate for body copy */
+  --color-text-muted:   #4b5563; /* Muted Slate for secondary text */
+  --color-bg-light:     #F0F4FA; /* Light Gray for section backdrops */
+  --color-bg-white:     #ffffff;
+  --color-border:       #e5e7eb; /* Crisp borders */
+  --color-border-dark:  #cbd5e1;
+
+  --font-serif:         'Merriweather', Georgia, serif;
+  --font-sans:          'Inter', sans-serif;
+  --container-width:    1200px;
+
+  font-family: var(--font-sans);
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+/* Dark mode theme variables for IR page */
+.dark .international-relations-page,
+.dark.international-relations-page {
+  --color-primary:      #60A5FA; /* Blue accent in dark mode */
+  --color-primary-dark: #3b82f6;
+  --color-accent:       #F87171; /* Brand-red dark */
+  --color-accent-light: #FCA5A5;
+  --color-text-main:    #E6EDF3; /* Light text */
+  --color-text-muted:   #8b949e;
+  --color-bg-light:     #0D1117; /* Dark background */
+  --color-bg-white:     #161B22; /* Dark surface */
+  --color-border:       #30363d;
+  --color-border-dark:  #21262d;
+}
+
+/* Base HTML Elements scoped to International Relations page */
+.international-relations-page h1,
+.international-relations-page h2,
+.international-relations-page h3,
+.international-relations-page h4,
+.international-relations-page h5,
+.international-relations-page h6 {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.international-relations-page p {
+  margin-bottom: 1.2rem;
+}
+
+.international-relations-page a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.international-relations-page a:hover {
+  color: var(--color-accent);
+}
+
+.international-relations-page img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.international-relations-page .container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.international-relations-page .section-padding {
+  padding: 60px 0;
+}
+
+.international-relations-page .bg-light {
+  background-color: var(--color-bg-light);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.international-relations-page .text-center {
+  text-align: center;
+}
+
+/* Slideshow Container */
+.international-relations-page .slideshow-wrapper {
+  margin-bottom: 40px;
+  border: 1px solid var(--color-border);
+  padding: 10px;
+  background-color: var(--color-bg-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.international-relations-page .slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 480px;
+  border-radius: 12px;
+}
+
+.international-relations-page .slideshow-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.international-relations-page .slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.international-relations-page .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.international-relations-page .slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 15px 25px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.international-relations-page .slide-date {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.international-relations-page .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.15s ease-in-out;
+}
+
+.international-relations-page .slide-btn:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+}
+
+.international-relations-page .slide-btn--prev {
+  left: 15px;
+}
+
+.international-relations-page .slide-btn--next {
+  right: 15px;
+}
+
+.international-relations-page .slide-dots {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.international-relations-page .slide-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.international-relations-page .slide-dot.active {
+  background-color: var(--color-accent);
+}
+
+/* Home Landing Layout */
+.international-relations-page .landing-grid {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Section Titles */
+.international-relations-page .section-headline {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-border);
+  position: relative;
+}
+
+.international-relations-page .section-headline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+/* What's New Feed */
+.international-relations-page .news-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.international-relations-page .news-alert {
+  padding: 20px;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar Widgets */
+.international-relations-page .sidebar-widget {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.international-relations-page .sidebar-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--color-primary);
+}
+
+.international-relations-page .widget-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.international-relations-page .quick-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.international-relations-page .quick-links-list li a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.international-relations-page .quick-links-list li a::before {
+  content: '→';
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.international-relations-page .quick-links-list li a:hover {
+  color: var(--color-accent);
+}
+
+/* Institutional Banner stats */
+.international-relations-page .stats-strip {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 40px 0;
+  border-top: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+  border-radius: 16px;
+}
+
+.international-relations-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.international-relations-page .stat-box h3 {
+  font-family: var(--font-serif);
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.international-relations-page .stat-box p {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+/* Audience Grid */
+.international-relations-page .audience-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.international-relations-page .audience-card {
+  border: 1px solid var(--color-border);
+  padding: 30px;
+  background-color: var(--color-bg-white);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.international-relations-page .audience-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.international-relations-page .audience-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.international-relations-page .audience-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.international-relations-page .audience-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.international-relations-page .audience-link {
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.international-relations-page .audience-link:hover {
+  color: var(--color-primary);
+}
+
+/* Inner Pages specific layouts */
+.international-relations-page .page-layout {
+  display: grid;
+  grid-template-columns: 8.5fr 3.5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.international-relations-page .academic-block,
+.international-relations-page .collab-block,
+.international-relations-page .about-block {
+  margin-bottom: 40px;
+}
+
+.international-relations-page .academic-block h2,
+.international-relations-page .collab-block h2,
+.international-relations-page .about-block h2 {
+  font-size: 1.5rem;
+}
+
+.international-relations-page .academic-block h3,
+.international-relations-page .collab-block h3,
+.international-relations-page .about-block h3 {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.international-relations-page .academic-block p,
+.international-relations-page .collab-block p,
+.international-relations-page .about-block p {
+  color: var(--color-text-muted);
+}
+
+/* Academic Tables */
+.international-relations-page .program-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 35px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.international-relations-page .program-table th {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-align: left;
+  padding: 16px 24px;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+}
+
+.international-relations-page .program-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  background-color: var(--color-bg-white);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.international-relations-page .program-table tr:last-child td {
+  border-bottom: none;
+}
+
+.international-relations-page .program-table tr:hover td {
+  background-color: #f9fafb;
+}
+
+.dark .international-relations-page .program-table tr:hover td {
+  background-color: rgba(31, 41, 55, 0.5);
+}
+
+/* Responsive Table (Card Layout for Mobile) */
+@media (max-width: 768px) {
+  .international-relations-page .program-table {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  
+  .international-relations-page .program-table thead {
+    display: none;
+  }
+  
+  .international-relations-page .program-table, 
+  .international-relations-page .program-table tbody, 
+  .international-relations-page .program-table tr, 
+  .international-relations-page .program-table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .international-relations-page .program-table tr {
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background-color: var(--color-bg-white) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  
+  .international-relations-page .program-table td {
+    padding: 16px;
+    text-align: right;
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .international-relations-page .program-table td:last-child {
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .international-relations-page .program-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-sans);
+    flex-shrink: 0;
+  }
+  
+  .international-relations-page .program-table td:last-child::before {
+    margin-bottom: 8px;
+  }
+}
+
+.international-relations-page .badge-degree {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.international-relations-page .badge-degree--btech {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.international-relations-page .badge-degree--mtech {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.international-relations-page .badge-degree--phd {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+/* Leadership Grid */
+.international-relations-page .leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.international-relations-page .leader-card {
+  border: 1px solid var(--color-border);
+  padding: 30px;
+  background-color: var(--color-bg-white);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.international-relations-page .leader-figure {
+  margin: 0 0 20px;
+}
+
+.international-relations-page .leader-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.international-relations-page .leader-figure figcaption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.international-relations-page .leader-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.international-relations-page .leader-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Contact Info Layout */
+.international-relations-page .contact-container {
+  display: grid;
+  grid-template-columns: 5.5fr 6.5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.international-relations-page .contact-details-box {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.international-relations-page .contact-info-list {
+  list-style: none;
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.international-relations-page .contact-info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.international-relations-page .contact-item-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.international-relations-page .contact-item-text h4 {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.international-relations-page .contact-item-text p, 
+.international-relations-page .contact-item-text a {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.international-relations-page .map-wrapper {
+  border: 1px solid var(--color-border);
+  padding: 10px;
+  background-color: var(--color-bg-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 480px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.international-relations-page .map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .international-relations-page .landing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .international-relations-page .slideshow-container {
+    height: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .international-relations-page .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .international-relations-page .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .international-relations-page .audience-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .international-relations-page .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .international-relations-page .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .international-relations-page .map-wrapper {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .international-relations-page .slideshow-container {
+    height: 250px;
+  }
+
+  .international-relations-page .slide-caption {
+    font-size: 0.85rem;
+    padding: 10px 15px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .international-relations-page .slide-date {
+    font-size: 0.75rem;
+  }
+
+  .international-relations-page .slide-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Breadcrumb color fixes for International Relations scoped pages */
+.international-relations-page nav[aria-label="Breadcrumb"] a {
+  color: rgb(191 219 254) !important;
+}
+
+.international-relations-page nav[aria-label="Breadcrumb"] a:hover {
+  color: #DC2626 !important;
+}
+
+.dark .international-relations-page nav[aria-label="Breadcrumb"] a {
+  color: rgb(156 163 175) !important;
+}
+
+.dark .international-relations-page nav[aria-label="Breadcrumb"] a:hover {
+  color: #F87171 !important;
+}
+
+/* ==========================================================================
+   IIIT Pune — Alumni Section Scoped CSS
+   ========================================================================== */
+
+.alumni-page {
+  --alumni-primary: #1B3A6B;
+  --alumni-primary-dark: #112546;
+  --alumni-accent: #DC2626;
+  --alumni-accent-light: #EF4444;
+  --alumni-text-main: #111827;
+  --alumni-text-muted: #4b5563;
+  --alumni-bg-light: #F5F8FC;
+  --alumni-bg-white: #ffffff;
+  --alumni-border: #e5e7eb;
+
+  --alumni-serif: 'Merriweather', Georgia, serif;
+  --alumni-sans: 'Inter', sans-serif;
+
+  font-family: var(--alumni-sans);
+  color: var(--alumni-text-main);
+  line-height: 1.68;
+}
+
+.dark .alumni-page,
+.dark.alumni-page {
+  --alumni-primary: #93c5fd;
+  --alumni-primary-dark: #60a5fa;
+  --alumni-accent: #f87171;
+  --alumni-accent-light: #fca5a5;
+  --alumni-text-main: #e5e7eb;
+  --alumni-text-muted: #9ca3af;
+  --alumni-bg-light: #111827;
+  --alumni-bg-white: #0f172a;
+  --alumni-border: #334155;
+}
+
+.alumni-page h1,
+.alumni-page h2,
+.alumni-page h3,
+.alumni-page h4,
+.alumni-page h5,
+.alumni-page h6 {
+  font-family: var(--alumni-serif);
+  color: var(--alumni-primary);
+  line-height: 1.35;
+}
+
+.alumni-page p {
+  color: var(--alumni-text-muted);
+  font-size: 1.01rem;
+}
+
+.alumni-page .page-layout {
+  display: grid;
+  grid-template-columns: 8.5fr 3.5fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 12px;
+}
+
+.alumni-page .section-headline {
+  font-size: 1.72rem;
+  color: var(--alumni-primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--alumni-border);
+  position: relative;
+}
+
+.alumni-page .section-headline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--alumni-accent);
+}
+
+.alumni-page .about-block {
+  margin-bottom: 34px;
+}
+
+.alumni-page .about-block p {
+  margin-bottom: 16px;
+}
+
+.alumni-page .sidebar-widget {
+  background-color: var(--alumni-bg-white);
+  border: 1px solid var(--alumni-border);
+  padding: 26px;
+  margin-bottom: 24px;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.alumni-page .sidebar-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--alumni-primary);
+}
+
+.alumni-page .widget-title {
+  font-size: 1.2rem;
+  color: var(--alumni-primary);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--alumni-border);
+}
+
+.alumni-page .quick-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.alumni-page .quick-links-list li a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--alumni-text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alumni-page .quick-links-list li a::before {
+  content: '→';
+  color: var(--alumni-accent);
+  font-weight: bold;
+}
+
+.alumni-page .quick-links-list li a:hover {
+  color: var(--alumni-accent);
+}
+
+.alumni-page article {
+  background-color: var(--alumni-bg-white);
+  border: 1px solid var(--alumni-border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.alumni-page article h3,
+.alumni-page article h2 {
+  color: var(--alumni-primary);
+}
+
+.alumni-page .slideshow-wrapper {
+  margin-bottom: 38px;
+  border: 1px solid var(--alumni-border);
+  padding: 10px;
+  background-color: var(--alumni-bg-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.alumni-page .slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 420px;
+  border-radius: 12px;
+}
+
+.alumni-page .slideshow-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alumni-page .slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.alumni-page .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.alumni-page .slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.68);
+  color: #fff;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.alumni-page .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--alumni-primary);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  font-weight: 700;
+  border: 1px solid var(--alumni-border);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+}
+
+.alumni-page .slide-btn:hover {
+  background-color: var(--alumni-accent);
+  color: #ffffff;
+  border-color: var(--alumni-accent);
+}
+
+.alumni-page .slide-btn--prev {
+  left: 14px;
+}
+
+.alumni-page .slide-btn--next {
+  right: 14px;
+}
+
+.alumni-page .slide-dots {
+  position: absolute;
+  bottom: 14px;
+  right: 24px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.alumni-page .slide-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.alumni-page .slide-dot.active {
+  background-color: var(--alumni-accent);
+}
+
+@media (max-width: 1024px) {
+  .alumni-page .page-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .alumni-page .slideshow-container {
+    height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+  .alumni-page .slideshow-container {
+    height: 240px;
+  }
+
+  .alumni-page .slide-caption {
+    font-size: 0.86rem;
+    padding: 10px 14px;
+  }
+
+  .alumni-page .slide-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.05rem;
+  }
+
+  .alumni-page .section-headline {
+    font-size: 1.45rem;
+  }
+}

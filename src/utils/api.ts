@@ -1,6 +1,12 @@
 const TOKEN_STORAGE_KEY = 'iiitp_cms_token';
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
 
+export function resolveApiAssetUrl(value: string | null | undefined): string | undefined {
+  if (!value) return undefined;
+  if (!API_BASE_URL || /^(?:https?:|data:|blob:)/i.test(value)) return value;
+  return new URL(value, `${API_BASE_URL}/`).toString();
+}
+
 export function getStoredToken(): string | null {
   return localStorage.getItem(TOKEN_STORAGE_KEY);
 }

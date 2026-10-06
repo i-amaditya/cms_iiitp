@@ -1,0 +1,117 @@
+{
+  "intro": "Alumni are assets for each institute of academic learning. We take pride in our alumni and in their achievements. Two batches of engineering (B.Tech CSE/ECE) have graduated from IIIT Pune so far since its inception in 2016. We are proud to say that our alumni have shown exemplary performance both in terms of placements and higher studies. Our beloved alumni are rapidly spreading among different sectors and are taking the name of the institute forward with them.\n\nKindly write to us at admin@iiitp.ac.in to get any specific information or connect with any of our alumni. You may also find them on their LinkedIn Pages.",
+  "higherEducation": {
+    "abroad": [
+      {
+        "name": "Disha Jagannath Dudhal",
+        "branchYear": "CSE-2016-2020",
+        "university": "Purdue University, West Lafayette, USA",
+        "degree": "MS in Computer Science"
+      },
+      {
+        "name": "Rutuja Tushar Pansare",
+        "branchYear": "CSE-2016-2020",
+        "university": "University of California, Irvine, USA",
+        "degree": "MS in Computer Science"
+      },
+      {
+        "name": "Jidnyesha Patil",
+        "branchYear": "CSE-2016-2020",
+        "university": "Worcester Polytechnic Institute, USA",
+        "degree": "MS in Robotics"
+      }
+    ],
+    "india": [
+      {
+        "name": "Devasish Mahato",
+        "branchYear": "CSE-2016-2020",
+        "university": "NIT Durgapur, India",
+        "degree": "M.Tech"
+      },
+      {
+        "name": "Palthya Pandu Naik",
+        "branchYear": "CSE-2016-2020",
+        "university": "NIT Tiruchirappalli, India",
+        "degree": "M.Tech"
+      },
+      {
+        "name": "Ranjit Malladi",
+        "branchYear": "ECE-2016-2020",
+        "university": "BITS Hyderabad, India",
+        "degree": "ME in Microelectronics"
+      }
+    ]
+  },
+  "placements": {
+    "batch2017_2021": [
+      { "name": "Rutuja Madhure", "company": "NUTANIX" },
+      { "name": "Hardik Mehta", "company": "NUTANIX" },
+      { "name": "Kirra Nagasaikiran", "company": "NUTANIX" },
+      { "name": "Aditya Raut", "company": "ServiceNow" },
+      { "name": "Radha Raman", "company": "ServiceNow" },
+      { "name": "Karan Khanna", "company": "ServiceNow" },
+      { "name": "Saloni Tripathi", "company": "ServiceNow" },
+      { "name": "Rohan Lekhwani", "company": "Gojek" },
+      { "name": "Abhinav Kumar", "company": "Gojek" },
+      { "name": "Anand Pawar", "company": "Gojek" },
+      { "name": "Sanya Tripathi", "company": "National Instruments" },
+      { "name": "Aman Kothari", "company": "National Instruments" },
+      { "name": "Yashit Garg", "company": "National Instruments" },
+      { "name": "Aaditya Joshi", "company": "FinIQ" },
+      { "name": "Abhishek Jugdar", "company": "FinIQ" },
+      { "name": "Aditya Raut", "company": "FinIQ" },
+      { "name": "Dhanashree Revagade", "company": "FinIQ" },
+      { "name": "Mihir Updadhyay", "company": "Xebia" },
+      { "name": "Aniket Dewangan", "company": "Xebia" },
+      { "name": "Khushi Agrawal", "company": "Xebia" },
+      { "name": "Saurabh Jaiswal", "company": "ZS Associates" },
+      { "name": "Yashodhan Agnihotri", "company": "ZS Associates" },
+      { "name": "Kumar Prakarsh", "company": "ZS Associates" },
+      { "name": "Saloni Chure", "company": "ZS Associates" },
+      { "name": "Rakshit Jain", "company": "ZS Associates" },
+      { "name": "Amartya Salpekar", "company": "09 solutions" },
+      { "name": "Himani Bhaisare", "company": "09 solutions" },
+      { "name": "Vikas Pratap Singh", "company": "09 solutions" },
+      { "name": "Tanushree", "company": "09 solutions" },
+      { "name": "Neakurthy Ajay Chowdary", "company": "Practo" }
+    ],
+    "batch2016_2020": [
+      { "name": "Gaurav Labhane", "company": "Valuefy Solutions Private Limited" },
+      { "name": "Aditya Kale", "company": "Valuefy Solutions Private Limited" },
+      { "name": "Amit Ranjan", "company": "Valuefy Solutions Private Limited" },
+      { "name": "Yogesh Karan", "company": "GoProducts Engineering India LLP" },
+      { "name": "Shivam Dev Singh", "company": "GoProducts Engineering India LLP" },
+      { "name": "Nikhilesh Reddy", "company": "GoProducts Engineering India LLP" },
+      { "name": "Rutuja Pansare", "company": "L & T Infotech" },
+      { "name": "Aaradhya Deshpande", "company": "L & T Infotech" },
+      { "name": "Akshay Dinker Bhombe", "company": "L & T Infotech" },
+      { "name": "Emmanuel Franklin Marandi", "company": "L & T Infotech" },
+      { "name": "Tushar Dattatray Kadam", "company": "L & T Infotech" },
+      { "name": "Dhornala Bharadwaj", "company": "L & T Infotech" },
+      { "name": "Vishal Vaibhav Singh", "company": "L & T Infotech" },
+      { "name": "Todupunuri SaiPhanish", "company": "L & T Infotech" },
+      { "name": "Vivek Chole", "company": "ElasticRun" },
+      { "name": "Sachin Kanth", "company": "MAQ Software Private Limited" },
+      { "name": "Nilesh Soni", "company": "Ipetronik India Private Limited" },
+      { "name": "Shivam Upadhyay", "company": "Ipetronik India Private Limited" },
+      { "name": "Dheeraj Jutary", "company": "Virtusa Corporation" },
+      { "name": "Uphar Bhasin", "company": "Virtusa Corporation" },
+      { "name": "Amit Jangid", "company": "Virtusa Corporation" },
+      { "name": "Ramnath Shenoy", "company": "Affine Analytics Pvt. Ltd." },
+      { "name": "Navin Dhakad", "company": "Affine Analytics Pvt. Ltd." },
+      { "name": "Anuj Kumar Bhaskar", "company": "Affine Analytics Pvt. Ltd." },
+      { "name": "Abhinav Kumar", "company": "RIA Advisory LLP." }
+    ],
+    "mtech2019_2021": [
+      { "name": "Aniket Shivam", "company": "Siksha 'O' Anusandhan University" },
+      { "name": "Mrunali Vinodrao Tembhare", "company": "Infosys" },
+      { "name": "Sudarshan Narayan Sardar", "company": "PayPal and TCS Innovator" },
+      { "name": "Ashwini Kumar Singh", "company": "TCS" },
+      { "name": "Chandra Kant Dwivedi", "company": "TCS" },
+      { "name": "Gajula Sai Prasanna", "company": "TCS" },
+      { "name": "S Sajna", "company": "TCS" },
+      { "name": "Niketan Panchal", "company": "TCS Innovator and TCS Digital" }
+    ]
+  },
+  "lastUpdated": "08-06-2024"
+}

@@ -40,7 +40,8 @@ export async function loginUser(
     username: user.username,
     email: user.email,
     role: user.role,
-    facultyId: user.faculty_id
+    facultyId: user.faculty_id,
+    mustChangePassword: Boolean(user.password_change_required)
   };
 
   const token = jwt.sign(payload, config.jwtSecret, {
@@ -64,7 +65,7 @@ export async function loginUser(
 
 export async function getCurrentUserProfile(userId: number) {
   const user = await queryOne<any>(
-    `SELECT u.id, u.username, u.email, u.role, u.faculty_id, u.is_active, u.last_login, u.created_at,
+    `SELECT u.id, u.username, u.email, u.role, u.faculty_id, u.is_active, u.password_change_required, u.last_login, u.created_at,
             f.full_name, f.designation, f.profile_slug, f.profile_photo, f.status as faculty_status, f.rejection_reason
      FROM users u
      LEFT JOIN faculty f ON u.faculty_id = f.id
@@ -80,6 +81,7 @@ export async function getCurrentUserProfile(userId: number) {
     email: user.email,
     role: user.role,
     facultyId: user.faculty_id,
+    mustChangePassword: Boolean(user.password_change_required),
     isActive: Boolean(user.is_active),
     lastLogin: user.last_login,
     createdAt: user.created_at,
@@ -92,4 +94,38 @@ export async function getCurrentUserProfile(userId: number) {
       rejectionReason: user.rejection_reason
     } : null
   };
+}
+
+export async function changeOwnPassword(userId: number, currentPassword: string, newPassword: string): Promise<void> {
+  if (!currentPassword || typeof currentPassword !== 'string') {
+    throw new Error('Current password is required.');
+  }
+  if (typeof newPassword !== 'string' || newPassword.length < 12) {
+    throw new Error('New password must be at least 12 characters long.');
+  }
+  if (newPassword === currentPassword) {
+    throw new Error('Choose a new password that is different from your temporary password.');
+  }
+
+  const user = await queryOne<{ password_hash: string }>(
+    'SELECT password_hash FROM users WHERE id = ? AND is_active = 1;',
+    [userId]
+  );
+  if (!user || !(await bcrypt.compare(currentPassword, user.password_hash))) {
+    throw new Error('Current password is incorrect.');
+  }
+
+  const passwordHash = await bcrypt.hash(newPassword, 12);
+  await execute(
+    `UPDATE users SET password_hash = ?, password_change_required = 0, updated_at = datetime('now') WHERE id = ?;`,
+    [passwordHash, userId]
+  );
+
+  await recordAuditLog({
+    userId,
+    action: 'PASSWORD_CHANGED',
+    entityType: 'user',
+    entityId: userId,
+    newValue: { event: 'User changed their password' }
+  });
 }

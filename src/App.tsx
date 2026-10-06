@@ -21,21 +21,49 @@ import { FacultyLogin } from './pages/faculty/FacultyLogin.tsx';
 import { FacultyDashboard } from './pages/faculty/FacultyDashboard.tsx';
 import { FacultyProfileEditor } from './pages/faculty/FacultyProfileEditor.tsx';
 import { FacultyVersionHistory } from './pages/faculty/FacultyVersionHistory.tsx';
+import { ForcePasswordChange } from './pages/auth/ForcePasswordChange.tsx';
 
 // Technical Specs
 import { ArchitectureDocs } from './pages/docs/ArchitectureDocs.tsx';
 
+function publicPageFromPath(pathname: string): { tab: string; slug?: string } {
+  const match = pathname.match(/^\/people\/faculty(?:\/([^/]+))?\/?$/);
+  if (!match) return { tab: 'public-faculty' };
+  return match[1]
+    ? { tab: 'public-detail', slug: decodeURIComponent(match[1]) }
+    : { tab: 'public-faculty' };
+}
+
 function MainLayout() {
   const { user, isAdmin, isFaculty } = useAuth();
-  const [currentTab, setCurrentTab] = useState<string>('public-faculty');
-  const [selectedSlug, setSelectedSlug] = useState<string>('prof-suresh-satapathy');
+  const initialPage = publicPageFromPath(window.location.pathname);
+  const [currentTab, setCurrentTab] = useState<string>(initialPage.tab);
+  const [selectedSlug, setSelectedSlug] = useState<string>(initialPage.slug || '');
   const [selectedFacultyId, setSelectedFacultyId] = useState<number | undefined>(undefined);
+
+  React.useEffect(() => {
+    if (window.location.pathname === '/') {
+      window.history.replaceState({}, '', '/people/faculty');
+    }
+    const syncPath = () => {
+      const page = publicPageFromPath(window.location.pathname);
+      setCurrentTab(page.tab);
+      if (page.slug) setSelectedSlug(page.slug);
+    };
+    window.addEventListener('popstate', syncPath);
+    return () => window.removeEventListener('popstate', syncPath);
+  }, []);
 
   const handleNavigate = (tab: string, param?: any) => {
     if (tab === 'public-detail') {
       if (typeof param === 'string' && param.trim()) {
-        setSelectedSlug(param.trim());
+        const slug = param.trim();
+        setSelectedSlug(slug);
+        window.history.pushState({}, '', `/people/faculty/${encodeURIComponent(slug)}`);
       }
+    }
+    if (tab === 'public-faculty') {
+      window.history.pushState({}, '', '/people/faculty');
     }
     if ((tab === 'admin-faculty-edit' || tab === 'admin-faculty-history') && typeof param === 'number') {
       setSelectedFacultyId(param);
@@ -47,6 +75,7 @@ function MainLayout() {
   const handleSelectFacultyFromDirectory = (slug: string) => {
     setSelectedSlug(slug);
     setCurrentTab('public-detail');
+    window.history.pushState({}, '', `/people/faculty/${encodeURIComponent(slug)}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -56,7 +85,14 @@ function MainLayout() {
       <Header currentTab={currentTab} onNavigate={handleNavigate} />
 
       {/* Main Body */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className={currentTab === 'public-faculty'
+        ? 'flex-1 w-full'
+        : 'flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8'
+      }>
+        {user?.mustChangePassword ? (
+          <ForcePasswordChange />
+        ) : (
+          <>
         {/* PUBLIC DIRECTORY */}
         {currentTab === 'public-faculty' && (
           <PublicFacultyList onSelectFaculty={handleSelectFacultyFromDirectory} />
@@ -66,7 +102,7 @@ function MainLayout() {
         {currentTab === 'public-detail' && (
           <PublicFacultyDetail
             slug={selectedSlug}
-            onBack={() => setCurrentTab('public-faculty')}
+            onBack={() => handleNavigate('public-faculty')}
           />
         )}
 
@@ -237,6 +273,8 @@ function MainLayout() {
         {/* TECHNICAL ARCHITECTURE & DEPLOYMENT DOCS (STEPS 1-14) */}
         {currentTab === 'docs' && (
           <ArchitectureDocs />
+        )}
+          </>
         )}
       </main>
 

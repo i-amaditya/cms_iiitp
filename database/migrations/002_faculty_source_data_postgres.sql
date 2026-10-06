@@ -1,0 +1,2 @@
+ALTER TABLE faculty
+ADD COLUMN IF NOT EXISTS profile_data TEXT;

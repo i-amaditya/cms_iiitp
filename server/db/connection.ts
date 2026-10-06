@@ -1,10 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import initSqlJs, { type Database as SqlJsDatabase } from 'sql.js';
 import { config } from '../config/index.ts';
 
 let sqlJsDb: SqlJsDatabase | null = null;
 let isInitialized = false;
+
+const facultyDataPath = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  '../data/faculty_profiles.json'
+);
+const facultyImportVersion = 'iiitp-faculty-profiles-v2-assets';
 
 // Ensure storage directory exists
 const dataDir = path.dirname(config.db.sqlitePath);
@@ -136,6 +143,7 @@ export async function initDatabase(): Promise<void> {
       office_room TEXT,
       profile_photo TEXT,
       profile_slug TEXT NOT NULL UNIQUE,
+      profile_data TEXT,
       highest_qualification TEXT,
       specialization TEXT,
       research_interests TEXT,
@@ -165,6 +173,7 @@ export async function initDatabase(): Promise<void> {
       username TEXT NOT NULL UNIQUE,
       email TEXT NOT NULL UNIQUE,
       password_hash TEXT NOT NULL,
+      password_change_required INTEGER NOT NULL DEFAULT 0,
       role TEXT NOT NULL DEFAULT 'FACULTY',
       faculty_id INTEGER REFERENCES faculty(id),
       is_active INTEGER NOT NULL DEFAULT 1,
@@ -254,6 +263,23 @@ export async function initDatabase(): Promise<void> {
     );
   `);
 
+  const facultyColumns = db.exec('PRAGMA table_info(faculty);')[0]?.values || [];
+  if (!facultyColumns.some(column => column[1] === 'profile_data')) {
+    db.run('ALTER TABLE faculty ADD COLUMN profile_data TEXT;');
+  }
+
+  const userColumns = db.exec('PRAGMA table_info(users);')[0]?.values || [];
+  if (!userColumns.some(column => column[1] === 'password_change_required')) {
+    db.run('ALTER TABLE users ADD COLUMN password_change_required INTEGER NOT NULL DEFAULT 0;');
+  }
+
+  db.run(`
+    CREATE TABLE IF NOT EXISTS cms_data_imports (
+      import_key TEXT PRIMARY KEY,
+      imported_at TEXT NOT NULL DEFAULT (datetime('now'))
+    );
+  `);
+
   // Check if we need to seed
   const countRes = db.exec("SELECT COUNT(*) AS count FROM users;");
   const userCount = (countRes[0]?.values[0]?.[0] as number) || 0;
@@ -270,8 +296,274 @@ export async function initDatabase(): Promise<void> {
     `);
   }
 
+  importFacultyProfiles(db);
   saveDatabaseToDisk();
   isInitialized = true;
+}
+
+type ImportedFacultyEntry = {
+  title?: string;
+  authors?: string;
+  journal?: string;
+  journal_or_conference?: string;
+  link?: string;
+  url?: string;
+  doi?: string;
+  publication_type?: string;
+};
+
+function profileNameFromSlug(slug: string, suppliedName?: string): string {
+  if (suppliedName?.trim()) return suppliedName.trim();
+
+  return slug.split('-').map(part => {
+    if (/^[a-z]$/i.test(part)) return `${part.toUpperCase()}.`;
+    if (/^km$/i.test(part)) return 'K. M.';
+    return `${part.charAt(0).toUpperCase()}${part.slice(1)}`;
+  }).join(' ');
+}
+
+function cleanProfileLink(value: unknown): string | null {
+  if (typeof value !== 'string') return null;
+  const trimmed = value.trim();
+  return trimmed && trimmed !== '#' && !/^n\/?a$/i.test(trimmed) ? trimmed : null;
+}
+
+function createAssetUrlResolver(directory: string, urlPrefix: string): (value: unknown) => string | null {
+  if (!fs.existsSync(directory)) {
+    throw new Error(`Faculty asset directory was not found: ${directory}`);
+  }
+
+  const fileNames = new Map(
+    fs.readdirSync(directory, { withFileTypes: true })
+      .filter(entry => entry.isFile())
+      .map(entry => [entry.name.toLowerCase(), entry.name])
+  );
+
+  return (value: unknown): string | null => {
+    const pathValue = cleanProfileLink(value);
+    if (!pathValue) return null;
+
+    const requestedName = path.basename(pathValue.replace(/\\/g, '/'));
+    const actualName = fileNames.get(requestedName.toLowerCase());
+    return actualName
+      ? `${urlPrefix}/${encodeURIComponent(actualName)}`
+      : null;
+  };
+}
+
+function importFacultyProfiles(db: SqlJsDatabase): void {
+  const existingImport = db.exec(
+    'SELECT import_key FROM cms_data_imports WHERE import_key = ?;',
+    [facultyImportVersion]
+  );
+  if (existingImport.length > 0 && existingImport[0].values.length > 0) return;
+
+  if (!fs.existsSync(facultyDataPath)) {
+    throw new Error(`Faculty data file was not found: ${facultyDataPath}`);
+  }
+
+  const profiles = JSON.parse(fs.readFileSync(facultyDataPath, 'utf8')) as Record<string, Record<string, unknown>>;
+  const departmentIds: Record<string, number> = { CSE: 1, ECE: 2, ASH: 3 };
+  const departmentNames: Record<string, string> = {
+    CSE: 'Computer Science & Engineering',
+    ECE: 'Electronics & Communication Engineering',
+    ASH: 'Applied Sciences & Humanities'
+  };
+  const resolveFacultyPhoto = createAssetUrlResolver(
+    path.join(config.uploadDir, 'faculty_photos'),
+    '/uploads/faculty/faculty_photos'
+  );
+  const resolveFacultyResume = createAssetUrlResolver(
+    path.join(config.uploadDir, 'resume'),
+    '/uploads/faculty/resume'
+  );
+
+  db.run('BEGIN TRANSACTION;');
+  try {
+    for (const [department, id] of Object.entries(departmentIds)) {
+      db.run(
+        `INSERT INTO departments (id, name, short_name, slug, is_active, display_order)
+         VALUES (?, ?, ?, ?, 1, ?)
+         ON CONFLICT(slug) DO UPDATE SET name = excluded.name, short_name = excluded.short_name, is_active = 1;`,
+        [id, departmentNames[department], department, department.toLowerCase(), id]
+      );
+    }
+
+    const sourceSlugs = new Set(Object.keys(profiles));
+    for (const sampleSlug of ['prof-suresh-satapathy', 'dr-pooja-kulkarni', 'dr-anand-deshmukh']) {
+      if (sourceSlugs.has(sampleSlug)) continue;
+      db.run(
+        `DELETE FROM faculty_education WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run(
+        `DELETE FROM faculty_experience WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run(
+        `DELETE FROM faculty_publications WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run(
+        `DELETE FROM faculty_patents WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run(
+        `DELETE FROM faculty_profile_versions WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run(
+        `UPDATE users SET faculty_id = NULL WHERE faculty_id IN (SELECT id FROM faculty WHERE profile_slug = ?);`,
+        [sampleSlug]
+      );
+      db.run('DELETE FROM faculty WHERE profile_slug = ?;', [sampleSlug]);
+    }
+
+    let displayOrder = 0;
+    for (const [slug, data] of Object.entries(profiles)) {
+      const name = profileNameFromSlug(slug, typeof data.name === 'string' ? data.name : undefined);
+      const nameParts = name.split(/\s+/);
+      const firstName = nameParts[0] || name;
+      const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : name;
+      const middleName = nameParts.length > 2 ? nameParts.slice(1, -1).join(' ') : null;
+      const department = typeof data.department === 'string' ? data.department.toUpperCase() : '';
+      const departmentId = departmentIds[department];
+      const email = cleanProfileLink(data.email);
+      const designation = typeof data.designation === 'string' ? data.designation.trim() : '';
+
+      if (!departmentId || !email || !designation) {
+        throw new Error(`Faculty profile '${slug}' is missing a valid department, email, or designation.`);
+      }
+
+      const expertise = typeof data.expertise === 'string' ? data.expertise.trim() : '';
+      const photo = resolveFacultyPhoto(data.image);
+      const resume = resolveFacultyResume(data.resume);
+      const profileData = {
+        ...data,
+        image: photo,
+        resume
+      };
+      const employeeId = `IIITP-${slug.toUpperCase().replace(/[^A-Z0-9]+/g, '-').slice(0, 40)}`;
+      const facultyType = /adjunct/i.test(designation)
+        ? 'Adjunct'
+        : /\(t\)/i.test(designation)
+          ? 'Temporary'
+          : 'Regular';
+
+      db.run(
+        `INSERT INTO faculty (
+          employee_id, title, first_name, middle_name, last_name, full_name,
+          designation, department_id, faculty_type, email, phone, profile_photo,
+          profile_slug, highest_qualification, specialization, research_interests,
+          areas_of_expertise, biography, research_keywords, google_scholar_url,
+          orcid_url, scopus_url, linkedin_url, display_order, status, is_active, profile_data
+        ) VALUES (?, 'Dr.', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'PUBLISHED', 1, ?)
+        ON CONFLICT(profile_slug) DO UPDATE SET
+          employee_id = excluded.employee_id,
+          first_name = excluded.first_name,
+          middle_name = excluded.middle_name,
+          last_name = excluded.last_name,
+          full_name = excluded.full_name,
+          designation = excluded.designation,
+          department_id = excluded.department_id,
+          faculty_type = excluded.faculty_type,
+          email = excluded.email,
+          phone = excluded.phone,
+          profile_photo = excluded.profile_photo,
+          highest_qualification = excluded.highest_qualification,
+          specialization = excluded.specialization,
+          research_interests = excluded.research_interests,
+          areas_of_expertise = excluded.areas_of_expertise,
+          biography = excluded.biography,
+          research_keywords = excluded.research_keywords,
+          google_scholar_url = excluded.google_scholar_url,
+          orcid_url = excluded.orcid_url,
+          scopus_url = excluded.scopus_url,
+          linkedin_url = excluded.linkedin_url,
+          display_order = excluded.display_order,
+          status = 'PUBLISHED',
+          is_active = 1,
+          profile_data = excluded.profile_data;`,
+        [
+          employeeId,
+          firstName,
+          middleName,
+          lastName,
+          name,
+          designation,
+          departmentId,
+          facultyType,
+          email,
+          cleanProfileLink(data.phone),
+          photo,
+          slug,
+          typeof data.education === 'string' ? data.education.trim() : null,
+          expertise || null,
+          expertise || null,
+          expertise || null,
+          typeof data.bio === 'string' ? data.bio.replace(/\\n/g, '\n').trim() : null,
+          expertise || null,
+          cleanProfileLink(data.google_scholar),
+          cleanProfileLink(data.orcid),
+          cleanProfileLink(data.scopus),
+          cleanProfileLink(data.linkedin),
+          displayOrder++,
+          JSON.stringify(profileData)
+        ]
+      );
+
+      const faculty = db.exec('SELECT id FROM faculty WHERE profile_slug = ?;', [slug]);
+      const facultyId = faculty[0]?.values[0]?.[0];
+      if (typeof facultyId !== 'number') {
+        throw new Error(`Could not resolve imported faculty profile '${slug}'.`);
+      }
+
+      db.run('DELETE FROM faculty_publications WHERE faculty_id = ?;', [facultyId]);
+      const rawPublications = data.publications;
+      const publications = Array.isArray(rawPublications)
+        ? rawPublications
+        : typeof rawPublications === 'string' && rawPublications.trim()
+          ? [rawPublications]
+          : [];
+
+      for (const publication of publications) {
+        const item = typeof publication === 'string'
+          ? { title: publication } satisfies ImportedFacultyEntry
+          : publication && typeof publication === 'object'
+            ? publication as ImportedFacultyEntry
+            : null;
+        if (!item) continue;
+
+        const publicationTitle = typeof item.title === 'string' ? item.title.trim() : '';
+        if (!publicationTitle) continue;
+        const journal = item.journal || item.journal_or_conference || '';
+        const years = typeof journal === 'string' ? journal.match(/\b(?:19|20)\d{2}\b/g) : null;
+        const year = years?.length ? Number(years[years.length - 1]) : null;
+        db.run(
+          `INSERT INTO faculty_publications (
+            faculty_id, title, authors, journal_or_conference, publication_year, doi, url, publication_type
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?);`,
+          [
+            facultyId,
+            publicationTitle,
+            typeof item.authors === 'string' ? item.authors : '',
+            typeof journal === 'string' ? journal : '',
+            year,
+            cleanProfileLink(item.doi),
+            cleanProfileLink(item.link || item.url),
+            typeof item.publication_type === 'string' ? item.publication_type : 'Journal'
+          ]
+        );
+      }
+    }
+
+    db.run('INSERT INTO cms_data_imports (import_key) VALUES (?);', [facultyImportVersion]);
+    db.run('COMMIT;');
+    console.log(`[CMS Database] Imported ${Object.keys(profiles).length} IIIT Pune faculty profiles.`);
+  } catch (error) {
+    db.run('ROLLBACK;');
+    throw error;
+  }
 }
 
 async function seedInitialData(db: SqlJsDatabase) {

@@ -18,6 +18,11 @@ export function requireRole(allowedRoles: Array<'SUPER_ADMIN' | 'ADMIN' | 'FACUL
       return;
     }
 
+    if (req.user.mustChangePassword) {
+      res.status(403).json({ error: 'Change your temporary password before accessing protected services.' });
+      return;
+    }
+
     next();
   };
 }

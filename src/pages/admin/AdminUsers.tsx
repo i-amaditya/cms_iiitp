@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useAuth } from '../../context/AuthContext.tsx';
 import { User, Faculty } from '../../types/index.ts';
 import { api } from '../../utils/api.ts';
 import { Modal } from '../../components/Modal.tsx';
@@ -10,10 +11,21 @@ import {
   CheckCircle2,
   XCircle,
   UserCheck,
-  UserPlus
+  UserPlus,
+  Download,
+  AlertTriangle
 } from 'lucide-react';
 
+interface ProvisionedCredential {
+  name: string;
+  email: string;
+  facultyId: number;
+  department: string;
+  temporaryPassword: string;
+}
+
 export const AdminUsers: React.FC = () => {
+  const { isSuperAdmin } = useAuth();
   const [users, setUsers] = useState<User[]>([]);
   const [facultyList, setFacultyList] = useState<Faculty[]>([]);
   const [loading, setLoading] = useState(true);
@@ -43,7 +55,9 @@ export const AdminUsers: React.FC = () => {
   const [newPassword, setNewPassword] = useState('');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [accountProvisionError, setAccountProvisionError] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [provisionedCredentials, setProvisionedCredentials] = useState<ProvisionedCredential[] | null>(null);
 
   const fetchUsers = async () => {
     try {
@@ -152,6 +166,52 @@ export const AdminUsers: React.FC = () => {
     }
   };
 
+  const handleProvisionFacultyAccounts = async () => {
+    if (!window.confirm('This will generate a new temporary password for every active faculty account and invalidate the current faculty passwords. Continue?')) {
+      return;
+    }
+
+    setAccountProvisionError(null);
+    setSuccessMessage(null);
+    setSaving(true);
+    setProvisionedCredentials(null);
+    try {
+      const result = await api.post<{ message: string; credentials: ProvisionedCredential[] }>(
+        '/api/admin/faculty-accounts/provision'
+      );
+      setProvisionedCredentials(result.credentials);
+      setSuccessMessage(result.message);
+      await fetchUsers();
+    } catch (err) {
+      setAccountProvisionError(err instanceof Error ? err.message : 'Faculty account provisioning failed.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const downloadCredentials = () => {
+    if (!provisionedCredentials?.length) return;
+    const escapeCsv = (value: string | number) => `"${String(value).replace(/"/g, '""')}"`;
+    const rows = [
+      ['Faculty Name', 'Department', 'Login ID (Email)', 'Temporary Password'],
+      ...provisionedCredentials.map(credential => [
+        credential.name,
+        credential.department,
+        credential.email,
+        credential.temporaryPassword
+      ])
+    ];
+    const csv = `\uFEFF${rows.map(row => row.map(escapeCsv).join(',')).join('\r\n')}`;
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = 'iiitp-faculty-temporary-credentials.csv';
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -178,6 +238,73 @@ export const AdminUsers: React.FC = () => {
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
           <span className="font-semibold">{successMessage}</span>
         </div>
+      )}
+
+      {isSuperAdmin && (
+        <section className="rounded-xl border border-amber-300 bg-amber-50 p-4 sm:p-5">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-sm font-bold text-amber-950">Faculty login credentials</h2>
+              <p className="mt-1 max-w-3xl text-xs leading-relaxed text-amber-900">
+                Generate a unique temporary password for each active faculty member. Their institute email is the login ID;
+                each member must change the temporary password before accessing or editing their own profile.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={handleProvisionFacultyAccounts}
+              disabled={saving}
+              className="shrink-0 rounded-lg bg-amber-700 px-4 py-2.5 text-xs font-bold text-white transition hover:bg-amber-800 disabled:opacity-50"
+            >
+              {saving ? 'Generating…' : 'Generate / Reset Faculty Credentials'}
+            </button>
+          </div>
+
+          {accountProvisionError && (
+            <div role="alert" className="mt-4 rounded-lg border border-rose-300 bg-rose-50 p-3 text-xs font-semibold text-rose-900">
+              {accountProvisionError}
+            </div>
+          )}
+
+          {provisionedCredentials && (
+            <div className="mt-4 space-y-3 border-t border-amber-200 pt-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p className="flex items-start gap-2 text-xs font-semibold text-amber-950">
+                  <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
+                  Temporary passwords are shown only once. Download and deliver this file securely; generating them again invalidates these passwords.
+                </p>
+                <button
+                  type="button"
+                  onClick={downloadCredentials}
+                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg border border-amber-400 bg-white px-3 py-2 text-xs font-bold text-amber-950 hover:bg-amber-100"
+                >
+                  <Download className="h-4 w-4" />
+                  Download credentials CSV
+                </button>
+              </div>
+              <div className="max-h-80 overflow-auto rounded-lg border border-amber-200 bg-white">
+                <table className="w-full text-left text-xs">
+                  <thead className="sticky top-0 bg-amber-100 text-[10px] uppercase text-amber-950">
+                    <tr>
+                      <th className="px-3 py-2">Faculty</th>
+                      <th className="px-3 py-2">Login ID</th>
+                      <th className="px-3 py-2">Temporary Password</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-amber-100">
+                    {provisionedCredentials.map(credential => (
+                      <tr key={credential.facultyId}>
+                        <td className="px-3 py-2 font-semibold text-slate-800">{credential.name}</td>
+                        <td className="px-3 py-2 font-mono text-slate-700">{credential.email}</td>
+                        <td className="px-3 py-2 font-mono text-slate-900">{credential.temporaryPassword}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </section>
       )}
 
       {loading ? (
@@ -321,9 +448,10 @@ export const AdminUsers: React.FC = () => {
             <input
               type="password"
               required
+              minLength={12}
               value={formData.password}
               onChange={e => setFormData({ ...formData, password: e.target.value })}
-              placeholder="Minimum 6 characters"
+              placeholder="Minimum 12 characters"
               className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-blue-600 focus:outline-hidden"
             />
           </div>
@@ -369,7 +497,7 @@ export const AdminUsers: React.FC = () => {
             </button>
             <button
               type="submit"
-              disabled={saving}
+              disabled={saving || formData.password.length < 12}
               className="px-4 py-2 rounded-lg bg-blue-900 hover:bg-blue-800 text-white text-xs font-semibold"
             >
               {saving ? 'Creating...' : 'Provision User'}
@@ -477,7 +605,7 @@ export const AdminUsers: React.FC = () => {
 
           <p className="text-xs text-slate-600">
             Enter a new password for <span className="font-bold">{selectedUser?.username}</span>.
-            The password will be hashed using bcrypt (salt factor 10) and updated immediately.
+            The password will be hashed securely, and the user must change it at their next sign-in.
           </p>
 
           <div>
@@ -487,9 +615,10 @@ export const AdminUsers: React.FC = () => {
             <input
               type="password"
               required
+              minLength={12}
               value={newPassword}
               onChange={e => setNewPassword(e.target.value)}
-              placeholder="Minimum 6 characters"
+              placeholder="Minimum 12 characters"
               className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-blue-600 focus:outline-hidden"
             />
           </div>
@@ -504,7 +633,7 @@ export const AdminUsers: React.FC = () => {
             </button>
             <button
               type="submit"
-              disabled={saving || !newPassword}
+              disabled={saving || newPassword.length < 12}
               className="px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold"
             >
               {saving ? 'Resetting...' : 'Confirm Reset Password'}

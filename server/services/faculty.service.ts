@@ -37,6 +37,7 @@ export interface FacultyProfileComplete {
   research_interests?: string | null;
   areas_of_expertise?: string | null;
   biography?: string | null;
+  source_data?: Record<string, unknown> | null;
   academic_experience?: string | null;
   industry_experience?: string | null;
   research_keywords?: string | null;
@@ -124,7 +125,7 @@ export async function getPublicFacultyBySlug(
       f.designation, f.department_id, f.faculty_type, f.email, f.alternate_email, f.phone,
       f.office_location, f.office_room, f.profile_photo, f.profile_slug, f.highest_qualification,
       f.specialization, f.research_interests, f.areas_of_expertise, f.biography,
-      f.academic_experience, f.industry_experience, f.research_keywords,
+      f.academic_experience, f.industry_experience, f.research_keywords, f.profile_data,
       f.google_scholar_url, f.orcid_url, f.scopus_url, f.researchgate_url, f.vidwan_url, f.linkedin_url,
       f.display_order, f.status, f.is_active,
       d.name as department_name, d.short_name as department_short_name, d.slug as department_slug
@@ -154,8 +155,10 @@ export async function getPublicFacultyBySlug(
     query('SELECT * FROM faculty_patents WHERE faculty_id = ? ORDER BY filing_date DESC, id DESC;', [faculty.id])
   ]);
 
+  const { profile_data: profileData, ...publicFaculty } = faculty;
   return {
-    ...faculty,
+    ...publicFaculty,
+    source_data: profileData ? JSON.parse(profileData) as Record<string, unknown> : null,
     education,
     experience,
     publications,

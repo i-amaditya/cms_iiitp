@@ -9,8 +9,8 @@ interface FacultyLoginProps {
 
 export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchToAdmin }) => {
   const { login } = useAuth();
-  const [identifier, setIdentifier] = useState('faculty.cse@iiitp.ac.in');
-  const [password, setPassword] = useState('Faculty@IIITP2026');
+  const [identifier, setIdentifier] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -26,11 +26,6 @@ export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchT
     } finally {
       setLoading(false);
     }
-  };
-
-  const handlePreFill = (email: string) => {
-    setIdentifier(email);
-    setPassword('Faculty@IIITP2026');
   };
 
   return (
@@ -55,7 +50,7 @@ export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchT
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
-            Institute Email or Username
+            Institute Email
           </label>
           <div className="relative">
             <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
@@ -64,7 +59,8 @@ export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchT
               required
               value={identifier}
               onChange={(e) => setIdentifier(e.target.value)}
-              placeholder="faculty.cse@iiitp.ac.in"
+              autoComplete="username"
+              placeholder="name@iiitp.ac.in"
               className="w-full pl-9 pr-3 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-purple-600 focus:outline-hidden"
             />
           </div>
@@ -79,6 +75,7 @@ export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchT
             <input
               type="password"
               required
+              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
@@ -97,27 +94,10 @@ export const FacultyLogin: React.FC<FacultyLoginProps> = ({ onSuccess, onSwitchT
         </button>
       </form>
 
-      {/* Demo Credentials Quick Switcher */}
       <div className="mt-6 pt-5 border-t border-slate-100 text-xs text-slate-600 space-y-2">
-        <p className="font-semibold text-slate-800">Quick Test Faculty Accounts:</p>
-        <div className="grid grid-cols-2 gap-2">
-          <button
-            type="button"
-            onClick={() => handlePreFill('faculty.cse@iiitp.ac.in')}
-            className="p-2 rounded bg-slate-50 hover:bg-purple-50 text-left border border-slate-200 transition-colors"
-          >
-            <div className="font-bold text-slate-800">Prof. Satapathy</div>
-            <div className="text-[10px] text-slate-500 font-mono">faculty.cse@...</div>
-          </button>
-          <button
-            type="button"
-            onClick={() => handlePreFill('faculty.ece@iiitp.ac.in')}
-            className="p-2 rounded bg-slate-50 hover:bg-purple-50 text-left border border-slate-200 transition-colors"
-          >
-            <div className="font-bold text-slate-800">Dr. Kulkarni</div>
-            <div className="text-[10px] text-slate-500 font-mono">faculty.ece@...</div>
-          </button>
-        </div>
+        <p className="text-center text-slate-600">
+          Use the temporary password issued by your administrator. On first sign-in, you will be asked to set a new password.
+        </p>
 
         <div className="text-center pt-2">
           <button

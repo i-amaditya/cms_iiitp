@@ -9,6 +9,7 @@ export interface AuthUser {
   email: string;
   role: 'SUPER_ADMIN' | 'ADMIN' | 'FACULTY';
   facultyId: number | null;
+  mustChangePassword: boolean;
 }
 
 export interface AuthenticatedRequest extends Request {
@@ -27,8 +28,8 @@ export async function authenticateToken(req: AuthenticatedRequest, res: Response
     const decoded = jwt.verify(token, config.jwtSecret) as AuthUser;
 
     // Verify user still exists and is active in database
-    const dbUser = await queryOne<{ id: number; username: string; email: string; role: 'SUPER_ADMIN' | 'ADMIN' | 'FACULTY'; faculty_id: number | null; is_active: number }>(
-      'SELECT id, username, email, role, faculty_id, is_active FROM users WHERE id = ?;',
+    const dbUser = await queryOne<{ id: number; username: string; email: string; role: 'SUPER_ADMIN' | 'ADMIN' | 'FACULTY'; faculty_id: number | null; is_active: number; password_change_required: number }>(
+      'SELECT id, username, email, role, faculty_id, is_active, password_change_required FROM users WHERE id = ?;',
       [decoded.id]
     );
 
@@ -42,7 +43,8 @@ export async function authenticateToken(req: AuthenticatedRequest, res: Response
       username: dbUser.username,
       email: dbUser.email,
       role: dbUser.role,
-      facultyId: dbUser.faculty_id
+      facultyId: dbUser.faculty_id,
+      mustChangePassword: Boolean(dbUser.password_change_required)
     };
 
     next();
@@ -70,8 +72,8 @@ export async function optionalAuthenticateToken(req: AuthenticatedRequest, _res:
   try {
     const decoded = jwt.verify(token, config.jwtSecret) as any;
     if (decoded?.id) {
-      const dbUser = await queryOne<{ id: number; username: string; email: string; role: 'SUPER_ADMIN' | 'ADMIN' | 'FACULTY'; faculty_id: number | null; is_active: number }>(
-        'SELECT id, username, email, role, faculty_id, is_active FROM users WHERE id = ?;',
+      const dbUser = await queryOne<{ id: number; username: string; email: string; role: 'SUPER_ADMIN' | 'ADMIN' | 'FACULTY'; faculty_id: number | null; is_active: number; password_change_required: number }>(
+        'SELECT id, username, email, role, faculty_id, is_active, password_change_required FROM users WHERE id = ?;',
         [decoded.id]
       );
 
@@ -81,12 +83,21 @@ export async function optionalAuthenticateToken(req: AuthenticatedRequest, _res:
           username: dbUser.username,
           email: dbUser.email,
           role: dbUser.role,
-          facultyId: dbUser.faculty_id
+          facultyId: dbUser.faculty_id,
+          mustChangePassword: Boolean(dbUser.password_change_required)
         };
       }
     }
   } catch {
     // Ignore invalid/expired tokens for optional authentication
+  }
+  next();
+}
+
+export function requirePasswordChangeComplete(req: AuthenticatedRequest, res: Response, next: NextFunction): void {
+  if (req.user?.mustChangePassword) {
+    res.status(403).json({ error: 'Change your temporary password before accessing protected services.' });
+    return;
   }
   next();
 }

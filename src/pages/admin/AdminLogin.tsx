@@ -9,8 +9,8 @@ interface AdminLoginProps {
 
 export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess, onSwitchToFaculty }) => {
   const { login } = useAuth();
-  const [identifier, setIdentifier] = useState('admin@iiitp.ac.in');
-  const [password, setPassword] = useState('Admin@IIITP2026');
+  const [identifier, setIdentifier] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -57,6 +57,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess, onSwitchToFac
             <input
               type="text"
               required
+              autoComplete="username"
               value={identifier}
               onChange={(e) => setIdentifier(e.target.value)}
               placeholder="admin@iiitp.ac.in"
@@ -74,6 +75,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess, onSwitchToFac
             <input
               type="password"
               required
+              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
@@ -92,14 +94,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onSuccess, onSwitchToFac
         </button>
       </form>
 
-      {/* Pre-fill helper */}
       <div className="mt-6 pt-5 border-t border-slate-100 text-xs text-slate-600 space-y-3">
-        <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
-          <p className="font-bold text-blue-900 mb-1">Seed Admin Account:</p>
-          <p className="text-[11px] text-blue-800">Email: <code className="font-mono font-bold">admin@iiitp.ac.in</code></p>
-          <p className="text-[11px] text-blue-800">Password: <code className="font-mono font-bold">Admin@IIITP2026</code></p>
-        </div>
-
         <div className="text-center">
           <button
             type="button"

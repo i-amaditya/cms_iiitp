@@ -259,7 +259,8 @@ export const ArchitectureDocs: React.FC = () => {
                 <h4 className="font-bold text-slate-900 text-sm">5. users (RBAC & Auth)</h4>
                 <p className="text-slate-600">
                   System-wide authentication accounts. Stores bcrypt password hashes, roles (SUPER_ADMIN, ADMIN, FACULTY),
-                  and foreign key linking a faculty account to exactly one faculty record.
+                  a first-login password-change flag, and a foreign key linking a faculty account to exactly one faculty record.
+                  Faculty sign in with their institute email and can edit only their linked profile.
                 </p>
                 <div className="font-mono text-[11px] text-slate-500 bg-white p-2 rounded border border-slate-200">
                   FK: <code>faculty_id → faculty.id (ON DELETE SET NULL)</code>
@@ -545,6 +546,7 @@ if IDs don't match → HTTP 403 Forbidden`}
                   <div><span className="text-blue-700 font-bold">POST</span> /api/admin/faculty/:id/approve <span className="text-slate-500 font-sans">(Publish profile)</span></div>
                   <div><span className="text-blue-700 font-bold">POST</span> /api/admin/faculty/:id/reject <span className="text-slate-500 font-sans">(Request revision with reason)</span></div>
                   <div><span className="text-blue-700 font-bold">POST</span> /api/admin/faculty/reorder <span className="text-slate-500 font-sans">(Update display order)</span></div>
+                  <div><span className="text-blue-700 font-bold">POST</span> /api/admin/faculty-accounts/provision <span className="text-slate-500 font-sans">(SUPER_ADMIN only; rotate all faculty temporary passwords)</span></div>
                 </div>
               </div>
             </div>

@@ -23,7 +23,8 @@ import {
   getAllUsers,
   createUser,
   updateUser,
-  resetUserPassword
+  resetUserPassword,
+  provisionAllFacultyAccounts
 } from '../services/user.service.ts';
 import { getAuditLogs } from '../services/audit.service.ts';
 import { queryOne } from '../db/connection.ts';
@@ -33,6 +34,18 @@ const router = Router();
 // Only SUPER_ADMIN and ADMIN can access admin routes
 router.use(authenticateToken);
 router.use(requireRole(['SUPER_ADMIN', 'ADMIN']));
+
+router.post('/faculty-accounts/provision', requireRole(['SUPER_ADMIN']), async (req: AuthenticatedRequest, res) => {
+  try {
+    const credentials = await provisionAllFacultyAccounts(req.user!.id, req);
+    res.json({
+      message: `Generated temporary credentials for ${credentials.length} faculty accounts.`,
+      credentials
+    });
+  } catch (err: any) {
+    res.status(400).json({ error: err.message || 'Faculty accounts could not be provisioned.' });
+  }
+});
 
 // -------------------------------------------------------------
 // DASHBOARD STATS

@@ -21,6 +21,52 @@ interface PublicFacultyDetailProps {
   onBack: () => void;
 }
 
+interface DisplaySourceItem {
+  title: string;
+  details: string[];
+  link?: string;
+}
+
+function isSafeResumeUrl(value: string): boolean {
+  return /^https?:\/\//i.test(value) || value.startsWith('/uploads/faculty/resume/');
+}
+
+function displaySourceItems(value: unknown): DisplaySourceItem[] {
+  const entries: unknown[] = Array.isArray(value) ? value : [value];
+  return entries.flatMap((entry): DisplaySourceItem[] => {
+    if (typeof entry === 'string') {
+      const text = entry.replace(/\\n/g, '\n').trim();
+      if (!text) return [];
+      return /^https?:\/\//i.test(text)
+        ? [{ title: 'Research profile link', details: [], link: text }]
+        : [{ title: text, details: [] }];
+    }
+    if (!entry || typeof entry !== 'object') return [];
+
+    const fields = entry as Record<string, unknown>;
+    const title = typeof fields.title === 'string' ? fields.title.trim() : '';
+    const details: string[] = Object.entries(fields)
+      .filter(([key, field]) => key !== 'title' && key !== 'link' && key !== 'url' && typeof field === 'string' && field.trim())
+      .map(([key, field]) => {
+        const label = key.replace(/_/g, ' ').replace(/^\w/, character => character.toUpperCase());
+        return `${label}: ${(field as string).replace(/\\n/g, '\n').trim()}`;
+      });
+    const rawLink = typeof fields.link === 'string'
+      ? fields.link
+      : typeof fields.url === 'string'
+        ? fields.url
+        : undefined;
+    const link = rawLink && /^https?:\/\//i.test(rawLink) ? rawLink : undefined;
+
+    if (!title && !details.length) return [];
+    return [{
+      title: title || details.shift() || 'Academic activity',
+      details,
+      link: link && link !== '#' ? link : undefined
+    }];
+  });
+}
+
 export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, onBack }) => {
   const [faculty, setFaculty] = useState<Faculty | null>(null);
   const [loading, setLoading] = useState(true);
@@ -74,6 +120,16 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
     );
   }
 
+  const sourceData = faculty.source_data || {};
+  const sourceSections = [
+    ['Books & Chapters', sourceData.books_chapters],
+    ['Seminars & Invited Talks', sourceData.seminars],
+    ['Research Projects', sourceData.projects],
+    ['Student Supervision', sourceData.supervisions],
+    ['Patents', sourceData.patents]
+  ] as const;
+  const researchLinks = displaySourceItems(sourceData.researchLinks).filter(item => item.link);
+
   return (
     <div className="space-y-6">
       {/* Top Preview Notice for unapproved states */}
@@ -114,14 +170,21 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
         <div className="h-32 bg-gradient-to-r from-[#0F2042] via-[#1E3A8A] to-[#2563EB] relative" />
         <div className="px-6 pb-6 pt-0 relative">
           <div className="flex flex-col sm:flex-row items-center sm:items-end gap-5 -mt-16 mb-4">
-            <img
-              src={faculty.profile_photo || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80'}
-              alt={faculty.full_name}
-              className="w-32 h-32 rounded-2xl object-cover border-4 border-white shadow-lg bg-white shrink-0"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80';
-              }}
-            />
+            <div className="w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-lg bg-blue-100 text-blue-900 shrink-0 relative flex items-center justify-center">
+              <span className="text-3xl font-black" aria-hidden="true">
+                {faculty.full_name.split(/\s+/).slice(0, 2).map(part => part[0]).join('')}
+              </span>
+              {faculty.profile_photo && (
+                <img
+                  src={faculty.profile_photo}
+                  alt={faculty.full_name}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              )}
+            </div>
             <div className="space-y-1 text-center sm:text-left min-w-0">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-900 border border-blue-200">
                 <span>{faculty.department_name}</span>
@@ -131,7 +194,7 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
               <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 {faculty.full_name}
               </h1>
-              <p className="text-sm font-semibold text-blue-700">
+              <p className="text-sm font-semibold text-blue-700 whitespace-pre-line">
                 {faculty.designation}
               </p>
               {faculty.highest_qualification && (
@@ -351,6 +414,87 @@ export const PublicFacultyDetail: React.FC<PublicFacultyDetailProps> = ({ slug, 
                     ))}
                   </div>
                 </div>
+              )}
+
+              {sourceSections.some(([, value]) => displaySourceItems(value).length > 0) && (
+                <div className="space-y-5 pt-4 border-t border-slate-100">
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500">
+                    Additional Academic Activity
+                  </h3>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    {sourceSections.map(([heading, value]) => {
+                      const items = displaySourceItems(value);
+                      if (!items.length) return null;
+                      return (
+                        <section key={heading} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                          <h4 className="text-xs font-bold uppercase tracking-wider text-blue-900 mb-3">{heading}</h4>
+                          <ul className="space-y-3">
+                            {items.map((item, index) => (
+                              <li key={`${heading}-${index}`} className="text-xs text-slate-700">
+                                {item.link ? (
+                                  <a href={item.link} target="_blank" rel="noreferrer" className="font-semibold text-blue-800 hover:underline">
+                                    {item.title}
+                                  </a>
+                                ) : (
+                                  <span className="font-semibold">{item.title}</span>
+                                )}
+                                {item.details.length > 0 && (
+                                  <p className="mt-1 whitespace-pre-line text-slate-600">{item.details.join('\n')}</p>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </section>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {typeof sourceData.publications === 'string' && sourceData.publications.trim() && (
+                <section className="pt-4 border-t border-slate-100">
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-2">
+                    Publications
+                  </h3>
+                  <p className="whitespace-pre-line text-sm leading-relaxed text-slate-700">
+                    {sourceData.publications.replace(/\\n/g, '\n')}
+                  </p>
+                </section>
+              )}
+
+              {researchLinks.length > 0 && (
+                <section className="pt-4 border-t border-slate-100">
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-2">
+                    Research & Professional Links
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {researchLinks.map((item, index) => (
+                      <a
+                        key={`${item.link}-${index}`}
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-800 hover:bg-blue-100"
+                      >
+                        Research Link {index + 1}
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {typeof sourceData.resume === 'string' && isSafeResumeUrl(sourceData.resume) && (
+                <a
+                  href={sourceData.resume}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-800 hover:bg-blue-100"
+                >
+                  <FileText className="h-4 w-4" />
+                  View Resume / CV
+                  <ExternalLink className="h-3 w-3" />
+                </a>
               )}
             </div>
           )}

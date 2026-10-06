@@ -1,4 +1,5 @@
 import React from 'react';
+import iiitpLogo from '../Logo/iiitp_logo.png';
 import { Building2, ShieldCheck, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 export const Footer: React.FC<{ onNavigate?: (tab: string) => void }> = ({ onNavigate }) => {
@@ -9,9 +10,16 @@ export const Footer: React.FC<{ onNavigate?: (tab: string) => void }> = ({ onNav
           {/* Institute Info */}
           <div className="md:col-span-2 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white tracking-wider">
-                IIITP
-              </div>
+              <a
+                href="https://iiitp.ac.in"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit the official IIIT Pune website"
+                title="Visit the official IIIT Pune website"
+                className="h-12 w-12 shrink-0 overflow-hidden rounded-full bg-white ring-1 ring-white/30"
+              >
+                <img src={iiitpLogo} alt="IIIT Pune logo" className="h-full w-full object-cover" />
+              </a>
               <div>
                 <h4 className="text-white font-bold text-base leading-snug">
                   Indian Institute of Information Technology Pune

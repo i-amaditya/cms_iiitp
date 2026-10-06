@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { loginUser, getCurrentUserProfile } from '../services/auth.service.ts';
+import { loginUser, getCurrentUserProfile, changeOwnPassword } from '../services/auth.service.ts';
 import { authenticateToken, AuthenticatedRequest } from '../middleware/auth.ts';
 import { recordAuditLog } from '../services/audit.service.ts';
 
@@ -30,6 +30,16 @@ router.get('/me', authenticateToken, async (req: AuthenticatedRequest, res) => {
     res.json(profile);
   } catch (err: any) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+router.post('/change-password', authenticateToken, async (req: AuthenticatedRequest, res) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+    await changeOwnPassword(req.user!.id, currentPassword, newPassword);
+    res.json({ message: 'Password changed successfully. You can now access your faculty profile.' });
+  } catch (err: any) {
+    res.status(400).json({ error: err.message || 'Password change failed' });
   }
 });
 

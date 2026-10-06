@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import { authenticateToken } from '../middleware/auth.ts';
+import { authenticateToken, requirePasswordChangeComplete } from '../middleware/auth.ts';
 import { uploadFacultyPhoto } from '../middleware/upload.ts';
 
 const router = Router();
 
 // Upload photo endpoint requires authentication (faculty or admin)
-router.post('/photo', authenticateToken, (req, res) => {
+router.post('/photo', authenticateToken, requirePasswordChangeComplete, (req, res) => {
   uploadFacultyPhoto.single('photo')(req, res, (err) => {
     if (err) {
       res.status(400).json({ error: err.message || 'File upload failed' });

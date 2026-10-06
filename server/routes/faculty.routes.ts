@@ -1,5 +1,5 @@
 import { Router, Response } from 'express';
-import { authenticateToken, AuthenticatedRequest } from '../middleware/auth.ts';
+import { authenticateToken, AuthenticatedRequest, requirePasswordChangeComplete } from '../middleware/auth.ts';
 import { requireRole, verifyFacultyOwnership } from '../middleware/rbac.ts';
 import {
   getFacultyById,
@@ -11,7 +11,7 @@ import {
 const router = Router();
 
 // Apply auth to all /api/faculty routes
-router.use(authenticateToken);
+router.use(authenticateToken, requirePasswordChangeComplete);
 
 /**
  * Helper to ensure user is linked to a faculty profile

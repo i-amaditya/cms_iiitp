@@ -84,6 +84,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     `username` VARCHAR(100) NOT NULL UNIQUE,
     `email` VARCHAR(150) NOT NULL UNIQUE,
     `password_hash` VARCHAR(255) NOT NULL,
+    `password_change_required` TINYINT(1) NOT NULL DEFAULT 0,
     `role` ENUM('SUPER_ADMIN', 'ADMIN', 'FACULTY') NOT NULL DEFAULT 'FACULTY',
     `faculty_id` INT NULL,
     `is_active` TINYINT(1) NOT NULL DEFAULT 1,

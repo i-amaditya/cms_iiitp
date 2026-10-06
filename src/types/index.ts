@@ -9,6 +9,7 @@ export interface User {
   role: Role;
   facultyId: number | null;
   isActive?: boolean;
+  mustChangePassword?: boolean;
   lastLogin?: string | null;
   createdAt?: string;
   facultyName?: string;
@@ -102,6 +103,7 @@ export interface Faculty {
   research_interests?: string | null;
   areas_of_expertise?: string | null;
   biography?: string | null;
+  source_data?: Record<string, unknown> | null;
   academic_experience?: string | null;
   industry_experience?: string | null;
   research_keywords?: string | null;
